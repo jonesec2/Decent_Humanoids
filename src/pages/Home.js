@@ -5,7 +5,8 @@ import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import MainText from "../components/MainText";
 import test from "../utils/test.json";
-import Search from "../components/Search"
+import Search from "../components/Search";
+import Footer from "../components/Footer";
 
 
 
@@ -45,6 +46,7 @@ function Home() {
                <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
             </div>
          </Wrapper>
+         <Footer />
          
       </div>
 

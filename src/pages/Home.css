@@ -27,14 +27,25 @@
    background-color: rgba(248, 249, 250, 0) !important;
    overflow-x: hidden;
    text-align: left !important;
+   min-height: 100% ;
+   /* will cover the 100% of viewport */
+   overflow: hidden;
+   display: block;
+   position: relative;
 }
 
 @media (min-width: 600px) {
    .container {
       background-color: rgb(248, 249, 250) !important;
+      min-height: 100vh;
       overflow-x: hidden;
       text-align: left !important;
+      min-height: 100% !important;
    }
+}
+
+.noMatch {
+   min-height: 100vh !important;
 }
 
 .bg-light {

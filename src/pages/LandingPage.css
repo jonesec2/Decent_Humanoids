@@ -6,54 +6,51 @@
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
- }
- 
- 
+}
 
- @media (min-width: 980px) {
-    .App {
-       text-align: center;
-       background: no-repeat center 75% fixed;
-       background-image: url("../images/dh_DM.jpg") !important;
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
-    }
- }
- 
- @media (min-width: 1080px) {
-    .App {
-       text-align: center;
-       background: no-repeat center 64% fixed;
-       background-image: url("../images/dh_DM.jpg") !important;
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
-    }
- }
- 
- @media (min-width: 1280px) {
-    .App {
-       text-align: center;
-       background: no-repeat center 52% fixed;
-       background-image: url("../images/dh_DM.jpg") !important;
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
-    }
- }
- 
- 
- @media (prefers-reduced-motion: no-preference) {
-   .App-logo {
-     animation: App-logo-spin infinite 20s linear;
+@media (min-width: 980px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 75% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
    }
- }
- 
- .App-header {
+}
+
+@media (min-width: 1080px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 64% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 1280px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 52% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+   }
+}
+
+.App-header {
    /* background-color: #282c34; */
    min-height: 100vh;
    display: flex;
@@ -62,13 +59,20 @@
    justify-content: center;
    font-size: calc(10px + 2vmin);
    color: white;
- }
- 
- .App-link {
+}
+
+.App-link {
    color: #61dafb;
- }
- 
- /* @keyframes App-logo-spin {
+}
+
+.footer {
+   bottom: 0;
+   width: 100%;
+   padding: 0.75rem;
+   background-image: linear-gradient(to left, rgb(251, 147, 190), rgb(233, 239, 237)) !important;
+}
+
+/* @keyframes App-logo-spin {
    from {
      transform: rotate(0deg);
    }
@@ -76,4 +80,3 @@
      transform: rotate(360deg);
    }
  } */
- 

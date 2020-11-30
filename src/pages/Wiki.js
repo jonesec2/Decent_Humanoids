@@ -6,6 +6,7 @@ import Wrapper from "../components/Wrapper";
 import MainText from "../components/MainText";
 import test from "../utils/test.json";
 import testpic from "../"
+import Footer from "../components/Footer";
 
 export default function Wiki() {
 
@@ -22,6 +23,7 @@ export default function Wiki() {
             <hr />
             <MainText/>
          </Wrapper>
+         <Footer />
       </div>
 
    )

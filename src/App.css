@@ -17,7 +17,7 @@
 @media (min-width: 767px) {
    .ttttt {
       text-align: center;
-      background: no-repeat center -100% fixed;
+      background: no-repeat center fixed;
       background-image: url("./images/iphirea_bg1.png") !important;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -34,6 +34,7 @@
 html, body {
    margin: 0;
    padding: 0;
+   height: 100vh;
 }
 
 @keyframes App-logo-spin {
