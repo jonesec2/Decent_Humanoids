@@ -19,12 +19,14 @@ export default function MainText(props) {
    return (
       <div className="container text-center mx-auto my-3">
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
-            <img className="image" src={object.mainImage} />
+            <img className="image" src={testPic} />
             <p>{object.left1}</p>
             <p>test</p>
             <p>test</p>
             <p>test</p>
-
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
          </div>
          <div className="mx-auto mb-3 pb-2">
             <p>{object.overview}</p>
@@ -36,7 +38,7 @@ export default function MainText(props) {
             <button className="btn info">Click Me!</button>
          </div>
          <div className=" mx-auto my-3 py-2">
-            {/* <hr></hr> */}
+            <hr></hr>
             <h3>{object.title1}</h3>
             <p>{object.History}</p>
             <hr></hr>

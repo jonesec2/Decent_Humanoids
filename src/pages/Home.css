@@ -49,7 +49,7 @@
 
 @media (min-width: 767px) {
    .textL {
-      float: left;
+      
       width: 20%;
       display: table;
       overflow: hidden;
@@ -60,7 +60,7 @@
 
 @media (min-width: 991px) {
    .textL {
-      float: left;
+      
       width: 20%;
       display: table;
       overflow: hidden;
