@@ -7,9 +7,11 @@ export default function Timeline() {
    return (
       <div>
          <Navbar />
-         <Wrapper>
-            <h1>Test</h1>
-         </Wrapper>
+         <div className="noMatch">
+            <Wrapper>
+               <h1>Test</h1>
+            </Wrapper>
+         </div>
          <Footer />
       </div>
 
