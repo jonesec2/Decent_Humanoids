@@ -12,6 +12,14 @@ import Footer from "../components/Footer";
 
 function Home() {
 
+   const [PageName, setPageName] = useState(["test "])
+   console.log(PageName + "stop1")
+
+   function goToPage() {
+      console.log(PageName + " stop 2");
+      setPageName(test[0].title)
+   }
+
    console.log(test[0])
    const object = test[0]
    console.log(window.location.pathname)
@@ -40,10 +48,7 @@ function Home() {
                Think I might have to make a function that passes a prop
                to the wiki page. From wiki page the prop is passed to the "main text"
                component and the page is dynamically loaded */}
-                  <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
-                  <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
-                  <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
-                  <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
+                  <Link className="col-3 info" PageName={PageName} onClick={goToPage}>Click Me!</Link> <p className="col-8">test test test test test</p>
                   <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
                </div>
             </Wrapper>
