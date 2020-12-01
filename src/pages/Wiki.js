@@ -6,12 +6,18 @@ import Wrapper from "../components/Wrapper";
 import test from "../utils/test.json";
 import Footer from "../components/Footer";
 import testPic from "../images/eb_dh1.jpg"
+import iphirea from "../images/Iphiria.png"
 
-export default function Wiki() {
+export default function Wiki(props) {
 
-   console.log(test[0])
+   
+
+   console.log(props.location.state)
+
+
+   // console.log(test[0])
    const object = test[0]
-   console.log(window.location.pathname)
+   // console.log(window.location.pathname)
 
    return (
       // <Router>
