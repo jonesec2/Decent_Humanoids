@@ -2,7 +2,7 @@
    {
       "title": "Decent Humanoids",
       "overview": "This is the overview for the Decent Humanoids. Normally there would be a lot more things but this just for the test. The Decent Humanoids are just as their name implies.",
-      "mainImage": "/static/media/eb_dh1.b235a8ce.jpg",
+      "mainImage": "/Decent_Humanoids/static/media/eb_dh1.b235a8ce.jpg",
       "left1": "Baelok, Anak, Maeve, Xalys, Viz",
       "title1": "History",
       "title2": "Future",  
@@ -14,13 +14,13 @@
    {
       "title": "Iphiria",
       "overview": "The country of Iphiria is blah blah blah",
-      "mainImage": "static/media/Iphiria.b9063192.png",
+      "mainImage": "/Decent_Humanoids/static/media/IphiriaClose.ac895cc6.png",
       "left1": "Country of Iphiria and its surrounding countries.",
       "title1": "History",
       "title2": "Future",  
       "title3": "Gallery",
-      "History": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-      "Future": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-      "Gallery": "img/ img/ img/ img/"
+      "History": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA ",
+      "Future": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA .",
+      "Gallery": "img/IPHIRIA img/IPHIRIA img/IPHIRIA img/IPHIRIA"
    }
 ]

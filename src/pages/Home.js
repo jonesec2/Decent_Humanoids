@@ -15,12 +15,19 @@ function Home() {
    const [pageName, setPage] = useState([])
    console.log(pageName + "stop1")
 
+   const [result, setResult] = useState("Iphiria")
+
+   // function results() {
+   //    result = "Iphiria"
+   // }
+
    function selectPage() {
       console.log(pageName + " stop 2");
-      setPage("Iphiria");
-      console.log(pageName);
+      setPage("Iphiria")
+         .then(res => {
+            console.log(pageName)
+         });
    }
-   console.log(pageName);
 
    console.log(test[0])
    const object = test[0]
@@ -53,11 +60,11 @@ function Home() {
                   <Link className="col-3 info"
                      to={{
                         pathname: "/wiki",
-                        state: pageName
-                        
+                        state: {result}
+
                      }}
-                     onClick={selectPage}
-                  >Click Me!</Link> <p className="col-8"></p>
+
+                  >{result}</Link> <p className="col-8"></p>
                   <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
                </div>
             </Wrapper>

@@ -6,18 +6,33 @@ import Wrapper from "../components/Wrapper";
 import test from "../utils/test.json";
 import Footer from "../components/Footer";
 import testPic from "../images/eb_dh1.jpg"
-import iphirea from "../images/Iphiria.png"
+import iphirea from "../images/IphiriaClose.png"
+import key from "../utils/key.json";
 
 export default function Wiki(props) {
 
+   // const page = props.location.state.result
+   console.log(iphirea)
+   // console.log(props.location.state.result)
+   ////////////////////////////////////////////////////////
    
+   // By passing props for now
+   // Hard coding a value that acts as a passed prop: "Iphiria"
+   const lookUp = "Iphiria"
 
-   console.log(props.location.state)
+   console.log(key[lookUp])
 
+   // setting the json Object key # based on the look up value (look up value will 
+   //eventually come from props)
+   const keyCode = key[lookUp]
 
-   // console.log(test[0])
-   const object = test[0]
-   // console.log(window.location.pathname)
+   console.log(keyCode)
+
+   // create variable to host the "dynamic" json Object value
+   // this allows me to dynamically populate the page using the "object" variable
+   const object = test[keyCode]
+   console.log(object)
+
 
    return (
       // <Router>
@@ -28,7 +43,7 @@ export default function Wiki(props) {
             <hr />
             <div className="container text-center mx-auto my-3">
                <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
-                  <img className="image" src={testPic} />
+                  <img className="image" src={object.mainImage} />
                   <p>{object.left1}</p>
                   <p>test</p>
                   <p>test</p>
@@ -55,6 +70,7 @@ export default function Wiki(props) {
                   <p>{object.Future}</p>
                   <hr></hr>
                   <h3>{object.title3}</h3>
+                  <div>{object.Gallery}</div>
                   <p>ipsum salt bitches ipsum salt bitches ipsum salt bitches ipsum salt bitches</p>
                   <p>ipsum salt bitches ipsum salt bitches ipsum salt bitches ipsum salt bitches</p>
                </div>
