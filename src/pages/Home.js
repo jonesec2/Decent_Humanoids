@@ -16,6 +16,7 @@ function Home() {
    console.log(pageName + "stop1")
 
    const [result, setResult] = useState("Iphiria")
+   const [resultTwo, setResultTwo] = useState("Decent Humanoids")
 
    // function results() {
    //    result = "Iphiria"
@@ -65,7 +66,7 @@ function Home() {
                      }}
 
                   >{result}</Link> <p className="col-8"></p>
-                  <Link className="col-3 info" to="/wiki">Click Me!</Link> <p className="col-8">test test test test test</p>
+                  <Link className="col-3 info" to="/wiki">{resultTwo}</Link> <p className="col-8">test test test test test</p>
                </div>
             </Wrapper>
          </div>
