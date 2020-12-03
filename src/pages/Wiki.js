@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../components/Nav";
@@ -11,12 +11,41 @@ import key from "../utils/key.json";
 
 export default function Wiki(props) {
 
+   // console.log(props.location.state.result)
+   console.log(props)
+
+   const [wiki, setWiki] = useState('Default')
+
+   useEffect(() => {
+         if (typeof props.location.state === 'undefined') {
+            console.log(wiki + " if statement")
+            return
+         }
+         if (typeof props.location.state !== 'undefined') {
+            setWiki(props.location.state.result)
+         }
+         else {
+            setWiki('Default')
+            console.log(wiki);
+         }
+      // checkStatus();
+
+   })
+
+   useEffect(() => {console.log(wiki)}, [wiki])
+
+   // function checkStatus() {
+   //    console.log(wiki)
+   // }
+
+
    // const page = props.location.state.result
    console.log(iphirea)
+   console.log(wiki)
    // console.log(props.location.state.result)
    ////////////////////////////////////////////////////////
-   
-   // By passing props for now
+
+   // Bypassing props for now
    // Hard coding a value that acts as a passed prop: "Iphiria"
    const lookUp = "Iphiria"
 
@@ -69,10 +98,11 @@ export default function Wiki(props) {
                   <h3>{object.title2}</h3>
                   <p>{object.Future}</p>
                   <hr></hr>
+                  {/*  */}
+                  {/* Use W3 schools about image gallery to make a cool image gallery */}
+                  {/*  */}
                   <h3>{object.title3}</h3>
                   <div>{object.Gallery}</div>
-                  <p>ipsum salt bitches ipsum salt bitches ipsum salt bitches ipsum salt bitches</p>
-                  <p>ipsum salt bitches ipsum salt bitches ipsum salt bitches ipsum salt bitches</p>
                </div>
             </div>
          </Wrapper>

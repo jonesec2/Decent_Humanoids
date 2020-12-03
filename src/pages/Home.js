@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
-import MainText from "../components/MainText";
-import test from "../utils/test.json";
+// import MainText from "../components/MainText";
+// import test from "../utils/test.json";
 import Search from "../components/Search";
 import Footer from "../components/Footer";
 
@@ -13,10 +13,11 @@ import Footer from "../components/Footer";
 function Home() {
 
    const [pageName, setPage] = useState([])
-   console.log(pageName + "stop1")
+   // console.log(pageName + "stop1")
 
-   const [result, setResult] = useState("Iphiria")
-   const [resultTwo, setResultTwo] = useState("Decent Humanoids")
+   const [result] = useState("Iphiria")
+   console.log(result)
+   // const [resultTwo, setResultTwo] = useState("Decent Humanoids")
 
    // function results() {
    //    result = "Iphiria"
@@ -30,9 +31,9 @@ function Home() {
          });
    }
 
-   console.log(test[0])
-   const object = test[0]
-   console.log(window.location.pathname)
+   // console.log(test[0])
+   // const object = test[0]
+   // console.log(window.location.pathname)
 
    return (
       // <Router>
@@ -66,7 +67,7 @@ function Home() {
                      }}
 
                   >{result}</Link> <p className="col-8"></p>
-                  <Link className="col-3 info" to="/wiki">{resultTwo}</Link> <p className="col-8">test test test test test</p>
+                  <Link className="col-3 info" to="/wiki">Decent Humanoids</Link> <p className="col-8">test test test test test</p>
                </div>
             </Wrapper>
          </div>
