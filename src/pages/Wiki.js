@@ -14,7 +14,7 @@ export default function Wiki(props) {
    console.log(testPic)
    const [wiki, setWiki] = useState('Default');
    const [keyCode, setKeyCode] = useState('');
-   // const [object, setObject] = useState(test[0]);
+   const [object, setObject] = useState(test[0]);
 
    useEffect(() => {
       if (typeof props.location.state === 'undefined') {
@@ -56,30 +56,16 @@ export default function Wiki(props) {
    // console.log(test[1]);
 
    function getObject() {
-      // setObject(test[keyCode]);
+      setObject(test[keyCode]);
    }
 
    const object = test[0]
    console.log(object);
 
    ////////////////////////////////////////////////////////
-
-   // Bypassing props for now
-   // Hard coding a value that acts as a passed prop: "Iphiria"
-   // const lookUp = 'Iphiria'
-
-   // console.log(key[lookUp])
-
-   // setting the json Object key # based on the look up value (look up value will 
-   //eventually come from props)
-   // const keyCode = key[lookUp]
-
-   // console.log(keyCode)
-
-   // create variable to host the "dynamic" json Object value
-   // this allows me to dynamically populate the page using the "object" variable
-   // const object = test[keyCode]
-   // console.log(object)
+   //
+   // how to dynamically render the page??
+   //
 
 
    return (

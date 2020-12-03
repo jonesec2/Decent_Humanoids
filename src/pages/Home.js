@@ -62,12 +62,13 @@ function Home() {
                   <Link className="col-3 info"
                      to={{
                         pathname: "/wiki",
-                        state: {result}
-
-                     }}
-
-                  >{result}</Link> <p className="col-8"></p>
-                  <Link className="col-3 info" to="/wiki">Decent Humanoids</Link> <p className="col-8">test test test test test</p>
+                        state: { result }
+                     }}> {result} </Link> <p className="col-8"></p>
+                  <Link className="col-3 info"
+                     to={{
+                        pathname: "/wiki",
+                        state: "Decent Humanoids"
+                     }}> Decent Humanoids </Link> <p className="col-8">test test test test test</p>
                </div>
             </Wrapper>
          </div>
