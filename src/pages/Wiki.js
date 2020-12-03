@@ -11,56 +11,75 @@ import key from "../utils/key.json";
 
 export default function Wiki(props) {
 
-   // console.log(props.location.state.result)
-   console.log(props)
-
-   const [wiki, setWiki] = useState('Default')
+   const [wiki, setWiki] = useState('Default');
+   // const [object, setObject] =useState('Default');
+   const [keyCode, setKeyCode] = useState('');
+   const [object, setObject] = useState(test[0]);
 
    useEffect(() => {
-         if (typeof props.location.state === 'undefined') {
-            console.log(wiki + " if statement")
-            return
-         }
-         if (typeof props.location.state !== 'undefined') {
-            setWiki(props.location.state.result)
-         }
-         else {
-            setWiki('Default')
-            console.log(wiki);
-         }
-      // checkStatus();
-
+      if (typeof props.location.state === 'undefined') {
+         console.log(wiki + " if statement")
+         return
+      }
+      if (typeof props.location.state !== 'undefined') {
+         setWiki(props.location.state.result)
+         loadPage();
+         // renderPage();
+      }
+      else {
+         setWiki('Default')
+         loadPage();
+         console.log(wiki);
+      }
    })
 
-   useEffect(() => {console.log(wiki)}, [wiki])
+   useEffect(() => {
+      console.log(wiki);
+   }, [wiki])
 
-   // function checkStatus() {
-   //    console.log(wiki)
-   // }
+   function loadPage() {
+      if (typeof wiki === 'undefined') {
+         setKeyCode(key['Default'])
+         getObject();
+      }
+      else {
+         // keycode = key[wiki]
+         // getObject()
+         setKeyCode(key[wiki])
+         getObject();
+      }
+      // console.log(keyCode)
+      // const object = test[keyCode]
+      // console.log(object)
+   }
+   // const object = test[2].title
+   // console.log(test[1]);
+
+   function getObject() {
+      setObject(test[keyCode]);
+   }
 
 
-   // const page = props.location.state.result
-   console.log(iphirea)
-   console.log(wiki)
-   // console.log(props.location.state.result)
+   console.log(object);
+
    ////////////////////////////////////////////////////////
 
    // Bypassing props for now
    // Hard coding a value that acts as a passed prop: "Iphiria"
-   const lookUp = "Iphiria"
+   // const lookUp = 'Iphiria'
 
-   console.log(key[lookUp])
+   // console.log(key[lookUp])
 
    // setting the json Object key # based on the look up value (look up value will 
    //eventually come from props)
-   const keyCode = key[lookUp]
+   // const keyCode = key[lookUp]
 
-   console.log(keyCode)
+   // console.log(keyCode)
 
    // create variable to host the "dynamic" json Object value
    // this allows me to dynamically populate the page using the "object" variable
-   const object = test[keyCode]
-   console.log(object)
+   // const object = test[keyCode]
+   // console.log(object)
 
 
    return (
@@ -68,6 +87,7 @@ export default function Wiki(props) {
       <div>
          <Navbar />
          <Wrapper>
+            {/* { }
             <h1 className="text-left">{object.title}</h1>
             <hr />
             <div className="container text-center mx-auto my-3">
@@ -97,14 +117,14 @@ export default function Wiki(props) {
                   <hr></hr>
                   <h3>{object.title2}</h3>
                   <p>{object.Future}</p>
-                  <hr></hr>
-                  {/*  */}
-                  {/* Use W3 schools about image gallery to make a cool image gallery */}
-                  {/*  */}
-                  <h3>{object.title3}</h3>
+                  <hr></hr> */}
+            {/*  */}
+            {/* Use W3 schools about image gallery to make a cool image gallery */}
+            {/*  */}
+            {/* <h3>{object.title3}</h3>
                   <div>{object.Gallery}</div>
                </div>
-            </div>
+            </div> */}
          </Wrapper>
          <Footer />
       </div>
