@@ -8,59 +8,69 @@ import Footer from "../components/Footer";
 import testPic from "../images/dh_groupA.jpg"
 import iphirea from "../images/IphiriaClose.png"
 import key from "../utils/key.json";
+import Title from "../components/Title";
+import MainContainer from "../components/MainContainer";
+import MainText from "../components/MainText";
 
 export default function Wiki(props) {
 
-   console.log(testPic)
+   // The trick to getting this to work is to set a default loading page to fall back on
+   // But putting all the code in home to send over. So use will search
+   // then select and when the link is selected that is where the object 
+   // will be chosen and then all of the info will make it over as a prop
+   // so rendering would look like "{load prop.title || if null default}"
+
    const [wiki, setWiki] = useState('Default');
-   const [keyCode, setKeyCode] = useState('');
+   const [keyCode, setKeyCode] = useState('Default');
    const [object, setObject] = useState(test[0]);
+   console.log(props.location.state)
 
-   useEffect(() => {
-      if (typeof props.location.state === 'undefined') {
-         console.log(wiki + " if statement")
-         return
-      }
-      if (typeof props.location.state !== 'undefined') {
-         setWiki(props.location.state.result)
-         loadPage();
-         // renderPage();
-      }
-      else {
-         setWiki('Default')
-         loadPage();
-         console.log(wiki);
-      }
-   })
+   // useEffect(() => {
 
-   useEffect(() => {
-      console.log(wiki);
-   }, [wiki])
+   //    if (typeof props.location.state === 'undefined') {
+   //       console.log("prop is UNDEFINED")
+   //       return
+   //    }
+   //    if (typeof props.location.state !== 'undefined') {
+   //       console.log("prop IS DEFINED: " + props.location.state.result)
+   //       setWiki(props.location.state.result)
+   //    }
+   //    else {
+   //       setWiki('Default')
+   //       console.log(wiki);
+   //    }
+   //    // console.log(keyCode)
+   //    // const object = test[keyCode]
+   //    // console.log(object)
+   //    // const object = test[2].title
+   //    // console.log(test[1]);
 
-   function loadPage() {
-      if (typeof wiki === 'undefined') {
-         setKeyCode(key['Default'])
-         getObject();
-      }
-      else {
-         // keycode = key[wiki]
-         // getObject()
-         setKeyCode(key[wiki])
-         getObject();
-      }
-      // console.log(keyCode)
-      // const object = test[keyCode]
-      // console.log(object)
-   }
-   // const object = test[2].title
-   // console.log(test[1]);
+   // })
 
-   function getObject() {
-      setObject(test[keyCode]);
-   }
+   // useEffect(() => {
+   //    console.log(wiki);
+   //    console.log(object)
+   //    if (typeof wiki === 'undefined') {
+   //       console.log("wiki is UNDEFINED" + key['Default'])
+   //       setKeyCode(key['Default'])
+   //    }
+   //    else {
+   //       console.log("wiki IS DEFINED: " + key[wiki])
+   //       setKeyCode(key[wiki])
+   //    }
+   // }, [wiki])
 
-   const object = test[0]
-   console.log(object);
+   // useEffect(() => {
+   //    console.log("got object " + JSON.stringify(object));
+   //    setObject(test[keyCode]);
+
+   // },[keyCode])
+
+   // console.log(object)
+
+
+   // const object = test[0]
+   // console.log(object);
 
    ////////////////////////////////////////////////////////
    //
@@ -74,43 +84,15 @@ export default function Wiki(props) {
          <Navbar />
          <Wrapper>
             {/* {object.map(object => */}
-            <h1 className="text-left">{object.title}</h1>
+            <Title title={"test"} />
+            {/* <h1 className="text-left">{object.title}</h1> */}
             <hr />
-            <div className="container text-center mx-auto my-3">
-               <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
-                  <img className="image" src={object.mainImage} />
-                  <p>{object.left1}</p>
-                  <p>test</p>
-                  <p>test</p>
-                  <p>test</p>
-                  <p>test</p>
-                  <p>test</p>
-                  <p>test</p>
-               </div>
-               <div className="mx-auto mb-3 pb-2">
-                  <p>{object.overview}</p>
-               </div>
-               <div className="border py-1 px-4 textL">
-                  <button className="btn info">Click Me!</button>
-                  <button className="btn info">Click Me!</button>
-                  <button className="btn info">Click Me!</button>
-                  <button className="btn info">Click Me!</button>
-               </div>
-               <div className=" mx-auto my-3 py-2">
-                  <hr></hr>
-                  <h3>{object.title1}</h3>
-                  <p>{object.History}</p>
-                  <hr></hr>
-                  <h3>{object.title2}</h3>
-                  <p>{object.Future}</p>
-                  <hr></hr>
-                  {/*  */}
-                  {/* Use W3 schools about image gallery to make a cool image gallery */}
-                  {/*  */}
-                  <h3>{object.title3}</h3>
-                  <div>{object.Gallery}</div>
-               </div>
-            </div>
+            <MainText
+               object={{left1:"test", mainImage:"test", overview:"test",title:"test", title1:"test", History:"test", title2:"test", Future:"test", title3:"test", Gallery:"test"}}
+            >
+            </MainText>
+            {/* Use W3 schools about image gallery to make a cool image gallery */}
+            {/*  */}
             {/* )} */}
          </Wrapper>
          <Footer />

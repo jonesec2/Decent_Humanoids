@@ -4,7 +4,8 @@ import "./Home.css";
 import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 // import MainText from "../components/MainText";
-// import test from "../utils/test.json";
+import pageContent from "../utils/test.json";
+import key from "../utils/key.json"
 import Search from "../components/Search";
 import Footer from "../components/Footer";
 
@@ -17,11 +18,7 @@ function Home() {
 
    const [result] = useState("Iphiria")
    console.log(result)
-   // const [resultTwo, setResultTwo] = useState("Decent Humanoids")
 
-   // function results() {
-   //    result = "Iphiria"
-   // }
 
    function selectPage() {
       console.log(pageName + " stop 2");
@@ -31,9 +28,6 @@ function Home() {
          });
    }
 
-   // console.log(test[0])
-   // const object = test[0]
-   // console.log(window.location.pathname)
 
    return (
       // <Router>
