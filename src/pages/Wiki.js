@@ -11,6 +11,7 @@ import key from "../utils/key.json";
 import Title from "../components/Title";
 import MainContainer from "../components/MainContainer";
 import MainText from "../components/MainText";
+import Search from "../components/Search";
 
 export default function Wiki(props) {
 
@@ -29,27 +30,6 @@ export default function Wiki(props) {
    // console.log(test[0])
 
 
-
-   // use useEffect with callback argument so they can click "links" on page 
-   // and re-render for new page
-   // useEffect(() => {
-   //    if (typeof props.location.state.pageName === 'undefined') {
-   //       console.log("prop is UNDEFINED")
-   //       setObject(test[0])
-   //       return
-   //    }
-   //    if (typeof props.location.state !== 'undefined') {
-   //       console.log("prop IS DEFINED: " + props.location.state.pageName)
-   //       // setObject(props.location.state.pageName)
-   //    }
-   //    else {
-   //       // setObject(test[0])
-   //       console.log(object);
-   //    }
-   // })
-
-
-
    return (
       // <Router>
       <div>
@@ -57,6 +37,7 @@ export default function Wiki(props) {
          <div className="noMatch">
             {object ? (
                <Wrapper>
+                  <Search/>
                   <Title title={object.title} />
                   <hr />
                   <MainText

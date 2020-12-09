@@ -17,11 +17,11 @@ function Home() {
 
    const history = useHistory();
    const prop = "test"
-   const [pageName, setPage] = useState(1);
+   const [pageName, setPage] = useState(2);
 
    const decent = pageContent[1]
 
- 
+
    useEffect(() => {
       if (typeof pageName === 'undefined') {
          console.log("Page not found");
@@ -45,6 +45,7 @@ function Home() {
          <Navbar />
          <div className="noMatch">
             <Wrapper>
+               <Search />
                <h1 className="text-left">Welcome</h1>
                <hr />
                <p>This is the Decent Humanoids wikipedia page. These chronicle the adventures of 6 friends through their D&D campaign. </p>
@@ -53,7 +54,6 @@ function Home() {
                <hr></hr>
                <h2>Restart the adventure</h2>
                <p>I'll try my best to get you what you're looking for. If I can't I'll try to get you as close as possible.</p>
-               <Search />
                <hr></hr>
                <h3>Results</h3>
                {/* The results should show as a "keyword" link and maybe the 
