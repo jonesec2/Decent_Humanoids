@@ -17,19 +17,14 @@ export default function MainText(object) {
    // {object.mainImage}
    const info = object.object
    console.log(object.object)
-   console.log(object.title1)
 
    return (
       <div className="container text-center mx-auto my-3">
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
             <img className="image" src={info.mainImage} />
             <p>{info.left1}</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <p>{info.left1}</p>
+ 
          </div>
          <div className="mx-auto mb-3 pb-2">
             <p>{info.overview}</p>

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
@@ -8,26 +8,88 @@ import pageContent from "../utils/test.json";
 import key from "../utils/key.json"
 import Search from "../components/Search";
 import Footer from "../components/Footer";
+import API from "../utils/API";
 
 
 
 function Home() {
 
-   const [pageName, setPage] = useState([])
-   // console.log(pageName + "stop1")
 
-   const [result] = useState("Iphiria")
-   console.log(result)
+   const history = useHistory();
+   const prop = "test"
+   const [pageName, setPage] = useState(1);
 
+   // function objectRequest() {
+   //    // event.preventDefault();
+   //    // API.getPage({key:2
+   //    // })
+   //    // .then(res => console.log(res))
+   //    fetch("https://decen")
+   //    .then(res => console.log(res));
+   // }
 
-   function selectPage() {
-      console.log(pageName + " stop 2");
-      setPage("Iphiria")
-         .then(res => {
-            console.log(pageName)
-         });
+   const decent = pageContent[1]
+
+   // async function routeChange() {
+   //    await function test() {
+   //       if (typeof pageName === 'undefined') {
+   //          console.log("Page not found");
+   //          return
+   //       }
+   //       else {
+   //          // console.log(pageContent[0]);
+   //          console.log("test");
+   //          setPage(pageContent[2]);
+   //          // routeChange();
+   //       }
+   //    }
+   //    // let path = '/wiki';
+   //    // history.push(path);
+   // }
+
+   function fetchTest() {
+      if (typeof pageName === 'undefined') {
+         console.log("Page not found");
+         return
+      }
+      else {
+         console.log("test");
+         setPage(pageContent[2]);
+         // navigatePage();
+      }
    }
 
+
+   function navigatePage() {
+      console.log(pageName);
+      setTimeout(function () {
+         let path = '/wiki';
+         history.push(path);
+      }, 2000)
+   }
+
+   useEffect(() => {
+      if (typeof pageName === 'undefined') {
+         console.log("Page not found");
+         return
+      }
+      else {
+         // console.log(pageContent[0]);
+         console.log("use Effect");
+         // routeChange();
+         // setPage(pageContent[2])
+      }
+   }, [pageName])
+
+   console.log(pageName)
+
+   function check() {
+      console.log(pageName);
+   }
+
+
+   const [result] = useState("Iphiria")
+   // console.log(pageName);
 
    return (
       // <Router>
@@ -54,15 +116,18 @@ function Home() {
                to the wiki page. From wiki page the prop is passed to the "main text"
                component and the page is dynamically loaded */}
                   <Link className="col-3 info"
+                     // onClick={objectRequest}
                      to={{
                         pathname: "/wiki",
-                        state: { result }
-                     }}> {result} </Link> <p className="col-8"></p>
+                        state: { pageName }
+                     }}
+                  > {result} </Link> <p className="col-8"></p>
                   <Link className="col-3 info"
                      to={{
                         pathname: "/wiki",
-                        state: "Decent Humanoids"
+                        state: { decent }
                      }}> Decent Humanoids </Link> <p className="col-8">test test test test test</p>
+                  <button onClick={check}>Test</button>
                </div>
             </Wrapper>
          </div>

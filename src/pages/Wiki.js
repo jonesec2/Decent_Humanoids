@@ -20,83 +20,59 @@ export default function Wiki(props) {
    // will be chosen and then all of the info will make it over as a prop
    // so rendering would look like "{load prop.title || if null default}"
 
-   const [wiki, setWiki] = useState('Default');
-   const [keyCode, setKeyCode] = useState('Default');
-   const [object, setObject] = useState(test[0]);
-   console.log(props.location.state)
+   const [object, setObject] = useState(test[props.location.state.pageName]);
+   console.log(object)
 
+
+
+   // use useEffect with callback argument so they can click "links" on page 
+   // and re-render for new page
    // useEffect(() => {
-
-   //    if (typeof props.location.state === 'undefined') {
+   //    if (typeof props.location.state.pageName === 'undefined') {
    //       console.log("prop is UNDEFINED")
+   //       setObject(test[0])
    //       return
    //    }
    //    if (typeof props.location.state !== 'undefined') {
-   //       console.log("prop IS DEFINED: " + props.location.state.result)
-   //       setWiki(props.location.state.result)
+   //       console.log("prop IS DEFINED: " + props.location.state.pageName)
+   //       // setObject(props.location.state.pageName)
    //    }
    //    else {
-   //       setWiki('Default')
-   //       console.log(wiki);
+   //       // setObject(test[0])
+   //       console.log(object);
    //    }
-   //    // console.log(keyCode)
-   //    // const object = test[keyCode]
-   //    // console.log(object)
-   //    // const object = test[2].title
-   //    // console.log(test[1]);
-
    // })
 
-   // useEffect(() => {
-   //    console.log(wiki);
-   //    console.log(object)
-   //    if (typeof wiki === 'undefined') {
-   //       console.log("wiki is UNDEFINED" + key['Default'])
-   //       setKeyCode(key['Default'])
-   //    }
-   //    else {
-   //       console.log("wiki IS DEFINED: " + key[wiki])
-   //       setKeyCode(key[wiki])
-   //    }
-   // }, [wiki])
-
-   // useEffect(() => {
-   //    console.log("got object " + JSON.stringify(object));
-   //    setObject(test[keyCode]);
-
-   // },[keyCode])
-
-   // console.log(object)
-
-
-   // const object = test[0]
-   // console.log(object);
-
-   ////////////////////////////////////////////////////////
-   //
-   // how to dynamically render the page??
-   //
 
 
    return (
       // <Router>
       <div>
          <Navbar />
-         <Wrapper>
-            {/* {object.map(object => */}
-            <Title title={"test"} />
-            {/* <h1 className="text-left">{object.title}</h1> */}
-            <hr />
-            <MainText
-               object={{left1:"test", mainImage:"test", overview:"test",title:"test", title1:"test", History:"test", title2:"test", Future:"test", title3:"test", Gallery:"test"}}
-            >
-            </MainText>
-            {/* Use W3 schools about image gallery to make a cool image gallery */}
-            {/*  */}
-            {/* )} */}
-         </Wrapper>
+         <div className="noMatch">
+            {object ? (
+               <Wrapper>
+                  <Title title={object.title} />
+                  <hr />
+                  <MainText
+                     object={{
+                        title: object.title,
+                        overview: object.overview,
+                        mainImage: object.mainImage,
+                        left1: object.left1,
+                        title1: object.title1,
+                        History: object.History,
+                        title2: object.title2,
+                        Future: object.Future,
+                        title3: object.title3,
+                        /* Use W3 schools about image gallery to make a cool image gallery */ 
+                        Gallery: object.Gallery
+                     }}>
+                  </MainText>
+               </Wrapper>
+            ) : (<h5>no results</h5>)}
+         </div>
          <Footer />
       </div>
-
    )
 }
