@@ -64,7 +64,6 @@ function Home() {
                to the wiki page. From wiki page the prop is passed to the "main text"
                component and the page is dynamically loaded */}
                   <Link className="col-3 info"
-                     // onClick={objectRequest}
                      to={{
                         pathname: "/wiki",
                         state: { pageName }
@@ -75,7 +74,6 @@ function Home() {
                         pathname: "/wiki",
                         state: { decent }
                      }}> Decent Humanoids </Link> <p className="col-8">test test test test test</p>
-                  <button onClick={check}>Test</button>
                </div>
             </Wrapper>
          </div>

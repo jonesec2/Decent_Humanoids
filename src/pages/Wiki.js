@@ -20,8 +20,13 @@ export default function Wiki(props) {
    // will be chosen and then all of the info will make it over as a prop
    // so rendering would look like "{load prop.title || if null default}"
 
-   const [object, setObject] = useState(test[props.location.state.pageName]);
+   const [object, setObject] = useState( 
+      typeof props.location.state === 'undefined'
+      ? test[0] 
+      : test[props.location.state.pageName]  );
    console.log(object)
+   // console.log(test[props.location.state.pageName])
+   // console.log(test[0])
 
 
 

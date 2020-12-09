@@ -16,9 +16,9 @@ function Navbar() {
                <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/home">Home</Link>
                </li>
-               {/* <li className="nav-item">
+               <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/wiki">Wiki</Link>
-               </li> */}
+               </li>
                <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/timeline">Timeline</Link>
                </li>
