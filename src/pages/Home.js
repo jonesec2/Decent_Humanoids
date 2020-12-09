@@ -19,55 +19,9 @@ function Home() {
    const prop = "test"
    const [pageName, setPage] = useState(1);
 
-   // function objectRequest() {
-   //    // event.preventDefault();
-   //    // API.getPage({key:2
-   //    // })
-   //    // .then(res => console.log(res))
-   //    fetch("https://decen")
-   //    .then(res => console.log(res));
-   // }
-
    const decent = pageContent[1]
 
-   // async function routeChange() {
-   //    await function test() {
-   //       if (typeof pageName === 'undefined') {
-   //          console.log("Page not found");
-   //          return
-   //       }
-   //       else {
-   //          // console.log(pageContent[0]);
-   //          console.log("test");
-   //          setPage(pageContent[2]);
-   //          // routeChange();
-   //       }
-   //    }
-   //    // let path = '/wiki';
-   //    // history.push(path);
-   // }
-
-   function fetchTest() {
-      if (typeof pageName === 'undefined') {
-         console.log("Page not found");
-         return
-      }
-      else {
-         console.log("test");
-         setPage(pageContent[2]);
-         // navigatePage();
-      }
-   }
-
-
-   function navigatePage() {
-      console.log(pageName);
-      setTimeout(function () {
-         let path = '/wiki';
-         history.push(path);
-      }, 2000)
-   }
-
+ 
    useEffect(() => {
       if (typeof pageName === 'undefined') {
          console.log("Page not found");
@@ -83,13 +37,7 @@ function Home() {
 
    console.log(pageName)
 
-   function check() {
-      console.log(pageName);
-   }
-
-
    const [result] = useState("Iphiria")
-   // console.log(pageName);
 
    return (
       // <Router>
