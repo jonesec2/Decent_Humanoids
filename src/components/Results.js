@@ -32,12 +32,12 @@ export default function Results(props) {
          filter: <input onChange={e => handleChange(e.target.value)} />
          {filterDisplay.map((search, i) => (
             <div className="row" key={i}>
-               <Link className="col-12 col-md-5 info"
+               <Link className="col-12 col-md-3 info pr-0"
                   to={{
                      pathname: "/wiki",
                      state: search.pageNumber
                   }}
-               > {search.name} </Link> <p className="col-12 col-md-7 text-left">{search.blurb}</p>
+               > {search.name} </Link> <p className="col-12 col-md-9 text-left pl-0">{search.blurb}</p>
             </div>
          ))}
       </div>
