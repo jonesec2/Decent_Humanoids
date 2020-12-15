@@ -1,6 +1,9 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 
 export default function Results(props) {
+
+   console.log(props)
 
    const [word, setWord] = useState("");
 
@@ -26,14 +29,15 @@ export default function Results(props) {
 
    return (
       <div>
-         <h1>Test</h1>
          filter: <input onChange={e => handleChange(e.target.value)} />
-         {filterDisplay.map((search, i) =>(
-            <div key={i}>
-               <li>
-                  {search.name} &nbsp;
-                  <span>{search.pageNumber}</span>
-               </li>
+         {filterDisplay.map((search, i) => (
+            <div className="row" key={i}>
+               <Link className="col-12 col-md-5 info"
+                  to={{
+                     pathname: "/wiki",
+                     state: search.pageNumber
+                  }}
+               > {search.name} </Link> <p className="col-12 col-md-7 text-left">{search.blurb}</p>
             </div>
          ))}
       </div>

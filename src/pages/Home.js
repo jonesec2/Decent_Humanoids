@@ -5,11 +5,12 @@ import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 // import MainText from "../components/MainText";
 import pageContent from "../utils/test.json";
-// import key from "../utils/key.json"
+import key from "../utils/key.json"
 import Search from "../components/Search";
 import Footer from "../components/Footer";
 // import API from "../utils/API";
 import Results from "../components/Results";
+import Maeve from "../images/dh_Maeve_1.jpg";
 
 
 
@@ -20,11 +21,10 @@ function Home() {
    const prop = "test"
    const [pageName, setPage] = useState(2);
 
-   const [search] = useState([
-      {name: "Iphiria", pageNumber: "2"},
-      {name: "Decent Humanoids Wiki", pageNumber: "0"},
-      {name: "The Decent Humanoids", pageNumber: "1"}
-   ])
+   // console.log(key)
+   console.log(Maeve)
+
+   const [search] = useState(key)
 
    const decent = pageContent[1]
 
@@ -55,7 +55,7 @@ function Home() {
          <Navbar />
          <div className="noMatch">
             <Wrapper>
-               
+
                <h1 className="text-left">Welcome</h1>
                <hr />
                <p>This is the Decent Humanoids wikipedia page. These chronicle the adventures of 6 friends through their D&D campaign. </p>
@@ -67,27 +67,7 @@ function Home() {
                <hr></hr>
                <Search />
                <h2>Results</h2>
-
-               {/* The results should show as a "keyword" link and maybe the 
-            first part of the overview? */}
-               <div className="row">
-                  {/* I don't think Link will work exactly like this.
-               Think I might have to make a function that passes a prop
-               to the wiki page. From wiki page the prop is passed to the "main text"
-               component and the page is dynamically loaded */}
                <Results search={search} />
-                  <Link className="col-5 info"
-                     to={{
-                        pathname: "/wiki",
-                        state: { pageName }
-                     }}
-                  > {result} </Link> <p className="col-7 text-left"></p>
-                  <Link className="col-5 info"
-                     to={{
-                        pathname: "/wiki",
-                        state: { decent }
-                     }}> Decent Humanoids </Link> <p className="col-7 text-left">test test test test test</p>
-               </div>
             </Wrapper>
          </div>
          <Footer />
