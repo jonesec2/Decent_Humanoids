@@ -65,7 +65,7 @@ function Home() {
                <h2>Restart the adventure</h2>
                <p>I'll try my best to get you what you're looking for. If I can't I'll try to get you as close as possible.</p>
                <hr></hr>
-               <Search />
+               {/* <Search /> */}
                <h2>Results</h2>
                <Results search={search} />
             </Wrapper>

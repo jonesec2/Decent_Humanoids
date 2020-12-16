@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
+import Search from "../components/Search"
 
 export default function Results(props) {
 
@@ -31,15 +32,22 @@ export default function Results(props) {
 
    return (
       <div>
-         filter: <input onChange={e => handleChange(e.target.value)} />
+         <div className="search">
+            <input onChange={e => handleChange(e.target.value)}
+               type="text"
+               name="searchBar"
+               id="searchBar"
+               placeholder="Search for a character, a place, an item, or a fond memory."
+            />
+         </div>
          {filterDisplay.map((search, i) => (
-            <div className="row" key={i}>
-               <Link className="col-12 col-md-3 info pr-0"
+            <div className="row linkTitle" key={i}>
+               <Link className="col-12 col-md-3 info border-right align-middle"
                   to={{
                      pathname: "/wiki",
                      state: search.pageNumber
                   }}
-               > {search.name} </Link> <p className="col-12 col-md-9 text-left pl-0">{search.blurb}</p>
+               > {search.name} </Link> <p className="col-12 col-md-9 text-left linkText">{search.blurb}</p>
             </div>
          ))}
       </div>
