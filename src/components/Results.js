@@ -10,11 +10,13 @@ export default function Results(props) {
    const [filterDisplay, setFilterDisplay] = useState(props.search);
 
    const handleChange = e => {
+      console.log(e)
       let oldList = props.search.map(search => {
          return { name: search.name.toLowerCase(), pageNumber: search.pageNumber }
       });
 
       if (e !== "") {
+         console.log(e)
          let newList = [];
          setWord(e);
          newList = oldList.filter(search =>
