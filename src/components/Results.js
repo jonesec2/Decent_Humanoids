@@ -40,12 +40,12 @@ export default function Results(props) {
 
    return (
       <div>
-         <div className="row search">
+         <div className="row">
             {/* <img className="col-1 d20" src={icon} /> */}
             <div className="float-right col-sm-1 col-2  px-0 imgWrap">
-               <img className="float-right d20" width="47px" height="47px" src={icon} />
+               <img className="d20" width="47px" height="47px" src={icon} />
             </div>
-            <div className="col-sm-11 col-10  pl-0">
+            <div className="col-sm-11 col-10 search pl-0">
                <input onChange={e => handleChange(e.target.value)}
                   type="text"
                   name="searchBar"
