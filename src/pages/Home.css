@@ -42,6 +42,10 @@
    }
 }
 
+/* .minHome {
+   min-height: 800px;
+} */
+
 .noMatch {
    min-height: 100vh !important;
 }
@@ -78,14 +82,18 @@
    }
 }
 
+.search {
+   flex-wrap: nowrap !important;
+}
+
 #searchBar {
    float:right;
    width: 100%;
    height: 3rem;
    border-radius: 3px;
    border: 1px solid #eaeaea;
-   padding: 5px 10px;
-   font-size: 65%;
+   padding: 3px 5px;
+   font-size: 62.5%;
    margin-bottom: 0.8rem;
 }
 
@@ -98,6 +106,8 @@
       margin-bottom: 0.6rem;
    }
 }
+
+
 
 @media (min-width: 760px) {
    .linkTitle {
@@ -173,4 +183,13 @@
 
 body, html {
    height: 100%;
+}
+
+.linkTitle {
+   flex-wrap: wrap !important;
+}
+
+.d20 {
+   margin-right: 0px;
+   margin-top: 1px;
 }
