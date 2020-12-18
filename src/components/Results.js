@@ -10,6 +10,9 @@ export default function Results(props) {
 
    const [filterDisplay, setFilterDisplay] = useState([{}]);
    console.log(filterDisplay)
+   console.log(word.length);
+   console.log(word)
+   console.log(word === "")
 
    const handleChange = e => {
       console.log(e)
@@ -27,7 +30,8 @@ export default function Results(props) {
          setFilterDisplay(newList);
       }
       else {
-         setFilterDisplay(props.search);
+         setWord("")
+         setFilterDisplay([{}]);
       }
    };
 
@@ -41,16 +45,23 @@ export default function Results(props) {
                placeholder="Search for a character, a place, an item, or a fond memory."
             />
          </div>
-         {filterDisplay.map((search, i) => (
-            <div className="row linkTitle" key={i}>
-               <Link className="col-12 col-md-3 info border-right align-middle"
-                  to={{
-                     pathname: "/wiki",
-                     state: search.pageNumber
-                  }}
-               > {search.name} </Link> <p className="col-12 col-md-9 text-left linkText">{search.blurb}</p>
-            </div>
-         ))}
+         {word === "" ? (
+            <div></div>
+         ) : (
+               <div>
+                  {filterDisplay.map((search, i) => (
+                     <div className="row linkTitle" key={i}>
+                        <Link className="col-12 col-md-3 info border-right align-middle"
+                           to={{
+                              pathname: "/wiki",
+                              state: search.pageNumber
+                           }}
+                        > {search.name} </Link> <p className="col-12 col-md-9 text-left linkText">{search.blurb}</p>
+                     </div>
+                  ))}
+               </div>
+            )
+         }
       </div>
    )
 }
