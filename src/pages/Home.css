@@ -102,6 +102,10 @@
 @media (min-width: 760px) {
    .linkTitle {
       padding-right: 0;
+      /* position: absolute; */
+      top:50%;
+      /* height: 10em; */
+      /* margin-top: -5em; */
    }
 }
 
@@ -112,7 +116,8 @@
 }
 
 .inline {
-   display: inline-block;
+   /* line-height: 2rem; */
+   position: relative;
 }
 
 .linkTitle:after {

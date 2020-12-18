@@ -59,7 +59,7 @@ function Home() {
                <h1 className="text-left">Welcome</h1>
                <hr />
                <p>This is the Decent Humanoids wikipedia page. These chronicle the adventures of 6 friends through their D&D campaign. </p>
-               <p>   It all started with a one shot, so four of the friends could dip their toes into role playing games. Six hours later, everyone was hooked and the game continued. Fast forward two and half years and the game was wrapped up. </p>
+               <p>   It all started with a one shot. Four friends wanted to dip their toes into role playing games, and asked two other friends to help them. Six hours later, everyone was hooked and the game continued. Fast forward two and half years and the game was wrapped up. </p>
                <p>   There is more to come for sure, but now we rest and use this website to look back fondly on the memories we made. </p>
                <hr></hr>
                <h2>Restart the adventure</h2>

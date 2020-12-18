@@ -8,20 +8,21 @@ export default function Results(props) {
 
    const [word, setWord] = useState("");
 
-   const [filterDisplay, setFilterDisplay] = useState(props.search);
+   const [filterDisplay, setFilterDisplay] = useState([{}]);
+   console.log(filterDisplay)
 
    const handleChange = e => {
       console.log(e)
       let oldList = props.search.map(search => {
-         return { name: search.name.toLowerCase(), pageNumber: search.pageNumber }
+         return { name: search.name, pageNumber: search.pageNumber }
       });
 
       if (e !== "") {
-         console.log(e)
+         // console.log(e)
          let newList = [];
          setWord(e);
          newList = oldList.filter(search =>
-            search.name.includes(word.toLowerCase())
+            search.name.includes(word.charAt(0).toUpperCase())
          );
          setFilterDisplay(newList);
       }
@@ -31,7 +32,7 @@ export default function Results(props) {
    };
 
    return (
-      <div>
+      <div className="inline">
          <div className="search">
             <input onChange={e => handleChange(e.target.value)}
                type="text"
