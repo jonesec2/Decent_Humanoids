@@ -13,23 +13,35 @@ import Title from "../components/Title";
 import MainContainer from "../components/MainContainer";
 import MainText from "../components/MainText";
 import Search from "../components/Search";
+import Results from "../components/Results";
 
 export default function Wiki(props) {
 
+   const [search] = useState(key)
    // The trick to getting this to work is to set a default loading page to fall back on
    // But putting all the code in home to send over. So use will search
    // then select and when the link is selected that is where the object 
    // will be chosen and then all of the info will make it over as a prop
    // so rendering would look like "{load prop.title || if null default}"
-   console.log(props)
+   // console.log(props)
    const [object, setObject] = useState(
       typeof props.location.state === 'undefined'
          ? test[0]
          : test[props.location.state]);
-   console.log(object)
+   // console.log(object)
    // console.log(test[props.location.state.pageName])
    // console.log(test[0])
 
+   useEffect(() => {
+      newResult()
+   }, [object])
+
+   console.log(search)
+   function newResult(test) {
+      // let test = "test"
+      console.log(test);
+      // setObject(test.props.pageNumber)
+   }
 
    return (
       // <Router>
@@ -38,7 +50,8 @@ export default function Wiki(props) {
          <div className="noMatch">
             {object ? (
                <Wrapper>
-                  <Search />
+                  {/* <Search /> */}
+                  
                   <Title title={object.title} />
                   <hr />
                   <MainText
@@ -56,6 +69,7 @@ export default function Wiki(props) {
                         Gallery: object.Gallery
                      }}>
                   </MainText>
+                  <Results search={search} newResult={newResult} />
                </Wrapper>
             ) :
                (
@@ -78,6 +92,7 @@ export default function Wiki(props) {
                            Gallery: pageKey[0].Gallery
                         }}>
                      </MainText>
+                     <Results search={search} newResult={newResult}/>
                   </Wrapper>
                )
             }

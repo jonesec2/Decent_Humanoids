@@ -16,7 +16,7 @@ export default function MainText(object) {
    // "../public/img/eb_dh1.jpg"
    // {object.mainImage}
    const info = object.object
-   console.log(object.object)
+   // console.log(object.object)
 
    return (
       <div className="container text-center mx-auto my-3">

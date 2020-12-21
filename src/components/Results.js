@@ -7,18 +7,19 @@ import icon from "../images/favicon.ico";
 export default function Results(props) {
 
    console.log(props)
-   console.log(icon)
+   // console.log(icon)
+   // console.log(props.newResult({}))
 
    const [word, setWord] = useState("");
 
    const [filterDisplay, setFilterDisplay] = useState([{}]);
-   console.log(filterDisplay)
-   console.log(word.length);
-   console.log(word)
-   console.log(word === "")
+   // console.log(filterDisplay)
+   // console.log(word.length);
+   // console.log(word)
+   // console.log(word === "")
 
    const handleChange = e => {
-      console.log(e)
+      // console.log(e)
       let oldList = props.search.map(search => {
          return { name: search.name, pageNumber: search.pageNumber, blurb: search.blurb }
       });
@@ -61,9 +62,10 @@ export default function Results(props) {
                   {filterDisplay.map((search, i) => (
                      <div className="row linkTitle" key={i}>
                         <Link className="col-12 col-md-3 info border-right align-middle"
+                           // onClick={props.newResult(search)}
                            to={{
                               pathname: "/wiki",
-                              state: search.pageNumber
+                              state: search.pageNumber,
                            }}
                         > {search.name} </Link> <p className="col-12 col-md-9 text-left linkText">{search.blurb}</p>
                      </div>
