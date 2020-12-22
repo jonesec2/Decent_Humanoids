@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/decent_humanoids/static/css/main.0c69ef1e.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.f40839f5.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.f40839f5.chunk.js.map",
+    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.f7983ee0.js",
+    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.f7983ee0.js.map",
+    "static/js/2.9606ae56.chunk.js": "/decent_humanoids/static/js/2.9606ae56.chunk.js",
+    "static/js/2.9606ae56.chunk.js.map": "/decent_humanoids/static/js/2.9606ae56.chunk.js.map",
+    "static/js/3.5934b4ba.chunk.js": "/decent_humanoids/static/js/3.5934b4ba.chunk.js",
+    "static/js/3.5934b4ba.chunk.js.map": "/decent_humanoids/static/js/3.5934b4ba.chunk.js.map",
+    "index.html": "/decent_humanoids/index.html",
+    "static/css/main.0c69ef1e.chunk.css.map": "/decent_humanoids/static/css/main.0c69ef1e.chunk.css.map",
+    "static/js/2.9606ae56.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.9606ae56.chunk.js.LICENSE.txt",
+    "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
+    "static/media/LandingPage.css": "/decent_humanoids/static/media/dh_DM_mobile2.4c254c46.jpg",
+    "static/media/dh_Maeve_1.664b3f4a.jpg": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
+    "static/media/dh_groupA.8d211e6f.jpg": "/decent_humanoids/static/media/dh_groupA.8d211e6f.jpg",
+    "static/media/eb_dh1.b235a8ce.jpg": "/decent_humanoids/static/media/eb_dh1.b235a8ce.jpg",
+    "static/media/favicon.60b3617a.ico": "/decent_humanoids/static/media/favicon.60b3617a.ico",
+    "static/media/App.css": "/decent_humanoids/static/media/iphirea_bg2.f7d452fe.png",
+    "static/media/logo.103b5fa1.svg": "/decent_humanoids/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7983ee0.js",
+    "static/js/2.9606ae56.chunk.js",
+    "static/css/main.0c69ef1e.chunk.css",
+    "static/js/main.f40839f5.chunk.js"
+  ]
+}
