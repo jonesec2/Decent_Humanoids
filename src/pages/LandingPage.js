@@ -32,7 +32,7 @@ function LandingPage() {
                   <ul>
                      <li>
                         {/* creating event that refreshes the page so that the Home page renders correctly */}
-                        <Link to="/home" onClick={event => window.location.href='/decent_humanoids/home'}>Enter</Link>
+                        <Link to="/decent_humanoids/home" onClick={event => window.location.href='/decent_humanoids/home'}>Enter</Link>
                      </li>
                   </ul>
                </nav>
