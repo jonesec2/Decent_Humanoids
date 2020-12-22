@@ -19,10 +19,10 @@ export default function App() {
          <div className="ttttt">
             {/* <LandingPage /> */}
             <Switch>
-               <Route exact path ={"/Decent_Humanoids/"} component={LandingPage} />
-               <Route exact path={"/home"} component={Home} />
-               <Route exact path ={"/wiki"} component={Wiki} />
-               <Route exact path = {"/timeline"} component={Timeline} />
+               <Route exact path ={"/decent_humanoids/"} component={LandingPage} />
+               <Route exact path={"/decent_humanoids/home"} component={Home} />
+               <Route exact path ={"/decent_humanoids/wiki"} component={Wiki} />
+               <Route exact path = {"/decent_humanoids/timeline"} component={Timeline} />
                <Route>
                   <NoMatch />
                </Route>
