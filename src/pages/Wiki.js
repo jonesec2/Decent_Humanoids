@@ -5,8 +5,10 @@ import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import test from "../utils/test.json";
 import Footer from "../components/Footer";
-import testPic from "../images/dh_groupA.jpg"
-import iphirea from "../images/IphiriaClose.png"
+import testPic from "../images/dh_groupA.jpg";
+import iphirea from "../images/IphiriaClose.png";
+import maevePic from "../images/dh_Maeve_1.jpg";
+import groupPic from "../images/eb_dh1.jpg";
 import pageKey from "../utils/test.json";
 import key from "../utils/key.json";
 import Title from "../components/Title";
@@ -15,7 +17,14 @@ import MainText from "../components/MainText";
 import Search from "../components/Search";
 import Results from "../components/Results";
 
+
 export default function Wiki(props) {
+   console.log(testPic);
+   console.log(iphirea);
+   console.log(maevePic);
+   console.log(groupPic);
+
+   // decent_humanoids/static/media/iphirea_bg2.f7d452fe.png
 
    const [search] = useState(key)
    // The trick to getting this to work is to set a default loading page to fall back on

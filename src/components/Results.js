@@ -14,9 +14,9 @@ export default function Results(props) {
 
    const [filterDisplay, setFilterDisplay] = useState([{}]);
    // console.log(filterDisplay)
-   // console.log(word.length);
-   // console.log(word)
-   // console.log(word === "")
+   console.log(word)
+   console.log(word === "")
+   console.log(word.length)
 
    const handleChange = e => {
       // console.log(e)
@@ -25,7 +25,7 @@ export default function Results(props) {
       });
 
       if (e !== "") {
-         // console.log(e)
+         // console.log(e
          let newList = [];
          setWord(e);
          newList = oldList.filter(search =>
