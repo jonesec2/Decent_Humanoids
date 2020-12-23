@@ -2,7 +2,7 @@
    {
       "title": "The Decent Humanoids Wiki",
       "overview": "Welcome to the Decent Humanoids Wiki. Let's get started",
-      "mainImage": "../images/dh_groupA.jpg",
+      "mainImage": "/decent_humanoids/static/media/dh_groupA.8d211e6f.jpg",
       "left1": "Baelok, Anak, DM, Maeve, Xalys, Viz",
       "title1": "The Decent Humanoids",
       "title2": "Supporting Characters",  
@@ -14,7 +14,7 @@
    {
       "title": "Decent Humanoids",
       "overview": "This is the overview for the Decent Humanoids. Normally there would be a lot more things but this just for the test. The Decent Humanoids are just as their name implies.",
-      "mainImage": "../images/eb_dh1.jpg",
+      "mainImage": "/decent_humanoids/static/media/eb_dh1.b235a8ce.jpg",
       "left1": "Baelok, Anak, Maeve, Xalys, Viz",
       "title1": "History",
       "title2": "Future",  
@@ -26,7 +26,7 @@
    {
       "title": "Iphiria",
       "overview": "The country of Iphiria is blah blah blah",
-      "mainImage": "../images/IphiriaClose.png",
+      "mainImage": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
       "left1": "Country of Iphiria and its surrounding countries.",
       "title1": "History",
       "title2": "Future",  
@@ -38,7 +38,7 @@
    {
       "title": "Maeve Leaflock",
       "overview": "The stealthy by choice, firecracker by nature, Rogue of the Decent Humanoids",
-      "mainImage": "../images/dh_Maeve_1.jpg",
+      "mainImage": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
       "left1": "Maeve checking if the coast is clear before continuing her stealth mission",
       "title1": "History",
       "title2": "Future",  
