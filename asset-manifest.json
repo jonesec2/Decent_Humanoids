@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.0c69ef1e.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.778720b0.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.778720b0.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.2a844a74.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.621ec76d.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.621ec76d.chunk.js.map",
     "runtime-main.js": "/decent_humanoids/static/js/runtime-main.f7983ee0.js",
     "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.f7983ee0.js.map",
     "static/js/2.3a3ca93c.chunk.js": "/decent_humanoids/static/js/2.3a3ca93c.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.5934b4ba.chunk.js": "/decent_humanoids/static/js/3.5934b4ba.chunk.js",
     "static/js/3.5934b4ba.chunk.js.map": "/decent_humanoids/static/js/3.5934b4ba.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.0c69ef1e.chunk.css.map": "/decent_humanoids/static/css/main.0c69ef1e.chunk.css.map",
+    "static/css/main.2a844a74.chunk.css.map": "/decent_humanoids/static/css/main.2a844a74.chunk.css.map",
     "static/js/2.3a3ca93c.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.3a3ca93c.chunk.js.LICENSE.txt",
+    "static/media/IphireaLanding.afd0a041.png": "/decent_humanoids/static/media/IphireaLanding.afd0a041.png",
     "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
     "static/media/LandingPage.css": "/decent_humanoids/static/media/dh_DM_mobile2.4c254c46.jpg",
     "static/media/dh_Maeve_1.664b3f4a.jpg": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
@@ -24,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.f7983ee0.js",
     "static/js/2.3a3ca93c.chunk.js",
-    "static/css/main.0c69ef1e.chunk.css",
-    "static/js/main.778720b0.chunk.js"
+    "static/css/main.2a844a74.chunk.css",
+    "static/js/main.621ec76d.chunk.js"
   ]
 }
