@@ -78,7 +78,7 @@ export default function Wiki(props) {
                         Gallery: object.Gallery
                      }}>
                   </MainText>
-                  <Results search={search} newResult={newResult} />
+                  {/* <Results search={search} newResult={newResult} /> */}
                </Wrapper>
             ) :
                (
@@ -101,7 +101,7 @@ export default function Wiki(props) {
                            Gallery: pageKey[0].Gallery
                         }}>
                      </MainText>
-                     <Results search={search} newResult={newResult}/>
+                     {/* <Results search={search} newResult={newResult}/> */}
                   </Wrapper>
                )
             }

@@ -42,9 +42,16 @@
    }
 }
 
-/* .minHome {
-   min-height: 800px;
+/* @media (min-width: 1700px) {
+   .container {
+      min-width: 84%;
+   }
 } */
+
+.minHome {
+   min-height: 400px;
+}
+
 
 .noMatch {
    min-height: 100vh !important;
@@ -177,6 +184,12 @@
 .textC {
    background-color: rgb(248, 249, 250) !important;
 }
+
+/* @media (min-width: 1700px) {
+   .textC {
+      min-width: 100%;
+   }
+} */
 
 .btn {
    border: none;

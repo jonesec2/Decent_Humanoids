@@ -24,7 +24,7 @@ function Navbar() {
                   <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/wiki">Wiki</Link>
                </li>
                <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/timeline">Timeline</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/timeline">Timeline</Link>
                </li>
                {/* <li>
                   <Link className="nav-link js-scroll-trigger" to="/whoops"> Whoops</Link>
