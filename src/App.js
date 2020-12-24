@@ -23,6 +23,7 @@ export default function App() {
                <Route exact path={"/decent_humanoids/home"} component={Home} />
                <Route exact path ={"/decent_humanoids/wiki"} component={Wiki} />
                <Route exact path = {"/decent_humanoids/timeline"} component={Timeline} />
+               <Route exact path ={"/decent_humanoids/noMatch"} component={NoMatch} />
                <Route>
                   <NoMatch />
                </Route>
