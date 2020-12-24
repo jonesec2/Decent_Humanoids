@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import Search from "../components/Search"
-
 import icon from "../images/favicon.ico";
 
 export default function Results(props) {
@@ -14,24 +13,31 @@ export default function Results(props) {
 
    const [filterDisplay, setFilterDisplay] = useState([{}]);
    // console.log(filterDisplay)
-   console.log(word)
-   console.log(word === "")
-   console.log(word.length)
+   console.log(word);
+   // console.log(word === "")
+   // console.log(word.length);
+   console.log(filterDisplay[0]);
+   // console.log(typeof(filterDisplay[0].name) === "undefined")
 
    const handleChange = e => {
       // console.log(e)
       let oldList = props.search.map(search => {
          return { name: search.name, pageNumber: search.pageNumber, blurb: search.blurb }
       });
+      console.log(oldList)
 
       if (e !== "") {
-         // console.log(e
+         // console.log(e.length)
          let newList = [];
          setWord(e);
          newList = oldList.filter(search =>
             search.name.includes(word.charAt(0).toUpperCase())
          );
-         setFilterDisplay(newList);
+         // console.log(newList.length)
+         if (newList.length <= 3) {
+            setFilterDisplay(newList);
+         }
+         else { }
       }
       else {
          setWord("")
@@ -55,7 +61,7 @@ export default function Results(props) {
                />
             </div>
          </div>
-         {word === "" ? (
+         { typeof(filterDisplay[0].name) === "undefined"  ? (
             <div></div>
          ) : (
                <div>
