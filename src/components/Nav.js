@@ -18,16 +18,16 @@ function Navbar() {
                   <Link className="nav-link js-scroll-trigger" to="/Decent_Humanoids/">Landing Page</Link>
                </li> */}
                <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/home">Home</Link>
+                  <Link className="nav-link js-scroll-trigger" to={process.env.PUBLIC_URL + "/home"}>Home</Link>
                </li>
                <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/wiki">Wiki</Link>
+                  <Link className="nav-link js-scroll-trigger" to={process.env.PUBLIC_URL + "/wiki"}>Wiki</Link>
                </li>
                <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/timeline">Timeline</Link>
+                  <Link className="nav-link js-scroll-trigger" to={process.env.PUBLIC_URL + "/timeline"}>Timeline</Link>
                </li>
                <li>
-                  <Link className="nav-link js-scroll-trigger" to="/decent_humanoids/noMatch"> Whoops</Link>
+                  <Link className="nav-link js-scroll-trigger" to={process.env.PUBLIC_URL + "/noMatch"}> Whoops</Link>
                </li>
             </ul>
             {/* <Results search={search}></Results> */}
