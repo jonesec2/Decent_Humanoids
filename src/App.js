@@ -15,7 +15,9 @@ export default function App() {
 
    return (
 
-      <Router basename="/decent_humanoids">
+      <Router 
+      // basename="/decent_humanoids"
+      >
          <div className="ttttt">
             {/* <LandingPage /> */}
             <Switch>
