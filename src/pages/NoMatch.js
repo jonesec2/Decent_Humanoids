@@ -19,7 +19,7 @@ function NoMatch() {
                <div className="minHome">
                   <h2>Sorry Traveller: Looks like you took a wrong turn </h2>
                   <hr></hr>
-                  <h4>Let's get you back <Link to="/decent_humanoids/home">home</Link></h4>
+                  <h4>Let's get you back <Link to={process.env.PUBLIC_URL + "/home"}>home</Link></h4>
                   <img className="image" src={iphiriaPic} />
                </div>
             </Wrapper>
