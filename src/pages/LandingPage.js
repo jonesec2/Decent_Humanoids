@@ -25,21 +25,21 @@ function LandingPage() {
 
    return (
 
-      <Router>
+      <Router basename="/decent_humanoids">
          <div className="App">
             <header className="App-header">
                <nav>
                   <ul>
                      <li>
                         {/* creating event that refreshes the page so that the Home page renders correctly */}
-                        <Link to={process.env.PUBLIC_URL + "/home"} 
-                        onClick={event => history.push("/decent_humanoids/home")}
+                        <Link to={"/home"} 
+                        onClick={event => history.push("/home")}
                         >Enter</Link>
                      </li>
                   </ul>
                </nav>
             </header>
-            <Route exact path={process.env.PUBLIC_URL + "/home"} component={Home}>
+            <Route exact path={"/home"} component={Home}>
                <Home />
             </Route>
          </div>
