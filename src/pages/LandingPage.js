@@ -25,7 +25,7 @@ function LandingPage() {
 
    return (
 
-      <Router>
+      <Router basename="/decent_humanoids">
          <div className="App">
             <header className="App-header">
                <nav>
@@ -33,7 +33,7 @@ function LandingPage() {
                      <li>
                         {/* creating event that refreshes the page so that the Home page renders correctly */}
                         <Link to={process.env.PUBLIC_URL + "/home"} 
-                        onClick={event => history.push("/decent_humanoids/home/")}
+                        onClick={event => history.push("/decent_humanoids/home")}
                         >Enter</Link>
                      </li>
                   </ul>
