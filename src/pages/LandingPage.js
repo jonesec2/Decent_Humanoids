@@ -32,12 +32,14 @@ function LandingPage() {
                   <ul>
                      <li>
                         {/* creating event that refreshes the page so that the Home page renders correctly */}
-                        <Link to="/decent_humanoids/home" onClick={event => history.push("/decent_humanoids/home")}>Enter</Link>
+                        <Link to={process.env.PUBLIC_URL + "/home"} 
+                        onClick={event => history.push("/decent_humanoids/home/")}
+                        >Enter</Link>
                      </li>
                   </ul>
                </nav>
             </header>
-            <Route exact path={"/decent_humanoids/home"} component={Home}>
+            <Route exact path={process.env.PUBLIC_URL + "/home"} component={Home}>
                <Home />
             </Route>
          </div>

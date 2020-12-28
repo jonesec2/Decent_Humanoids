@@ -19,11 +19,11 @@ export default function App() {
          <div className="ttttt">
             {/* <LandingPage /> */}
             <Switch>
-               <Route exact path ={"/decent_humanoids/"} component={LandingPage} />
-               <Route exact path={"/decent_humanoids/home"} component={Home} />
-               <Route exact path ={"/decent_humanoids/wiki"} component={Wiki} />
-               <Route exact path = {"/decent_humanoids/timeline"} component={Timeline} />
-               <Route exact path ={"/decent_humanoids/noMatch"} component={NoMatch} />
+               <Route exact path ={process.env.PUBLIC_URL + "/"} component={LandingPage} />
+               <Route exact path={process.env.PUBLIC_URL + "/home"} component={Home} />
+               <Route exact path ={process.env.PUBLIC_URL + "/wiki"} component={Wiki} />
+               <Route exact path = {process.env.PUBLIC_URL + "/timeline"} component={Timeline} />
+               <Route exact path ={process.env.PUBLIC_URL + "/noMatch"} component={NoMatch} />
                <Route>
                   <NoMatch />
                </Route>

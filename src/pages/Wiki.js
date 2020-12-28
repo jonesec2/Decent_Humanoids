@@ -53,7 +53,6 @@ export default function Wiki(props) {
    }
 
    return (
-      // <Router>
       <div>
          <Navbar />
          <div className="noMatch">
