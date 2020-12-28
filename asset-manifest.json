@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.2a844a74.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.eec96f3b.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.eec96f3b.chunk.js.map",
-    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.f7983ee0.js",
-    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.f7983ee0.js.map",
-    "static/js/2.378c9ccb.chunk.js": "/decent_humanoids/static/js/2.378c9ccb.chunk.js",
-    "static/js/2.378c9ccb.chunk.js.map": "/decent_humanoids/static/js/2.378c9ccb.chunk.js.map",
-    "static/js/3.5934b4ba.chunk.js": "/decent_humanoids/static/js/3.5934b4ba.chunk.js",
-    "static/js/3.5934b4ba.chunk.js.map": "/decent_humanoids/static/js/3.5934b4ba.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.72f63015.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.ed4ba680.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.ed4ba680.chunk.js.map",
+    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.a2a86827.js",
+    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.a2a86827.js.map",
+    "static/js/2.b511c291.chunk.js": "/decent_humanoids/static/js/2.b511c291.chunk.js",
+    "static/js/2.b511c291.chunk.js.map": "/decent_humanoids/static/js/2.b511c291.chunk.js.map",
+    "static/js/3.4bb39a1f.chunk.js": "/decent_humanoids/static/js/3.4bb39a1f.chunk.js",
+    "static/js/3.4bb39a1f.chunk.js.map": "/decent_humanoids/static/js/3.4bb39a1f.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.2a844a74.chunk.css.map": "/decent_humanoids/static/css/main.2a844a74.chunk.css.map",
-    "static/js/2.378c9ccb.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.378c9ccb.chunk.js.LICENSE.txt",
+    "static/css/main.72f63015.chunk.css.map": "/decent_humanoids/static/css/main.72f63015.chunk.css.map",
+    "static/js/2.b511c291.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.b511c291.chunk.js.LICENSE.txt",
     "static/media/IphireaLanding.afd0a041.png": "/decent_humanoids/static/media/IphireaLanding.afd0a041.png",
     "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
     "static/media/LandingPage.css": "/decent_humanoids/static/media/dh_DM_mobile2.4c254c46.jpg",
@@ -23,9 +23,9 @@
     "static/media/logo.103b5fa1.svg": "/decent_humanoids/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7983ee0.js",
-    "static/js/2.378c9ccb.chunk.js",
-    "static/css/main.2a844a74.chunk.css",
-    "static/js/main.eec96f3b.chunk.js"
+    "static/js/runtime-main.a2a86827.js",
+    "static/js/2.b511c291.chunk.js",
+    "static/css/main.72f63015.chunk.css",
+    "static/js/main.ed4ba680.chunk.js"
   ]
 }
