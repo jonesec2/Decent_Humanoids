@@ -25,7 +25,7 @@ function LandingPage() {
 
    return (
 
-      <Router basename="/decent_humanoids">
+      // <Router basename="/decent_humanoids">
          <div className="App">
             <header className="App-header">
                <nav>
@@ -43,7 +43,7 @@ function LandingPage() {
                <Home />
             </Route>
          </div>
-      </Router>
+      // </Router>
 
    )
 }
