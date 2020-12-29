@@ -23,7 +23,13 @@
    margin: auto;
    cursor: zoom-in;
    margin-top: 10px !important;
+   transition: 0.17s;
 }
+
+.image:hover {
+   opacity: 0.9;
+}
+
 
 .container {
    background-color: rgba(248, 249, 250, 0) !important;
@@ -51,7 +57,6 @@
 .minHome {
    min-height: 400px;
 }
-
 
 .noMatch {
    min-height: 100vh !important;
