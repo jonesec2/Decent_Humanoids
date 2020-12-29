@@ -70,7 +70,7 @@ export default function Results(props) {
                         <Link className="col-12 col-md-3 info border-right align-middle"
                            // onClick={props.newResult(search)}
                            to={{
-                              pathname: "/decent_humanoids/wiki",
+                              pathname: "/wiki",
                               state: search.pageNumber,
                            }}
                         > {search.name} </Link> <p className="col-12 col-md-9 text-left linkText">{search.blurb}</p>
