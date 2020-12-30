@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import test from "../utils/test.json";
 import picture from "../images/eb_dh1.jpg"
 import testPic from "./images/eb_dh1.jpg"
+import Modal from "../components/Modal"
 
 /* Will have to attach json objects dynamically here, still not sure how  */
 
 
 export default function MainText(object) {
+
+   console.log()
+   const [show, setShow] = useState('false')
+
+   const showModal = e => {
+      if (show === 'false') {
+         setShow('true')
+      }
+      console.log(show)
+   }
+
+   console.log(show)
 
    // const object = test[0]
    // const image = test[0].mainImage
@@ -21,10 +34,15 @@ export default function MainText(object) {
    return (
       <div className="container text-center mx-auto my-3">
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
-            <img className="image" src={info.mainImage} />
+            <img onClick={e => showModal()} className="image" src={info.mainImage} />
+            {show === 'true' ? (
+               <Modal show={show} />
+            ) : (
+                  <div></div>
+               )}
             <p>{info.left1}</p>
             <p>{info.left1}</p>
- 
+
          </div>
          <div className="mx-auto mb-3 pb-2">
             <p>{info.overview}</p>
