@@ -57,7 +57,7 @@ export default function Results(props) {
                   type="text"
                   name="searchBar"
                   id="searchBar"
-                  placeholder="Search for a character, a place, an item, or a fond memory."
+                  placeholder="Your starts inquiry here."
                />
             </div>
          </div>
