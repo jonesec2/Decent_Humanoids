@@ -17,6 +17,10 @@ export default function MainText(object) {
          setShow('true')
       }
       console.log(show)
+      if ( show === 'true') {
+         setShow('false')
+         console.log('yep')
+      }
    }
 
    console.log(show)
@@ -36,7 +40,7 @@ export default function MainText(object) {
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
             <img onClick={e => showModal()} className="image" src={info.mainImage} />
             {show === 'true' ? (
-               <Modal show={show} />
+               <Modal img={info.mainImage} show={show} closeModal={showModal} />
             ) : (
                   <div></div>
                )}
