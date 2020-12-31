@@ -64,7 +64,6 @@ export default function Results(props) {
                   {filterDisplay.map((search, i) => (
                      <div className="row linkTitle" key={i}>
                         <Link className="col-12 col-md-3 info border-right align-middle"
-                           // onClick={props.newResult(search)}
                            to={{
                               pathname: "/wiki",
                               state: search.pageNumber,

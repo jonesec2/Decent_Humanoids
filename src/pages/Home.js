@@ -81,20 +81,34 @@ function Home() {
                   <hr></hr>
                   <h2>Restart the adventure</h2>
                   <p>Start searching below or look at a random page.</p>
+                  <hr></hr>
                   {/*  */}
                   {/* styling for rows needed */}
                   {/*  */}
-                  <div className="row">
-                     <p className="pr-2">Person: </p>
-                     <p> {person[randomPerson].name}</p>
+
+                  <div className="row linkTitle">
+                     <Link className="col-12 col-md-3 info border-right align-middle"
+                        to={{
+                           pathname: "/wiki",
+                           state: person[randomPerson].pageNumber,
+                        }}
+                     > {person[randomPerson].name} </Link> <p className="col-12 col-md-9 text-left linkText">{person[randomPerson].blurb}</p>
                   </div>
-                  <div className="row">
-                  <p>{place[randomPlace].name}</p>
-                     <p> {person[randomPerson].name}</p>
+                  <div className="row linkTitle">
+                     <Link className="col-12 col-md-3 info border-right align-middle"
+                        to={{
+                           pathname: "/wiki",
+                           state: place[randomPlace].pageNumber,
+                        }}
+                     > {place[randomPlace].name} </Link> <p className="col-12 col-md-9 text-left linkText">{place[randomPlace].blurb}</p>
                   </div>
-                  <div className="row">
-                     <p className="pr-2">Thing: </p>
-                     <p>{thing[randomThing].name}</p>
+                  <div className="row linkTitle">
+                     <Link className="col-12 col-md-3 info border-right align-middle"
+                        to={{
+                           pathname: "/wiki",
+                           state: thing[randomThing].pageNumber,
+                        }}
+                     > {thing[randomThing].name} </Link> <p className="col-12 col-md-9 text-left linkText">{thing[randomThing].blurb}</p>
                   </div>
                   {/*  */}
                   {/*  */}
