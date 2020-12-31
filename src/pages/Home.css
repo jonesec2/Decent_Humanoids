@@ -33,9 +33,9 @@
 .imageTarget {
    position: fixed;
    top: -100%;
-   height: 100%;
+   height: 10000%;
    background: rgba(0, 0, 0, .7);
-   width: 100%;
+   width: 10000%;
    -webkit-transition: opacity .5s ease-in-out;
    -moz-transition: opacity .5s ease-in-out;
    -o-transition: opacity .5s ease-in-out;
@@ -62,6 +62,12 @@
    -o-transition: .5s ease-in-out;
    transition: .5s ease-in-out;
 }
+
+@media (min-width: 500px){
+   .imageTarget img {
+
+   }
+} 
 
 /* Styles the close link, adds the slide down transition */
 
@@ -165,7 +171,7 @@ a.lightbox-close:after {
 }
 
 .bg-light {
-   background-image: linear-gradient(to left, rgb(251, 147, 190), rgb(233, 239, 237)) !important;
+   background-image: linear-gradient(to left, rgb(142,187,198), rgb(201,231,239) ) !important;
 }
 
 .textL {
