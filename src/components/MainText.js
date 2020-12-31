@@ -38,14 +38,14 @@ export default function MainText(object) {
    return (
       <div className="container text-center mx-auto my-3">
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
-            <img onClick={e => showModal()} className="image" src={info.mainImage} />
+            <img onClick={e => showModal()} className="image" src={info.mainImage} alt={info.imageDescription} />
             {show === 'true' ? (
                <Modal img={info.mainImage} show={show} closeModal={showModal} />
             ) : (
                   <div></div>
                )}
-            <p>{info.left1}</p>
-            <p>{info.left1}</p>
+            <p>{info.imageDescription}</p>
+            <p>{info.rightInfo1}</p>
 
          </div>
          <div className="mx-auto mb-3 pb-2">
