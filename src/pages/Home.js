@@ -5,7 +5,10 @@ import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 // import MainText from "../components/MainText";
 import pageContent from "../utils/test.json";
-import key from "../utils/key.json"
+import key1 from "../utils/key.json"
+import key2 from "../utils/person.json";
+import key3 from "../utils/place.json";
+import key4 from "../utils/thing.json";
 // import Search from "../components/Search";
 import Footer from "../components/Footer";
 // import API from "../utils/API";
@@ -18,26 +21,22 @@ function Home() {
 
    console.log(Maeve)
 
-   const [search] = useState(key)
-   const [person] = useState(key)
-   const [place] = useState(key)
-   const [thing] = useState(key)
+   const [search] = useState(key1)
+   const [person] = useState(key2)
+   const [place] = useState(key3)
+   const [thing] = useState(key4)
    console.log(search);
+   console.log(person)
+   console.log(place)
+   console.log(thing)
 
    // create const for random link
    // handle selecting a page at random and navigating user to Wiki
 
-   const [randomPerson, setRandomPage] = useState(Math.floor(Math.random() * search.length));
-   const [randomPlace] = useState(Math.floor(Math.random() * search.length));
-   const [randomThing] = useState(Math.floor(Math.random() * search.length));
+   const [randomPerson] = useState(Math.floor(Math.random() * person.length));
+   const [randomPlace] = useState(Math.floor(Math.random() * place.length));
+   const [randomThing] = useState(Math.floor(Math.random() * thing.length));
 
-   useEffect(() => {
-      setRandomPage(Math.floor(Math.random() * search.length))
-   })
-   console.log(randomPerson);
-   function randomizeJSON() {
-      console.log(Math.floor(Math.random() * search.length))
-   }
 
    // const history = useHistory();
    // const prop = "test"
@@ -82,9 +81,23 @@ function Home() {
                   <hr></hr>
                   <h2>Restart the adventure</h2>
                   <p>Start searching below or look at a random page.</p>
-                  <button onClick={randomizeJSON}>Random JSON</button>
-                  <p>{search[randomPerson].name}</p>
-                  <p></p>
+                  {/*  */}
+                  {/* styling for rows needed */}
+                  {/*  */}
+                  <div className="row">
+                     <p className="pr-2">Person: </p>
+                     <p> {person[randomPerson].name}</p>
+                  </div>
+                  <div className="row">
+                  <p>{place[randomPlace].name}</p>
+                     <p> {person[randomPerson].name}</p>
+                  </div>
+                  <div className="row">
+                     <p className="pr-2">Thing: </p>
+                     <p>{thing[randomThing].name}</p>
+                  </div>
+                  {/*  */}
+                  {/*  */}
                   <hr></hr>
                   <Results search={search} />
                </div>
