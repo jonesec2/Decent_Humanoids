@@ -12,7 +12,8 @@ export default function Modal(props) {
    return (
       <div className="imageTarget">
          <img onClick={e => close()} src={props.img} />
-         <a class="lightbox-close" href="#"></a>
+         <div className="imageDescription">{props.alt}</div>
+         <a className="lightbox-close" href="#"></a>
       </div>
    )
 }

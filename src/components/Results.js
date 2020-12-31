@@ -1,18 +1,15 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-import Search from "../components/Search"
+// import Search from "../components/Search"
 import icon from "../images/favicon.ico";
 
 export default function Results(props) {
 
    console.log(props)
-   // console.log(icon)
-   // console.log(props.newResult({}))
 
    const [word, setWord] = useState("");
 
    const [filterDisplay, setFilterDisplay] = useState([{}]);
-   // console.log(filterDisplay)
    console.log(word);
    // console.log(word === "")
    // console.log(word.length);
@@ -48,7 +45,6 @@ export default function Results(props) {
    return (
       <div>
          <div className="row">
-            {/* <img className="col-1 d20" src={icon} /> */}
             <div className="float-right col-sm-1 col-2  px-0 imgWrap">
                <img className="d20" width="47px" height="47px" src={icon} />
             </div>

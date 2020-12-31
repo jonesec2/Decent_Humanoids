@@ -5,12 +5,16 @@
       "mainImage": "/decent_humanoids/static/media/dh_groupA.8d211e6f.jpg",
       "imageDescription": "Baelok, Anak, DM, Maeve, Xalys, Viz",
       "rightInfo1": "here is some cool info in the right float",
+      "rightInfo2": "null",
+      "rightInfo3": "null",
+      "rightInfo4": "null",
+      "rightInfo5": "null",
       "title1": "The Decent Humanoids",
       "title2": "Supporting Characters",  
       "title3": "Stick Em With the Pointy End",
-      "History": "Why not start by looking up one of our main cast members?",
-      "Future": "They say a man with many hats is very fashionable. This is true. I am fashionable. Look up one of the many NPC's played by me, the Dungeon Master.",
-      "Gallery": "Here you'll find entries about the cool items the group used."
+      "Section1": "Why not start by looking up one of our main cast members?",
+      "Section2": "They say a man with many hats is very fashionable. This is true. I am fashionable. Look up one of the many NPC's played by me, the Dungeon Master.",
+      "Section3": "Here you'll find entries about the cool items the group used."
    },
    {
       "title": "Decent Humanoids",
@@ -18,12 +22,16 @@
       "mainImage": "/decent_humanoids/static/media/eb_dh1.b235a8ce.jpg",
       "imageDescription": "The Decent Humanoids",
       "rightInfo1": "As drawn by our wonderful Emily Burlingame.",
+      "rightInfo2": "null",
+      "rightInfo3": "null",
+      "rightInfo4": "null",
+      "rightInfo5": "null",
       "title1": "History",
       "title2": "Future",  
       "title3": "Gallery",
-      "History": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-      "Future": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
-      "Gallery": "img/ img/ img/ img/"
+      "Section1": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+      "Section2": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum .",
+      "Section3": "img/ img/ img/ img/"
    },
    {
       "title": "Iphiria",
@@ -31,12 +39,16 @@
       "mainImage": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
       "imageDescription": "Iphiria",
       "rightInfo1": "Country of Iphiria and its surrounding countries.",
+      "rightInfo2": "null",
+      "rightInfo3": "null",
+      "rightInfo4": "null",
+      "rightInfo5": "null",
       "title1": "History",
       "title2": "Future",  
       "title3": "Gallery",
-      "History": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA ",
-      "Future": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA .",
-      "Gallery": "img/IPHIRIA img/IPHIRIA img/IPHIRIA img/IPHIRIA"
+      "Section1": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA ",
+      "Section2": "lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA lorem IPHIRIA .",
+      "Section3": "img/IPHIRIA img/IPHIRIA img/IPHIRIA img/IPHIRIA"
    },
    {
       "title": "Maeve Leaflock",
@@ -44,11 +56,32 @@
       "mainImage": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
       "imageDescription": "Maeve Leaflock",
       "rightInfo1": "Maeve checking if the coast is clear before continuing her stealth mission",
+      "rightInfo2": "Character: Level 13 Thief Rogue",
+      "rightInfo3": "Alignment: Chaotic Good",
+      "rightInfo4": "null",
+      "rightInfo5": "null",
       "title1": "History",
       "title2": "Future",  
       "title3": "Gallery",
-      "History": "Maeve wasn't always level 13, but she was always a badd ass bitcchh.",
-      "Future": "Maeve now resides in the reconstructed Dunshire with her family. She enjoys sparring with Trove when Trove is in town, and playing with her brother Jax.",
-      "Gallery": "img/Maeve img/Maeve img/Maeve img/Maeve"
+      "Section1": "Maeve wasn't always level 13, but she was always a badd ass bitcchh.",
+      "Section2": "Maeve now resides in the reconstructed Dunshire with her family. She enjoys sparring with Trove when Trove is in town, and playing with her brother Jax.",
+      "Section3": "img/Maeve img/Maeve img/Maeve img/Maeve"
+   },
+   {
+      "title": "Dagger of Many Daggers",
+      "overview": "This thing is one dagger, but then sometimes many daggers",
+      "mainImage": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
+      "imageDescription": "Dagger of Many Daggers",
+      "rightInfo1": "The dagger is a well made physical +1 weapon. The dagger feels well balanced for throwing, and if during an attack the power word is spoken many ethereal daggers fly with it.",
+      "rightInfo2": "Very Rare - Requires Attunement",
+      "rightInfo3": "+1 Magical Dagger - Two charges per day",
+      "rightInfo4": "On hit 1d4 damage - Throw range 20/60",
+      "rightInfo5": "If power word is spoken, roll 2d4, and gain that many extra attacks.",
+      "title1": "Why carry many blade when one do trick?",
+      "title2": "History",  
+      "title3": "Gallery",
+      "Section1": "The first time this dagger is used is always an interesting experience for the user. They swear they only threw one, but those seven daggers they threw were not imaginary. When confronted on how they managed to stab someone eight times, they often reply that they only stabbed them twice. When it was pointed out that they actually threw five, yet there was only one dagger in the dummy, it left everyone scratching their heads.",
+      "Section2": "....",
+      "Section3": "img/DMD img/DMD img/DMD img/DMD"
    }
 ]

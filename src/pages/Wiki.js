@@ -12,17 +12,17 @@ import groupPic from "../images/eb_dh1.jpg";
 import pageKey from "../utils/test.json";
 import key from "../utils/key.json";
 import Title from "../components/Title";
-import MainContainer from "../components/MainContainer";
 import MainText from "../components/MainText";
 import Search from "../components/Search";
-import Results from "../components/Results";
+import dagger from "../images/Daggerofmanydaggers.jpg"
 
 
 export default function Wiki(props) {
-   console.log(testPic);
-   console.log(iphirea);
-   console.log(maevePic);
-   console.log(groupPic);
+   // console.log(testPic);
+   // console.log(iphirea);
+   // console.log(maevePic);
+   // console.log(groupPic);
+   console.log(dagger);
 
    // decent_humanoids/static/media/iphirea_bg2.f7d452fe.png
 
@@ -67,17 +67,21 @@ export default function Wiki(props) {
                         title: object.title,
                         overview: object.overview,
                         mainImage: object.mainImage,
-                        left1: object.left1,
+                        imageDescription: object.imageDescription,
+                        rightInfo1: object.rightInfo1,
+                        rightInfo2: object.rightInfo2,
+                        rightInfo3: object.rightInfo3,
+                        rightInfo4: object.rightInfo4,
+                        rightInfo5: object.rightInfo5,
                         title1: object.title1,
-                        History: object.History,
+                        Section1: object.Section1,
                         title2: object.title2,
-                        Future: object.Future,
+                        Section2: object.Section2,
                         title3: object.title3,
-                        /* Use W3 schools about image gallery to make a cool image gallery */
-                        Gallery: object.Gallery
+                        /* Use W3 schools about image Section3 to make a cool image Section3 */
+                        Section3: object.Section3
                      }}>
                   </MainText>
-                  {/* <Results search={search} newResult={newResult} /> */}
                </Wrapper>
             ) :
                (
@@ -92,15 +96,14 @@ export default function Wiki(props) {
                            mainImage: pageKey[0].mainImage,
                            left1: pageKey[0].left1,
                            title1: pageKey[0].title1,
-                           History: pageKey[0].History,
+                           Section1: pageKey[0].Section1,
                            title2: pageKey[0].title2,
-                           Future: pageKey[0].Future,
+                           Section2: pageKey[0].Section2,
                            title3: pageKey[0].title3,
-                           /* Use W3 schools about image gallery to make a cool image gallery */
-                           Gallery: pageKey[0].Gallery
+                           /* Use W3 schools about image Section3 to make a cool image Section3 */
+                           Section3: pageKey[0].Section3
                         }}>
                      </MainText>
-                     {/* <Results search={search} newResult={newResult}/> */}
                   </Wrapper>
                )
             }

@@ -68,20 +68,31 @@
    transition: .5s ease-in-out;
 }
 
-@media (min-width: 500px){
+.imageDescription {
+   /* position: absolute; */
+   margin: auto;
+   display: block;
+   /* bottom: 0; */
+   width: 100%;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   padding: 10px 0;
+
+}
+
+@media (min-width: 500px) {
    .imageTarget img {
       max-height: 95%;
       max-width: 95%;
    }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
    .imageTarget img {
       max-height: 90%;
       max-width: 90%;
    }
-} 
-
+}
 
 /* Styles the close link, adds the slide down transition */
 
@@ -185,7 +196,7 @@ a.lightbox-close:after {
 }
 
 .bg-light {
-   background-image: linear-gradient(to left, rgb(142,187,198), rgb(201,231,239) ) !important;
+   background-image: linear-gradient(to left, rgb(142, 187, 198), rgb(201, 231, 239)) !important;
 }
 
 .textL {
