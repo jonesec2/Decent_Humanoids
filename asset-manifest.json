@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.72f63015.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.c9ada135.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.c9ada135.chunk.js.map",
-    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.a2a86827.js",
-    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.a2a86827.js.map",
-    "static/js/2.605b0794.chunk.js": "/decent_humanoids/static/js/2.605b0794.chunk.js",
-    "static/js/2.605b0794.chunk.js.map": "/decent_humanoids/static/js/2.605b0794.chunk.js.map",
-    "static/js/3.4bb39a1f.chunk.js": "/decent_humanoids/static/js/3.4bb39a1f.chunk.js",
-    "static/js/3.4bb39a1f.chunk.js.map": "/decent_humanoids/static/js/3.4bb39a1f.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.893811f7.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.f48e1405.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.f48e1405.chunk.js.map",
+    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.ca7d6680.js",
+    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.ca7d6680.js.map",
+    "static/js/2.871df68c.chunk.js": "/decent_humanoids/static/js/2.871df68c.chunk.js",
+    "static/js/2.871df68c.chunk.js.map": "/decent_humanoids/static/js/2.871df68c.chunk.js.map",
+    "static/js/3.341f84ae.chunk.js": "/decent_humanoids/static/js/3.341f84ae.chunk.js",
+    "static/js/3.341f84ae.chunk.js.map": "/decent_humanoids/static/js/3.341f84ae.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.72f63015.chunk.css.map": "/decent_humanoids/static/css/main.72f63015.chunk.css.map",
-    "static/js/2.605b0794.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.605b0794.chunk.js.LICENSE.txt",
+    "static/css/main.893811f7.chunk.css.map": "/decent_humanoids/static/css/main.893811f7.chunk.css.map",
+    "static/js/2.871df68c.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.871df68c.chunk.js.LICENSE.txt",
+    "static/media/Daggerofmanydaggers.e7f84d99.jpg": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
     "static/media/IphireaLanding.afd0a041.png": "/decent_humanoids/static/media/IphireaLanding.afd0a041.png",
     "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
     "static/media/LandingPage.css": "/decent_humanoids/static/media/dh_DM_mobile2.4c254c46.jpg",
@@ -23,9 +24,9 @@
     "static/media/logo.103b5fa1.svg": "/decent_humanoids/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2a86827.js",
-    "static/js/2.605b0794.chunk.js",
-    "static/css/main.72f63015.chunk.css",
-    "static/js/main.c9ada135.chunk.js"
+    "static/js/runtime-main.ca7d6680.js",
+    "static/js/2.871df68c.chunk.js",
+    "static/css/main.893811f7.chunk.css",
+    "static/js/main.f48e1405.chunk.js"
   ]
 }
