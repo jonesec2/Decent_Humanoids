@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react"
 import { BrowserRouter as Router, useHistory, Link, Route, Switch } from "react-router-dom"
 // import './App.css';
 import Home from "./Home"
-import styles from './LandingPage.css'
 import icon from "../images/favicon.ico";
 
 
