@@ -28,11 +28,12 @@ function LandingPage() {
       // <Router basename="/decent_humanoids">
       <div className="App">
          <header className="App-header">
-            <div className="diceBackground">
+            <div className="diceBackground"><Link to={"/home"}
+               onClick={event => history.push("/home")}></Link>
             </div>
             <Link to={"/home"}
-                  onClick={event => history.push("/home")}
-               ><img className="d20 color" width="47px" height="47px" src={icon} /></Link>
+               onClick={event => history.push("/home")}
+            ><img className="d20 color" width="47px" height="47px" src={icon} /></Link>
             {/* <div className="diceBackground">
                <Link to={"/home"}
                   onClick={event => history.push("/home")}

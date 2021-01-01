@@ -8,8 +8,21 @@
    background-size: cover;
 }
 
+.appBlurred {
+   -moz-filter: 5px;
+   -o-filter: 5px;
+   filter: 5px;
+   text-align: center;
+   background: no-repeat center center fixed;
+   background-image: url("../images/dh_DM_mobile2.jpg") !important;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
 @media (min-width: 980px) {
-   .App {
+   .App, .appBlurred {
       text-align: center;
       background: no-repeat center 75% fixed;
       background-image: url("../images/dh_DM.jpg") !important;
@@ -21,7 +34,7 @@
 }
 
 @media (min-width: 1080px) {
-   .App {
+   .App, .appBlurred {
       text-align: center;
       background: no-repeat center 64% fixed;
       background-image: url("../images/dh_DM.jpg") !important;
@@ -33,7 +46,7 @@
 }
 
 @media (min-width: 1280px) {
-   .App {
+   .App, .appBlurred {
       text-align: center;
       background: no-repeat center 52% fixed;
       background-image: url("../images/dh_DM.jpg") !important;
@@ -435,7 +448,7 @@ body, html {
    width: 68px;
    height: 68px;
    border-radius: 50%;
-   z-index: 1;
+   /* z-index: 1; */
 }
 
 @media (min-width: 800px) {
@@ -496,7 +509,7 @@ body, html {
    transition: 0.5s ease-out;
    /* margin-bottom: -4px !important; */
    /* position: fixed; */
-   z-index: 2;
+   /* z-index: 2; */
 }
 
 @media (min-width: 800px) {
