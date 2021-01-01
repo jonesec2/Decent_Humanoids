@@ -29,10 +29,10 @@ function LandingPage() {
       <div className="App">
          <header className="App-header">
             <div className="diceBackground">
-               <Link to={"/home"}
+            </div>
+            <Link to={"/home"}
                   onClick={event => history.push("/home")}
                ><img className="d20 color" width="47px" height="47px" src={icon} /></Link>
-            </div>
             {/* <div className="diceBackground">
                <Link to={"/home"}
                   onClick={event => history.push("/home")}

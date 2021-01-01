@@ -53,6 +53,7 @@
    justify-content: center;
    font-size: calc(10px + 2vmin);
    color: white;
+   position:relative;
 }
 
 .App-link {
@@ -430,13 +431,18 @@ body, html {
 
 .diceBackground {
    transition: 0.5s ease-in;
+   position: fixed;
+   width: 68px;
+   height: 68px;
    border-radius: 50%;
+   z-index: 1;
 }
 
-.diceBackground:hover {
-   border-radius: 50%;
-   opacity: 1.0;
-   transition: 0.2s ease-out;
+@media (min-width: 800px) {
+   .diceBackground {
+      width: 100px;
+      height: 100px;
+   }
 }
 
 .diceBackground:active {
@@ -460,10 +466,10 @@ body, html {
 
 @media (prefers-reduced-motion: no-preference) {
    .color {
-      animation: App-logo-spin-mobile infinite 1.84s linear;
+      animation: App-logo-spin-mobile infinite 1.5s linear;
    }
    .diceBackground {
-      animation: fluctuate-shadow infinite 3.68s linear;
+      animation: fluctuate-shadow infinite 3s linear;
    }
 }
 
@@ -478,7 +484,7 @@ body, html {
 
 @keyframes fluctuate-shadow {
    50% {
-      box-shadow: 0 0 1em 0.82em rgba(255, 251, 220, 0.666);
+      box-shadow: 0 0 2.5em 1em rgba(255, 251, 220, 0.705);
    }
 }
 
@@ -488,10 +494,10 @@ body, html {
    filter: invert(100%);
    margin: auto !important;
    transition: 0.5s ease-out;
-   margin-bottom: -4px !important
+   margin-bottom: -4px !important;
+   /* position: fixed; */
+   z-index: 2;
 }
-
-
 
 @media (min-width: 800px) {
    .color {
