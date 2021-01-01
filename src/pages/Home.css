@@ -460,10 +460,10 @@ body, html {
 
 @media (prefers-reduced-motion: no-preference) {
    .color {
-      animation: App-logo-spin-mobile infinite 1.54s linear;
+      animation: App-logo-spin-mobile infinite 1.84s linear;
    }
    .diceBackground {
-      animation: fluctuate-shadow infinite 3.08s linear;
+      animation: fluctuate-shadow infinite 3.68s linear;
    }
 }
 
@@ -488,7 +488,7 @@ body, html {
    filter: invert(100%);
    margin: auto !important;
    transition: 0.5s ease-out;
-   margin-bottom: -8px !important
+   margin-bottom: -4px !important
 }
 
 
