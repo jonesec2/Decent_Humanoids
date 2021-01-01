@@ -4,6 +4,7 @@ import { BrowserRouter as Router, useHistory, Link, Route, Switch } from "react-
 // import './App.css';
 import Home from "./Home"
 import styles from './LandingPage.css'
+import icon from "../images/favicon.ico";
 
 
 function LandingPage() {
@@ -19,30 +20,31 @@ function LandingPage() {
    let history = useHistory();
 
    const redirect = () => {
-      console.log(path+"redirect")
+      console.log(path + "redirect")
       history.push(path)
    }
 
    return (
 
       // <Router basename="/decent_humanoids">
-         <div className="App">
-            <header className="App-header">
-               <nav>
-                  <ul>
-                     <li>
-                        {/* creating event that refreshes the page so that the Home page renders correctly */}
-                        <Link to={"/home"} 
-                        onClick={event => history.push("/home")}
-                        >Enter</Link>
-                     </li>
-                  </ul>
-               </nav>
-            </header>
-            <Route exact path={"/home"} component={Home}>
-               <Home />
-            </Route>
-         </div>
+      <div className="App">
+         <header className="App-header">
+            <div className="diceBackground">
+               <Link to={"/home"}
+                  onClick={event => history.push("/home")}
+               ><img className="d20 color" width="47px" height="47px" src={icon} /></Link>
+            </div>
+            {/* <div className="diceBackground">
+               <Link to={"/home"}
+                  onClick={event => history.push("/home")}
+               ><img className="d20 color" width="47px" height="47px" src={icon} /></Link>
+            </div> */}
+            <div className="App"></div>
+         </header>
+         <Route exact path={"/home"} component={Home}>
+            <Home />
+         </Route>
+      </div>
       // </Router>
 
    )

@@ -1,3 +1,80 @@
+.App {
+   text-align: center;
+   background: no-repeat center center fixed;
+   background-image: url("../images/dh_DM_mobile2.jpg") !important;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@media (min-width: 980px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 75% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 1080px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 64% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 1280px) {
+   .App {
+      text-align: center;
+      background: no-repeat center 52% fixed;
+      background-image: url("../images/dh_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+.App-header {
+   /* background-color: #282c34; */
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: calc(10px + 2vmin);
+   color: white;
+}
+
+.App-link {
+   color: #61dafb;
+}
+
+.footer {
+   bottom: 0;
+   width: 100%;
+   padding: 0.75rem;
+   background-image: linear-gradient(to left, rgb(142, 187, 198), rgb(201, 231, 239)) !important;
+}
+
+/* @keyframes App-logo-spin {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ } */
+
 .test {
    text-align: center;
    /* background: repeat center; */
@@ -77,7 +154,6 @@
    text-align: center;
    color: rgb(255, 255, 255);
    padding: 10px 0;
-
 }
 
 @media (min-width: 500px) {
@@ -352,6 +428,22 @@ body, html {
    flex-wrap: wrap !important;
 }
 
+.diceBackground {
+   transition: 0.5s ease-in;
+   border-radius: 50%;
+}
+
+.diceBackground:hover {
+   border-radius: 50%;
+   opacity: 1.0;
+   transition: 0.2s ease-out;
+}
+
+.diceBackground:active {
+   border-radius: 50%;
+   transition: 0.1s ease-out;
+}
+
 @media (min-width: 991px) {
    .d20 {
       margin-left: 5px;
@@ -363,4 +455,54 @@ body, html {
    float: right;
    margin-right: 0px;
    margin-top: 1px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+   .color {
+      animation: App-logo-spin-mobile infinite 1.54s linear;
+   }
+   .diceBackground {
+      animation: fluctuate-shadow infinite 3.08s linear;
+   }
+}
+
+@keyframes App-logo-spin-mobile {
+   0%, 100% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-8px);
+   }
+}
+
+@keyframes fluctuate-shadow {
+   50% {
+      box-shadow: 0 0 1em 0.82em rgba(255, 251, 220, 0.666);
+   }
+}
+
+.color {
+   width: 88px;
+   height: 88px;
+   filter: invert(100%);
+   margin: auto !important;
+   transition: 0.5s ease-out;
+   margin-bottom: -8px !important
+}
+
+
+
+@media (min-width: 800px) {
+   .color {
+      width: 120px;
+      height: 120px;
+   }
+}
+
+
+.color:active {
+   width: 72px;
+   height: 72px;
+   transition: 0.3s ease;
 }
