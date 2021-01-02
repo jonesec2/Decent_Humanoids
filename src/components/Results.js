@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 // import Search from "../components/Search"
 import icon from "../images/favicon.ico";
@@ -13,8 +13,14 @@ export default function Results(props) {
    console.log(word);
    // console.log(word === "")
    // console.log(word.length);
-   console.log(filterDisplay[0]);
-   // console.log(typeof(filterDisplay[0].name) === "undefined")
+   console.log(filterDisplay);
+   // console.log(filterDisplay[0]);
+   // console.log(filterDisplay.length)
+
+   useEffect(() => {
+
+   }, [filterDisplay.length > 2])
+
 
    const handleChange = e => {
       // console.log(e)
@@ -23,18 +29,28 @@ export default function Results(props) {
       });
       console.log(oldList)
 
+      console.log(oldList[0].name.includes('Ma'))
+
       if (e !== "") {
          // console.log(e.length)
          let newList = [];
+         // console.log(e)
+         console.log(word.charAt(0).charAt(1))
+         console.log(word.charAt(1))
          setWord(e);
          newList = oldList.filter(search =>
-            search.name.includes(word.charAt(0).toUpperCase())
+            search.name.charAt(0).includes(word.charAt(0).toUpperCase())
          );
-         // console.log(newList.length)
-         if (newList.length <= 3) {
+         console.log(newList)
+         if (newList.length <= 0) {
+            return
+         }
+
+         if (e.length >= 3) {
             setFilterDisplay(newList);
          }
-         else { }
+
+         else { return }
       }
       else {
          setWord("")

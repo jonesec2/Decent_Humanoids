@@ -19,16 +19,16 @@ import Maeve from "../images/dh_Maeve_1.jpg";
 
 function Home() {
 
-   console.log(Maeve)
+   // console.log(Maeve)
 
    const [search] = useState(key1)
    const [person] = useState(key2)
    const [place] = useState(key3)
    const [thing] = useState(key4)
-   console.log(search);
-   console.log(person)
-   console.log(place)
-   console.log(thing)
+   // console.log(search);
+   // console.log(person)
+   // console.log(place)
+   // console.log(thing)
 
    // create const for random link
    // handle selecting a page at random and navigating user to Wiki

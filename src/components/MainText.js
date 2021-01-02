@@ -16,14 +16,13 @@ export default function MainText(object) {
       if (show === 'false') {
          setShow('true')
       }
-      console.log(show)
+      // console.log(show)
       if (show === 'true') {
          setShow('false')
-         console.log('yep')
       }
    }
 
-   console.log(show)
+   // console.log(show)
 
 
    // {object.mainImage}

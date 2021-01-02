@@ -48,7 +48,7 @@ export default function Wiki(props) {
    console.log(search)
    function newResult(test) {
       // let test = "test"
-      console.log(test);
+      // console.log(test);
       // setObject(test.props.pageNumber)
    }
 

@@ -46,14 +46,12 @@ function LandingPage() {
                   setBackground('App-header')
                }}
 
-               to={"/home"} onClick={event => history.push("/home")}
-            >
+               to={"/home"} onClick={event => history.push("/home")
+               }>
                <img className="d20 color" width="47px" height="47px" src={icon} />
             </Link>
          </header>
-         <Route exact path={"/home"} component={Home}>
-            <Home />
-         </Route>
+         <Route exact path={"/home"} component={Home} />
       </div>
       // </Router>
 
