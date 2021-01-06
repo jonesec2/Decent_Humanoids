@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
-import iphiriaPic from "../images/IphireaLanding.png";
+// import iphiriaPic from "../images/IphireaLanding.png";
+import iphiriaClose from "../images/IphiriaClose.png";
 import "./Home.css";
 
 
@@ -20,7 +21,8 @@ function NoMatch() {
                   <h2>Sorry Traveller: Looks like you took a wrong turn </h2>
                   <hr></hr>
                   <h4>Let's get you back <Link to={"/home"}>home</Link></h4>
-                  <img className="image" src={iphiriaPic} />
+                  <Link to={"/home"}><img className="noMatchImage"  src={iphiriaClose}/></Link>
+                  {/* <img className="noMatchImage"  src={iphiriaClose}/> */}
                </div>
             </Wrapper>
          </div>

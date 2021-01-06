@@ -4,10 +4,12 @@ import Navbar from "../components/Nav";
 import Footer from "../components/Footer";
 import Results from "../components/Results";
 // import iphiriaPic from "../images/IphireaLanding.png";
+import HistoryTest from "../images/dh_history_test.png";
 
 export default function Timeline() {
 
-   const search = "test"
+   console.log(HistoryTest);
+   // const search = "test"
    return (
       <div>
          <Navbar />

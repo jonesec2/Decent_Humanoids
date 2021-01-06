@@ -14,12 +14,14 @@ import Footer from "../components/Footer";
 // import API from "../utils/API";
 import Results from "../components/Results";
 import Maeve from "../images/dh_Maeve_1.jpg";
+import IphiriaMap from "../images/iphiria_map.jpg"
 
 
 
 function Home() {
 
    // console.log(Maeve)
+   console.log(IphiriaMap)
 
    const [search] = useState(key1)
    const [person] = useState(key2)

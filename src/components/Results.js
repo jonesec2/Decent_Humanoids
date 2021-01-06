@@ -8,7 +8,7 @@ export default function Results(props) {
    console.log(props)
 
    const [word, setWord] = useState("");
-
+   const [searchWord, setSearchWord] = useState("")
    const [filterDisplay, setFilterDisplay] = useState([{}]);
    console.log(word);
    // console.log(word === "")
@@ -17,9 +17,6 @@ export default function Results(props) {
    // console.log(filterDisplay[0]);
    // console.log(filterDisplay.length)
 
-   useEffect(() => {
-
-   }, [filterDisplay.length > 2])
 
 
    const handleChange = e => {

@@ -111,6 +111,16 @@
    /* width: max-content; */
 }
 
+.noMatchImage {
+   max-width: 100%;
+   max-height: 100% !important;
+   display: block;
+   margin: auto;
+   cursor: pointer;
+   margin-top: 10px !important;
+   transition: 0.17s;
+}
+
 .image {
    max-width: 100%;
    max-height: 100% !important;
@@ -291,6 +301,10 @@ a.lightbox-close:after {
 
 .bg-light {
    background-image: linear-gradient(to left, rgb(142, 187, 198), rgb(201, 231, 239)) !important;
+   /* position: fixed;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0; */
 }
 
 .textL {
