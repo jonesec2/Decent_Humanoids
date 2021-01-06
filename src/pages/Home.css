@@ -112,7 +112,7 @@
 }
 
 .timeline {
-   overflow: scroll;
+   overflow: auto;
 }
 
 .timelineImage {
