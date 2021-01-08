@@ -67,7 +67,7 @@ export default function MainText(object) {
             <p>{info.overview}</p>
          </div>
          <div className="border py-1 px-4 textL">
-            <button className="btn info" onClick={executeScroll} >{info.title1}</button>
+            <button className="btn info" onClick={executeScroll} >Overview</button>
             <button className="btn info">{info.title2}</button>
             <button className="btn info">{info.title3}</button>
          </div>
