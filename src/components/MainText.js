@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 // import test from "../utils/test.json";
 // import picture from "../images/eb_dh1.jpg"
 // import testPic from "./images/eb_dh1.jpg"
@@ -21,6 +21,9 @@ export default function MainText(object) {
          setShow('false')
       }
    }
+
+   let myRef = useRef()
+   const executeScroll = () => myRef.current.scrollIntoView();
 
    // console.log(show)
 
@@ -64,7 +67,7 @@ export default function MainText(object) {
             <p>{info.overview}</p>
          </div>
          <div className="border py-1 px-4 textL">
-            <button className="btn info">Click Me!</button>
+            <button className="btn info" onClick={executeScroll} >Click Me!</button>
             <button className="btn info">Click Me!</button>
             <button className="btn info">Click Me!</button>
             <button className="btn info">Click Me!</button>
@@ -118,7 +121,7 @@ export default function MainText(object) {
 
 
             <hr></hr>
-            <h3>{info.title3}</h3>
+            <h3 ref={myRef}>{info.title3}</h3>
             {info.SectionThreeP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionThreeP1}</p>)}
