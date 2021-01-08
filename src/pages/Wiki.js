@@ -59,7 +59,7 @@ export default function Wiki(props) {
             {object ? (
                <Wrapper>
                   {/* <Search /> */}
-                  
+
                   <Title title={object.title} />
                   <hr />
                   <MainText
@@ -74,12 +74,24 @@ export default function Wiki(props) {
                         rightInfo4: object.rightInfo4,
                         rightInfo5: object.rightInfo5,
                         title1: object.title1,
-                        Section1: object.Section1,
+                        SectionOneP1: object.SectionOneP1,
+                        SectionOneP2: object.SectionOneP2,
+                        SectionOneP3: object.SectionOneP3,
+                        SectionOneP4: object.SectionOneP4,
+                        SectionOneP5: object.SectionOneP5,
                         title2: object.title2,
-                        Section2: object.Section2,
+                        SectionTwoP1: object.SectionTwoP1,
+                        SectionTwoP2: object.SectionTwoP2,
+                        SectionTwoP3: object.SectionTwoP3,
+                        SectionTwoP4: object.SectionTwoP4,
+                        SectionTwoP5: object.SectionTwoP5,
                         title3: object.title3,
                         /* Use W3 schools about image Section3 to make a cool image Section3 */
-                        Section3: object.Section3
+                        SectionThreeP1: object.SectionThreeP1,
+                        SectionThreeP2: object.SectionThreeP2,
+                        SectionThreeP3: object.SectionThreeP3,
+                        SectionThreeP4: object.SectionThreeP4,
+                        SectionThreeP5: object.SectionThreeP5
                      }}>
                   </MainText>
                </Wrapper>
@@ -96,12 +108,24 @@ export default function Wiki(props) {
                            mainImage: pageKey[0].mainImage,
                            left1: pageKey[0].left1,
                            title1: pageKey[0].title1,
-                           Section1: pageKey[0].Section1,
+                           SectionOneP1: pageKey[0].SectionOneP1,
+                           SectionOneP2: pageKey[0].SectionOneP2,
+                           SectionOneP3: pageKey[0].SectionOneP3,
+                           SectionOneP4: pageKey[0].SectionOneP4,
+                           SectionOneP5: pageKey[0].SectionOneP5,
                            title2: pageKey[0].title2,
-                           Section2: pageKey[0].Section2,
+                           SectionTwoP1: pageKey[0].SectionTwoP1,
+                           SectionTwoP2: pageKey[0].SectionTwoP2,
+                           SectionTwoP3: pageKey[0].SectionTwoP3,
+                           SectionTwoP4: pageKey[0].SectionTwoP4,
+                           SectionTwoP5: pageKey[0].SectionTwoP5,
                            title3: pageKey[0].title3,
                            /* Use W3 schools about image Section3 to make a cool image Section3 */
-                           Section3: pageKey[0].Section3
+                           SectionThreeP1: pageKey[0].SectionThreeP1,
+                           SectionThreeP2: pageKey[0].SectionThreeP2,
+                           SectionThreeP3: pageKey[0].SectionThreeP3,
+                           SectionThreeP4: pageKey[0].SectionThreeP4,
+                           SectionThreeP5: pageKey[0].SectionThreeP5
                         }}>
                      </MainText>
                   </Wrapper>

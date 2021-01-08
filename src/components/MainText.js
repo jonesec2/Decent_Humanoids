@@ -70,15 +70,74 @@ export default function MainText(object) {
             <button className="btn info">Click Me!</button>
          </div>
          <div className=" mx-auto my-3 py-2">
+
             <hr></hr>
             <h3>{info.title1}</h3>
-            <p>{info.Section1}</p>
+            {info.SectionOneP1 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionOneP1}</p>)}
+            {info.SectionOneP2 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionOneP2}</p>)}
+
+            {info.SectionOneP3 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionOneP3}</p>)}
+
+            {info.SectionOneP4 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionOneP4}</p>)}
+
+            {info.SectionOneP5 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionOneP5}</p>)}
+
+
+
             <hr></hr>
             <h3>{info.title2}</h3>
-            <p>{info.Section2}</p>
+            {info.SectionTwoP1 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionTwoP1}</p>)}
+            {info.SectionTwoP2 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionTwoP2}</p>)}
+
+            {info.SectionTwoP3 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionTwoP3}</p>)}
+
+            {info.SectionTwoP4 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionTwoP4}</p>)}
+
+            {info.SectionTwoP5 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionTwoP5}</p>)}
+
+
+
             <hr></hr>
             <h3>{info.title3}</h3>
-            <div>{info.Section3}</div>
+            {info.SectionThreeP1 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionThreeP1}</p>)}
+            {info.SectionThreeP2 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionThreeP2}</p>)}
+
+            {info.SectionThreeP3 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionThreeP3}</p>)}
+
+            {info.SectionThreeP4 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionThreeP4}</p>)}
+
+            {info.SectionThreeP5 === "null" ? (
+               <div></div>
+            ) : (<p>{info.SectionThreeP5}</p>)}
+
          </div>
       </div>
    )
