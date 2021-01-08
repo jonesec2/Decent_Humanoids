@@ -22,11 +22,24 @@ export default function MainText(object) {
       }
    }
 
-   let myRef = useRef()
-   const executeScroll = () => myRef.current.scrollIntoView();
-
-   // console.log(show)
-
+   
+   let myRef = useRef();
+   let otherRef = useRef();
+   let lastRef = useRef();
+   const executeScroll = (e) => {
+      if (e.target.id === "firstSection"){
+         myRef.current.scrollIntoView();
+      }
+      else if (e.target.id === "secondSection") {
+         otherRef.current.scrollIntoView();
+      }
+      else if (e.target.id === "thirdSection") {
+         lastRef.current.scrollIntoView();
+      }
+      else {
+         return;
+      }
+   }
 
    // {object.mainImage}
    const info = object.object
@@ -61,20 +74,18 @@ export default function MainText(object) {
                <div></div>
             ) : (<p>{info.rightInfo5}</p>)}
 
-
          </div>
-         <div className="mx-auto mb-3 pb-2">
-            <p>{info.overview}</p>
+         <div className="mx-auto mb-3 pb-2 endOverview">
+            <p className="endOverview">{info.overview}</p>
          </div>
-         <div className="border py-1 px-4 textL">
-            <button className="btn info" onClick={executeScroll} >Overview</button>
-            <button className="btn info">{info.title2}</button>
-            <button className="btn info">{info.title3}</button>
+         <div className="border py-1 px-4 mr-4 textL row">
+            <button className="btn info col-12" id="firstSection"  onClick={executeScroll}>{info.title1}</button>
+            <button className="btn info col-12" id="secondSection" onClick={executeScroll}>{info.title2}</button>
+            <button className="btn info col-12" id="thirdSection" onClick={executeScroll}>{info.title3}</button>
          </div>
-         <div className=" mx-auto my-3 py-2">
-
+         <div className=" mx-auto my-3 py-2 startInfo">
             <hr></hr>
-            <h3>{info.title1}</h3>
+            <h3 ref={myRef}>{info.title1}</h3>
             {info.SectionOneP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionOneP1}</p>)}
@@ -97,7 +108,7 @@ export default function MainText(object) {
 
 
             <hr></hr>
-            <h3>{info.title2}</h3>
+            <h3 ref={otherRef}>{info.title2}</h3>
             {info.SectionTwoP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionTwoP1}</p>)}
@@ -120,7 +131,8 @@ export default function MainText(object) {
 
 
             <hr></hr>
-            <h3 ref={myRef}>{info.title3}</h3>
+
+            <h3 ref={lastRef}>{info.title3}</h3>
             {info.SectionThreeP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionThreeP1}</p>)}
