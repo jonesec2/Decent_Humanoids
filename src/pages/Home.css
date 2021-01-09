@@ -537,7 +537,7 @@ body, html {
       animation: App-logo-spin-mobile infinite 1.5s linear;
    }
    .diceBackground {
-      animation: fluctuate-shadow infinite 3s linear;
+      animation: fluctuate-shadow infinite 2.5s linear;
    }
 }
 
@@ -552,7 +552,7 @@ body, html {
 
 @keyframes fluctuate-shadow {
    50% {
-      box-shadow: 0 0 5em 2.5em rgba(255, 251, 220, 0.795);
+      box-shadow: 0 0 5em 2.5em rgba(255, 251, 220, 1.995);
    }
 }
 
