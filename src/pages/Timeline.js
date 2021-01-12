@@ -6,6 +6,7 @@ import Results from "../components/Results";
 // import iphiriaPic from "../images/IphireaLanding.png";
 import HistoryTest from "../images/dh_history_test.png";
 import HistoryTest2 from "../images/dh_history_test2.png";
+import normalizedHistory from "../images/DH_History_Normalized_Size.png"
 
 export default function Timeline() {
 
@@ -20,7 +21,7 @@ export default function Timeline() {
                   <h1 className="text-left">The Decent Humanoids Campaign Timeline</h1>
                   <hr />
                   <div className="timeline">
-                     <img className="timelineImage" src={HistoryTest} />
+                     <img className="timelineImage" src={normalizedHistory} />
                   </div>
 
                   {/* <h2>Restart the adventure</h2>
