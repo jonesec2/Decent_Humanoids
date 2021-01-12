@@ -64,9 +64,10 @@ export default function Results(props) {
             <div className="col-sm-11 col-10 search pl-0">
                <input onChange={e => handleChange(e.target.value)}
                   type="text"
+                  autoComplete="off"
                   name="searchBar"
                   id="searchBar"
-                  placeholder="Your starts inquiry here."
+                  placeholder="Your inquiry starts here. :)"
                />
             </div>
          </div>

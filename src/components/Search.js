@@ -9,6 +9,7 @@ export default function Search() {
          <input
             type="text"
             name="searchBar"
+            autoComplete= "off"
             id="searchBar"
             placeholder="Search for a character, a place, an item, or a fond memory."
          />

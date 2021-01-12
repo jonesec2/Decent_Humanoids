@@ -9,6 +9,7 @@ import testPic from "../images/dh_groupA.jpg";
 import iphirea from "../images/IphiriaClose.png";
 import maevePic from "../images/dh_Maeve_1.jpg";
 import groupPic from "../images/eb_dh1.jpg";
+import yubnub from "../images/yubnub.jpg";
 import pageKey from "../utils/test.json";
 import key from "../utils/key.json";
 import Title from "../components/Title";
@@ -23,6 +24,7 @@ export default function Wiki(props) {
    // console.log(maevePic);
    // console.log(groupPic);
    console.log(dagger);
+   console.log(yubnub)
 
    // decent_humanoids/static/media/iphirea_bg2.f7d452fe.png
 
@@ -101,7 +103,7 @@ export default function Wiki(props) {
             ) :
                (
                   <Wrapper>
-                     <Search />
+                     {/* <Search /> */}
                      <Title title="test" />
                      <hr />
                      <MainText

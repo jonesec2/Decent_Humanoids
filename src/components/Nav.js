@@ -26,9 +26,9 @@ function Navbar() {
                <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to={"/timeline"}>Timeline</Link>
                </li>
-               <li>
+               {/* <li>
                   <Link className="nav-link js-scroll-trigger" to={"/noMatch"}> Whoops</Link>
-               </li>
+               </li> */}
             </ul>
             {/* <Results search={search}></Results> */}
          </nav>
