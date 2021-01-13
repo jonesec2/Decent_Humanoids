@@ -8,10 +8,11 @@ import icon from "../images/favicon.ico";
 
 function LandingPage() {
 
-   const [background, setBackground] = useState('App-header')
+   const [appBackground, setAppBackground] = useState('App')
+   const [headerBackground, setHeaderBackground] = useState('App-header')
    const [path, setPath] = useState(window.location.pathname);
 
-   // console.log(background)
+   // console.log(headerBackground)
    // console.log(path)
 
    useEffect(() => {
@@ -20,30 +21,32 @@ function LandingPage() {
    }, [path]);
 
    useEffect(() => {
+      console.log('headerBackground test')
+   }, [headerBackground])
+
+   useEffect(() => {
       console.log('background test')
-   }, [background])
+   }, [appBackground])
 
    let history = useHistory();
 
-   const redirect = () => {
-      console.log(path + "redirect")
-      history.push(path)
-   }
 
    return (
 
       // <Router basename="/decent_humanoids">
       <div className='App'>
-         <header className={background}>
+         <header className={headerBackground}>
             <div className="diceBackground">
                <Link to={"/home"} onClick={event => history.push("/home")}></Link>
             </div>
             <Link
                onMouseEnter={(e) => {
-                  setBackground('blur-App-header')
+                  setHeaderBackground('blur-App-header');
+                  setAppBackground('darkApp')
                }}
                onMouseLeave={(e) => {
-                  setBackground('App-header')
+                  setHeaderBackground('App-header')
+                  setAppBackground('App')
                }}
 
                to={"/home"} onClick={event => history.push("/home")

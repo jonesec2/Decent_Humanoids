@@ -8,7 +8,6 @@
    background-size: cover;
 }
 
-
 @media (min-width: 980px) {
    .App {
       text-align: center;
@@ -34,7 +33,7 @@
 }
 
 @media (min-width: 1280px) {
-   .App{
+   .App {
       text-align: center;
       background: no-repeat center 52% fixed;
       background-image: url("../images/dh_DM.jpg") !important;
@@ -44,6 +43,52 @@
       background-size: cover;
    }
 }
+/* 
+.darkApp {
+   text-align: center;
+   background: no-repeat center center fixed;
+   background-image: url("../images/dh_DM_mobile2.jpg") !important;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@media (min-width: 980px) {
+   .darkApp {
+      text-align: center;
+      background: no-repeat center 75% fixed;
+      background-image: url("../images/DH_Dark_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 1080px) {
+   .darkApp {
+      text-align: center;
+      background: no-repeat center 64% fixed;
+      background-image: url("../images/DH_Dark_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 1280px) {
+   .darkApp {
+      text-align: center;
+      background: no-repeat center 52% fixed;
+      background-image: url("../images/DH_Dark_DM.jpg") !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+} */
 
 .App-header {
    /* background-color: #282c34; */
@@ -318,24 +363,24 @@ a.lightbox-close:after {
    margin-right: 0; */
 }
 
-.endOverview{
+.endOverview {
    margin-bottom: 0 !important;
    padding-bottom: 0 !important;
 }
 
 @media (min-width: 767px) {
-   .endOverview{
+   .endOverview {
       margin-bottom: 0.5rem !important;
       padding-bottom: 0.5rem !important;
    }
 }
 
-.startInfo{
+.startInfo {
    margin-top: 0 !important;
 }
 
 @media (min-width: 767px) {
-   .startInfo{
+   .startInfo {
       margin-top: 0.5rem !important;
    }
 }
@@ -484,7 +529,7 @@ a.lightbox-close:after {
 
 .info {
    color: dodgerblue;
-   overflow:auto;
+   overflow: auto;
    overflow-wrap: break-word !important;
    word-wrap: break-word !important;
    text-align: left;
