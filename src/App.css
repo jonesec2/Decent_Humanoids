@@ -14,7 +14,7 @@
    background-size: cover;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
    .ttttt {
       text-align: center;
       background: no-repeat center fixed;

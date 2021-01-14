@@ -61,10 +61,21 @@ export default function Wiki(props) {
          <Navbar />
          <div className="noMatch">
             <div className="example">
-
+               <p>Top</p>
+               <p>Section 1</p>
+               <p>Section 2</p>
+               <p>Section 3</p>
+            </div>
+            <div className="example2">
+               <p>^</p>
+               <p>S1</p>
+               <p>S2</p>
+               <p>S3</p>
             </div>
             {object ? (
                <Wrapper>
+
+
                   {/* <Search /> */}
 
                   <Title title={object.title} />
