@@ -82,6 +82,8 @@ export default function Wiki(props) {
       }
    }
 
+   console.log(object.title1.charAt(0).toUpperCase())
+
    return (
       <div ref={myRef} >
          <Navbar />
@@ -94,9 +96,9 @@ export default function Wiki(props) {
             </div>
             <div className="example2">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
-               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>1</p>
-               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>2</p>
-               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>3</p>
+               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>°</p>
+               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>°°</p>
+               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
             </div>
             {object ? (
                <Wrapper>

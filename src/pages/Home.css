@@ -449,7 +449,7 @@ a.lightbox-close:after {
    margin-bottom: 1rem !important;
    border-radius: 0.5rem;
    border-width: 0.3rem;
-   border-color: rgb(201,231,239);
+   border-color: rgb(201, 231, 239);
    border-style: solid;
    line-height: 0.5rem;
 }
@@ -467,7 +467,7 @@ a.lightbox-close:after {
    border: black;
    border-radius: 0.5rem;
    border-width: 0.15rem;
-   border-color: rgb(201,231,239);
+   border-color: rgb(201, 231, 239);
    border-style: ridge;
 }
 
@@ -495,8 +495,17 @@ a.lightbox-close:after {
    }
    .example2 {
       display: none !important;
-
    }
+}
+
+#thirdSection {
+   /* display: inline; */
+   /* transition: all .9s; */
+   -moz-transform: scale(-1, -1);
+   -webkit-transform: scale(-1, -1);
+   -o-transform: scale(-1, -1);
+   -ms-transform: scale(-1, -1);
+   transform: scale(-1, -1);
 }
 
 @media (min-width: 1100px) {
