@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../components/Nav";
@@ -24,23 +24,24 @@ export default function Wiki(props) {
    // console.log(iphirea);
    // console.log(maevePic);
    // console.log(groupPic);
-   console.log(dagger);
-   console.log(yubnub);
-   console.log(normalizedHistory);
+   // console.log(dagger);
+   // console.log(yubnub);
+   // console.log(normalizedHistory);
 
-   // decent_humanoids/static/media/iphirea_bg2.f7d452fe.png
 
    const [search] = useState(key)
-   // The trick to getting this to work is to set a default loading page to fall back on
-   // But putting all the code in home to send over. So use will search
-   // then select and when the link is selected that is where the object 
-   // will be chosen and then all of the info will make it over as a prop
-   // so rendering would look like "{load prop.title || if null default}"
+
+   let myRef = useRef();
+   console.log(myRef)
+   let secondRef = useRef();
+   let otherRef = useRef();
+   let lastRef = useRef();
    // console.log(props)
    const [object, setObject] = useState(
       typeof props.location.state === 'undefined'
          ? test[0]
-         : test[props.location.state]);
+         : test[props.location.state]
+   );
    // console.log(object)
    // console.log(test[props.location.state.pageName])
    // console.log(test[0])
@@ -49,11 +50,35 @@ export default function Wiki(props) {
       newResult()
    }, [object])
 
-   console.log(search)
+
+   // console.log(search)
    function newResult(test) {
       // let test = "test"
       // console.log(test);
       // setObject(test.props.pageNumber)
+   }
+
+   const sideBarScroll = (e) => {
+      console.log(e)
+      if (e === "topSection") {
+         // myRef.current.scrollIntoView();
+         console.log("top");
+      }
+      else if (e === "firstSection") {
+         secondRef.current.scrollIntoView();
+         console.log("first");
+      }
+      else if (e === "secondSection") {
+         otherRef.current.scrollIntoView();
+         console.log("second");
+      }
+      else if (e === "thirdSection") {
+         lastRef.current.scrollIntoView();
+         console.log("third");
+      }
+      else {
+         return;
+      }
    }
 
    return (
@@ -61,16 +86,16 @@ export default function Wiki(props) {
          <Navbar />
          <div className="noMatch">
             <div className="example">
-               <p>Top</p>
-               <p>Section 1</p>
-               <p>Section 2</p>
-               <p>Section 3</p>
+               <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>Top</p>
+               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>Section 1</p>
+               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>Section 2</p>
+               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>Section 3</p>
             </div>
             <div className="example2">
-               <p>^</p>
-               <p>S1</p>
-               <p>S2</p>
-               <p>S3</p>
+               <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
+               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>S1</p>
+               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>S2</p>
+               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>S3</p>
             </div>
             {object ? (
                <Wrapper>
@@ -81,6 +106,12 @@ export default function Wiki(props) {
                   <Title title={object.title} />
                   <hr />
                   <MainText
+                     // sideBarScroll = {sideBarScroll}
+                     myRef={myRef}
+                     secondRef={secondRef}
+                     otherRef={otherRef}
+                     lastRef={lastRef}
+                     sideBarScroll={sideBarScroll}
                      object={{
                         title: object.title,
                         overview: object.overview,

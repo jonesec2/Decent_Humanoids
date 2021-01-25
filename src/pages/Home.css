@@ -447,6 +447,11 @@ a.lightbox-close:after {
    text-align: center !important;
    overflow-wrap: break-word !important;
    margin-bottom: 1rem !important;
+   border-radius: 0.5rem;
+   border-width: 0.3rem;
+   border-color: rgb(201,231,239);
+   border-style: ridge;
+   line-height: 0.5rem;
 }
 
 .example2 {
@@ -454,11 +459,16 @@ a.lightbox-close:after {
    display: block !important;
    position: fixed;
    margin-top: 5rem;
-   padding: 0.5rem;
+   padding: 0.4rem;
    z-index: 1;
    text-align: center !important;
    overflow-wrap: break-word !important;
    margin-bottom: 1rem !important;
+   border: black;
+   border-radius: 0.5rem;
+   border-width: 0.01rem;
+   border-color: rgb(201,231,239);
+   border-style: ridge;
 }
 
 @media (min-width: 768px) {

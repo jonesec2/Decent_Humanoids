@@ -5,7 +5,7 @@ export default function Modal(props) {
    // console.log(props.show);
 
    const close = e =>{
-      props.closeModal()
+      props.showModal();
    }
 
    return (

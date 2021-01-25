@@ -22,25 +22,7 @@ export default function MainText(object) {
       }
    }
 
-   
-   let myRef = useRef();
-   let otherRef = useRef();
-   let lastRef = useRef();
-   const executeScroll = (e) => {
-      if (e.target.id === "firstSection"){
-         myRef.current.scrollIntoView();
-      }
-      else if (e.target.id === "secondSection") {
-         otherRef.current.scrollIntoView();
-      }
-      else if (e.target.id === "thirdSection") {
-         lastRef.current.scrollIntoView();
-      }
-      else {
-         return;
-      }
-   }
-
+   // console.log(object);
    // {object.mainImage}
    const info = object.object
    // console.log(object.object)
@@ -50,7 +32,7 @@ export default function MainText(object) {
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
             <img onClick={e => showModal()} className="image" src={info.mainImage} alt={info.imageDescription} />
             {show === 'true' ? (
-               <Modal img={info.mainImage} alt={info.imageDescription} show={show} closeModal={showModal} />
+               <Modal img={info.mainImage} alt={info.imageDescription} show={show} showModal={showModal} />
             ) : (
                   <div></div>
                )}
@@ -79,13 +61,13 @@ export default function MainText(object) {
             <p className="endOverview">{info.overview}</p>
          </div>
          <div className="border py-1 px-4 mr-4 textL row">
-            <button className="btn info col-12" id="firstSection"  onClick={executeScroll}>{info.title1}</button>
-            <button className="btn info col-12" id="secondSection" onClick={executeScroll}>{info.title2}</button>
-            <button className="btn info col-12" id="thirdSection" onClick={executeScroll}>{info.title3}</button>
+            <button className="btn info col-12" id="firstSection"  onClick={e => object.sideBarScroll(e.target.id)}>{info.title1}</button>
+            <button className="btn info col-12" id="secondSection" onClick={e => object.sideBarScroll(e.target.id)}>{info.title2}</button>
+            <button className="btn info col-12" id="thirdSection"  onClick={e => object.sideBarScroll(e.target.id)}>{info.title3}</button>
          </div>
          <div className=" mx-auto my-3 py-2 startInfo">
             <hr></hr>
-            <h3 ref={myRef}>{info.title1}</h3>
+            <h3 ref={object.secondRef}>{info.title1}</h3>
             {info.SectionOneP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionOneP1}</p>)}
@@ -108,7 +90,7 @@ export default function MainText(object) {
 
 
             <hr></hr>
-            <h3 ref={otherRef}>{info.title2}</h3>
+            <h3 ref={object.otherRef}>{info.title2}</h3>
             {info.SectionTwoP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionTwoP1}</p>)}
@@ -132,7 +114,7 @@ export default function MainText(object) {
 
             <hr></hr>
 
-            <h3 ref={lastRef}>{info.title3}</h3>
+            <h3 ref={object.lastRef}>{info.title3}</h3>
             {info.SectionThreeP1 === "null" ? (
                <div></div>
             ) : (<p>{info.SectionThreeP1}</p>)}
