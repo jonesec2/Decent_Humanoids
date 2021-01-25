@@ -82,9 +82,9 @@ export default function Wiki(props) {
    }
 
    return (
-      <div>
+      <div ref={myRef} >
          <Navbar />
-         <div ref={myRef} className="noMatch">
+         <div  className="noMatch">
             <div className="example">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>Top</p>
                <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>Section 1</p>
