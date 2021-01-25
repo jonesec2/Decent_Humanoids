@@ -48,6 +48,7 @@ export default function Wiki(props) {
 
    useEffect(() => {
       newResult()
+      myRef.current.scrollIntoView();
    }, [object])
 
 
@@ -93,9 +94,9 @@ export default function Wiki(props) {
             </div>
             <div className="example2">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
-               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>S1</p>
-               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>S2</p>
-               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>S3</p>
+               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>1</p>
+               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>2</p>
+               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>3</p>
             </div>
             {object ? (
                <Wrapper>

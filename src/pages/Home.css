@@ -438,7 +438,7 @@ a.lightbox-close:after {
 }
 
 .example {
-   background-color: rgb(248, 249, 250) !important;
+   background-color: rgb(176, 220, 231) !important;
    display: none !important;
    position: fixed;
    margin-top: 5rem;
@@ -450,12 +450,12 @@ a.lightbox-close:after {
    border-radius: 0.5rem;
    border-width: 0.3rem;
    border-color: rgb(201,231,239);
-   border-style: ridge;
+   border-style: solid;
    line-height: 0.5rem;
 }
 
 .example2 {
-   background-color: rgb(248, 249, 250) !important;
+   background-color: rgb(176, 220, 231) !important;
    display: block !important;
    position: fixed;
    margin-top: 5rem;
@@ -466,7 +466,7 @@ a.lightbox-close:after {
    margin-bottom: 1rem !important;
    border: black;
    border-radius: 0.5rem;
-   border-width: 0.01rem;
+   border-width: 0.15rem;
    border-color: rgb(201,231,239);
    border-style: ridge;
 }
