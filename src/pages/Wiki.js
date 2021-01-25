@@ -32,7 +32,6 @@ export default function Wiki(props) {
    const [search] = useState(key)
 
    let myRef = useRef();
-   console.log(myRef)
    let secondRef = useRef();
    let otherRef = useRef();
    let lastRef = useRef();
@@ -60,29 +59,22 @@ export default function Wiki(props) {
    }
 
    const sideBarScroll = (e) => {
-      console.log(e)
       if (e === "topSection") {
          myRef.current.scrollIntoView();
-         console.log("top");
       }
       else if (e === "firstSection") {
          secondRef.current.scrollIntoView();
-         console.log("first");
       }
       else if (e === "secondSection") {
          otherRef.current.scrollIntoView();
-         console.log("second");
       }
       else if (e === "thirdSection") {
          lastRef.current.scrollIntoView();
-         console.log("third");
       }
       else {
          return;
       }
    }
-
-   console.log(object.title1.charAt(0).toUpperCase())
 
    return (
       <div ref={myRef} >
@@ -98,7 +90,7 @@ export default function Wiki(props) {
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
                <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>°</p>
                <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>°°</p>
-               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
+               <p className="thirdSection" id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
             </div>
             {object ? (
                <Wrapper>

@@ -498,7 +498,7 @@ a.lightbox-close:after {
    }
 }
 
-#thirdSection {
+.thirdSection {
    /* display: inline; */
    /* transition: all .9s; */
    -moz-transform: scale(-1, -1);
