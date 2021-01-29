@@ -15,6 +15,8 @@ import pageKey from "../utils/test.json";
 import key from "../utils/key.json";
 import Title from "../components/Title";
 import MainText from "../components/MainText";
+import d61 from "../images/d6_1.jpg";
+import d62 from "../images/d6_2.jpg";
 import Search from "../components/Search";
 import dagger from "../images/Daggerofmanydaggers.jpg"
 
@@ -27,6 +29,8 @@ export default function Wiki(props) {
    // console.log(dagger);
    // console.log(yubnub);
    // console.log(normalizedHistory);
+   // console.log(d61);
+   // console.log(d62);
 
 
    const [search] = useState(key)
@@ -35,6 +39,22 @@ export default function Wiki(props) {
    let secondRef = useRef();
    let otherRef = useRef();
    let lastRef = useRef();
+
+   const [lastScroll, setLastScroll] = useState(0);
+   const [scrollY, setScrollY] = useState(0)
+
+   function testScroll() {
+      // console.log(e)
+      setScrollY(window.scrollY)
+      console.log(scrollY)
+      console.log(window.scrollY)
+      if (window.pageYOffset > 10) {
+         console.log('scrolled');
+      }
+      console.log(secondRef)
+   }
+
+
    // console.log(props)
    const [object, setObject] = useState(
       typeof props.location.state === 'undefined'
@@ -48,7 +68,9 @@ export default function Wiki(props) {
    useEffect(() => {
       newResult()
       myRef.current.scrollIntoView();
-   }, [object])
+      testScroll()
+      console.log(window.scrollY)
+   }, [object],[scrollY])
 
 
    // console.log(search)
@@ -77,14 +99,14 @@ export default function Wiki(props) {
    }
 
    return (
-      <div ref={myRef} >
+      <div ref={myRef} onScroll={testScroll} >
          <Navbar />
          <div  className="noMatch">
             <div className="example">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>Top</p>
-               <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>Section 1</p>
-               <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>Section 2</p>
-               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>Section 3</p>
+               <img id="firstSection" onClick={e => sideBarScroll(e.target.id)} className="d6" width="36px" height="36px" src={d61} />
+               <p><img id="secondSection" onClick={e => sideBarScroll(e.target.id)} className="d6" width="36px" height="36px" src={d62}/></p>
+               <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>Bot</p>
             </div>
             <div className="example2">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
@@ -94,8 +116,6 @@ export default function Wiki(props) {
             </div>
             {object ? (
                <Wrapper>
-
-
                   {/* <Search /> */}
 
                   <Title title={object.title} />
