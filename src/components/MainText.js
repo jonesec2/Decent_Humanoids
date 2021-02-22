@@ -1,16 +1,27 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Link, useHistory, Route } from "react-router-dom";
 // import test from "../utils/test.json";
 // import picture from "../images/eb_dh1.jpg"
 // import testPic from "./images/eb_dh1.jpg"
-import Modal from "../components/Modal"
+import Modal from "../components/Modal";
+
 
 /* Will have to attach json objects dynamically here, still not sure how  */
 
 
 export default function MainText(object) {
 
-   console.log()
    const [show, setShow] = useState('false')
+   // const [path, setPath] = useState(window.location.pathname);
+
+   // console.log(headerBackground)
+   // console.log(path)
+
+   // useEffect(() => {
+   //    setPath(window.location.pathname);
+   //    console.log(path + "test")
+   // }, [path]);
+
 
    const showModal = e => {
       if (show === 'false') {
@@ -25,7 +36,11 @@ export default function MainText(object) {
    // console.log(object);
    // {object.mainImage}
    const info = object.object
-   // console.log(object.object)
+
+   console.log(object.object)
+   console.log(info.subtitle1)
+
+   let history = useHistory();
 
    return (
       <div className="container text-center mx-auto my-3">
@@ -86,10 +101,22 @@ export default function MainText(object) {
                (<div></div>)
                :
                (
+                  <div>
+                     {info.subtitle1.map((search, i) => (
+                        <p className="col-2" key={i}>
+                           <Link className="border-right border-left align-middle"
+                              to={{
+                                 pathname: "/wiki",
+                                 state: search.pageNumber,
+                              }} onClick={() => window.location.reload()}
 
-                  <p>{info.subtitle1}</p>
-
-
+                           > {search.page} </Link>
+                        </p>
+                        
+                     ))}
+                     <Route exact path={"/wiki"}/>
+                  </div>
+                  
                )
             }
 

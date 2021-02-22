@@ -4,7 +4,7 @@ import key from "../utils/key.json";
 // import LandingPage from "../pages/LandingPage";
 // import Home from "../pages/Home";
 // import NoMatch from "../pages/NoMatch";
-import Results from "../components/Results";
+// import Results from "../components/Results";
 
 function Navbar() {
 

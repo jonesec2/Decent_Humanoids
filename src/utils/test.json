@@ -12,7 +12,32 @@
       "title1": "The Decent Humanoids",
       "title2": "Supporting Characters",
       "title3": "Stick Em With the Pointy End",
-      "subtitle1": "t",
+      "subtitle1": [
+         {
+            "page": "Baelok",
+            "pageNumber": 5
+         },
+         {
+            "page": "Anak",
+            "pageNumber": 5
+         },
+         {
+            "page": "Dungeon Master",
+            "pageNumber": 5
+         },
+         {
+            "page": "Maeve",
+            "pageNumber": 3
+         },
+         {
+            "page": "Xalys",
+            "pageNumber": 5
+         },
+         {
+            "page": "Viz",
+            "pageNumber": 5
+         }
+      ],
       "subtitle2": "null",
       "subtitle3": "null",
       "SectionOneP1": "Why not start by looking up one of our main cast members?",
