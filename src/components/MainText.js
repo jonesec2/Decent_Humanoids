@@ -12,15 +12,6 @@ import Modal from "../components/Modal";
 export default function MainText(object) {
 
    const [show, setShow] = useState('false')
-   // const [path, setPath] = useState(window.location.pathname);
-
-   // console.log(headerBackground)
-   // console.log(path)
-
-   // useEffect(() => {
-   //    setPath(window.location.pathname);
-   //    console.log(path + "test")
-   // }, [path]);
 
 
    const showModal = e => {
@@ -101,10 +92,10 @@ export default function MainText(object) {
                (<div></div>)
                :
                (
-                  <div>
+                  <div className="row mx-auto subtitle">
                      {info.subtitle1.map((search, i) => (
-                        <p className="col-2" key={i}>
-                           <Link className="border-right border-left align-middle"
+                        <p  key={i}>
+                           <Link className="col-2 border-right border-left align-middle"
                               to={{
                                  pathname: "/wiki",
                                  state: search.pageNumber,

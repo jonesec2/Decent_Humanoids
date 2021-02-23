@@ -5,11 +5,11 @@ import Navbar from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import test from "../utils/test.json";
 import Footer from "../components/Footer";
-import testPic from "../images/dh_groupA.jpg";
-import iphirea from "../images/IphiriaClose.png";
-import maevePic from "../images/dh_Maeve_1.jpg";
-import groupPic from "../images/eb_dh1.jpg";
-import yubnub from "../images/yubnub.jpg";
+// import testPic from "../images/dh_groupA.jpg";
+// import iphirea from "../images/IphiriaClose.png";
+// import maevePic from "../images/dh_Maeve_1.jpg";
+// import groupPic from "../images/eb_dh1.jpg";
+// import yubnub from "../images/yubnub.jpg";
 import normalizedHistory from "../images/DH_History_Normalized_Size.png"
 import pageKey from "../utils/test.json";
 import key from "../utils/key.json";

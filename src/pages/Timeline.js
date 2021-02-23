@@ -7,6 +7,7 @@ import Results from "../components/Results";
 import HistoryTest from "../images/dh_history_test.png";
 import HistoryTest2 from "../images/dh_history_test2.png";
 import normalizedHistory from "../images/DH_History_Normalized_Size.png"
+import MainTime from "../components/MainTime";
 
 export default function Timeline() {
 
@@ -24,6 +25,7 @@ export default function Timeline() {
                      <img className="timelineImage" src={normalizedHistory} />
                   </div>
 
+                  <MainTime/>
                   {/* <h2>Restart the adventure</h2>
                   <p>I'll try my best to get you what you're looking for. If I can't I'll try to get you as close as possible.</p>
                   <hr></hr>
