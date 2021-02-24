@@ -173,36 +173,22 @@
    max-width: 6000%;
    min-width: 5000px;
    max-height: 200px;
+   /* position:fixed; */
+   display:flex;
 }
 
-.horizontal {
-   position:absolute;
-   display:block;
-   /* top:0; */
-   /* left:0; */
-   /* width:80px; */
-   /* max-height:500px; */
-   margin:0;
-   /* background:#abc; */
-   /* overflow-y:auto; */
-   /* overflow-x:hidden; */
-   /* transform:rotate(-90deg) translateY(-80px); */
-   /* transform-origin:right top; */
+.timelineContainer {
+   position: relative;
+   
 }
 
-.horizontal > div{
-   display:block;
-   /* padding:5px; */
-   /* background:#cab; */
-   /* transform:rotate(90deg); */
-   transform-origin: right top;
- }
 
 .topBlurb {
    min-width: 200px;
    max-width: 400px;
    max-height: 100%;
    min-height: 50px;
+   margin-left: 100px;
    background: white;
    text-align: center;
    border-radius: 10%;
@@ -220,7 +206,10 @@
    background: rgb(230,230,230);
    text-align: center;
    border-radius: 10%;
-   padding: 1rem
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-right: 0.5rem;
+   padding-left: 0.5rem;
    /* overflow: hidden; */
 }
 
@@ -235,10 +224,11 @@
 }
 
 .line {
-   width: 100%;
+   width: 120%;
    height: 4px;
    background: rgb(29,97,164);
    /* margin-left: 83px; */
+   /* position: fixed; */
    z-index: 2;
    margin-bottom: -14.5px;
 }

@@ -1,33 +1,61 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+
+import timeline from "../utils/timeline.json"
 
 
 export default function MainTime() {
 
+   const info = timeline
+   console.log(info);
+
    return (
       <div className="timeline">
          <div className=" timelineText ">
-            {/* <div className="horizontal"> */}
-               <div className="topBlurb">Viz pays 20 gold for information and then pays doubles for no real reason.</div>
-               <div className="mainInfo">
-                  <h3>The Lost Crystal</h3>
-                  <p>
-                     Our heroes first meet at the Righteous Fist office, signing on to do a job for a wizard named Atrix.
-                  <br />
-                     <br />Gather information and infiltrated Thieves Guild hideout.
-                  <br />
-                     <br />They find a temple to Selune and escape a trap.
-                  <br />
-                     <br />The group completely destroy two guards and bury them in a shallow grave. Baelok curb-stomped a guy
-                  <br />
-                     <br />Reclaimed the crystal from the thief.
-                  </p>
+            {info.map((search, i) => (
+               <div className="timelineContainer mx-3" key={i}>
+                  {search.topBlurb === "null" ?
+                     (<div></div>)
+                     :
+                     (<div className="topBlurb">{search.topBlurb}</div>)
+                  }
+
+                  <div className="mainInfo">
+                     <h3>{search.title}</h3>
+                     <p>
+                        {search.mainInfo[0].info1}
+                        <br />
+                        <br />{search.mainInfo[0].info2}
+                        <br />
+                        <br />{search.mainInfo[0].info3}
+                        <br />
+                        {search.mainInfo[0].info4 === "null" ?
+                           (<div></div>)
+                           :
+                           (<div><br />{search.mainInfo[0].info4}
+                              <br /></div>)
+                        }
+
+                        {search.mainInfo[0].info5 === "null" ?
+                           (<div></div>)
+                           :
+                           (<div><br />{search.mainInfo[0].info5}
+                              <br /></div>)
+                        }
+
+                        {search.mainInfo[0].info6 === "null" ?
+                           (<div></div>)
+                           :
+                           (<div><br />{search.mainInfo[0].info6}
+                              <br /></div>)
+                        }
+                     </p>
+                  </div>
+                  <div className="line"></div>
+                  <div className="dot"></div>
+                  <div className="sessionNumber">{search.sessionNumber}</div>
+                  <div className="days">{search.days}</div>
                </div>
-               <div className="line"></div>
-               <div className="dot"></div>
-               <div className="sessionNumber">Session 1</div>
-               <div className="days">Day 1</div>
-            {/* </div> */}
+            ))}
          </div>
       </div>
    )
