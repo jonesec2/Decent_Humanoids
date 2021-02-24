@@ -1,34 +1,32 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.2b3d774e.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.0cee4e82.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.0cee4e82.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.719d9eec.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.7e5efba7.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.7e5efba7.chunk.js.map",
     "runtime-main.js": "/decent_humanoids/static/js/runtime-main.0243996a.js",
     "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.0243996a.js.map",
-    "static/js/2.0836925d.chunk.js": "/decent_humanoids/static/js/2.0836925d.chunk.js",
-    "static/js/2.0836925d.chunk.js.map": "/decent_humanoids/static/js/2.0836925d.chunk.js.map",
+    "static/js/2.ea303012.chunk.js": "/decent_humanoids/static/js/2.ea303012.chunk.js",
+    "static/js/2.ea303012.chunk.js.map": "/decent_humanoids/static/js/2.ea303012.chunk.js.map",
     "static/js/3.7407b067.chunk.js": "/decent_humanoids/static/js/3.7407b067.chunk.js",
     "static/js/3.7407b067.chunk.js.map": "/decent_humanoids/static/js/3.7407b067.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.2b3d774e.chunk.css.map": "/decent_humanoids/static/css/main.2b3d774e.chunk.css.map",
-    "static/js/2.0836925d.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.0836925d.chunk.js.LICENSE.txt",
+    "static/css/main.719d9eec.chunk.css.map": "/decent_humanoids/static/css/main.719d9eec.chunk.css.map",
+    "static/js/2.ea303012.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.ea303012.chunk.js.LICENSE.txt",
     "static/media/DH_History_Normalized_Size.340cdf5d.png": "/decent_humanoids/static/media/DH_History_Normalized_Size.340cdf5d.png",
     "static/media/Daggerofmanydaggers.e7f84d99.jpg": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
     "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
     "static/media/Home.css": "/decent_humanoids/static/media/dh_DM_mobile2.4c254c46.jpg",
     "static/media/dh_Maeve_1.664b3f4a.jpg": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
-    "static/media/dh_groupA.8d211e6f.jpg": "/decent_humanoids/static/media/dh_groupA.8d211e6f.jpg",
     "static/media/dh_history_test.f6e84944.png": "/decent_humanoids/static/media/dh_history_test.f6e84944.png",
     "static/media/dh_history_test2.73c82c08.png": "/decent_humanoids/static/media/dh_history_test2.73c82c08.png",
-    "static/media/eb_dh1.b235a8ce.jpg": "/decent_humanoids/static/media/eb_dh1.b235a8ce.jpg",
     "static/media/favicon.60b3617a.ico": "/decent_humanoids/static/media/favicon.60b3617a.ico",
     "static/media/App.css": "/decent_humanoids/static/media/iphiria_map.915f8f12.jpg",
     "static/media/logo.103b5fa1.svg": "/decent_humanoids/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0243996a.js",
-    "static/js/2.0836925d.chunk.js",
-    "static/css/main.2b3d774e.chunk.css",
-    "static/js/main.0cee4e82.chunk.js"
+    "static/js/2.ea303012.chunk.js",
+    "static/css/main.719d9eec.chunk.css",
+    "static/js/main.7e5efba7.chunk.js"
   ]
 }
