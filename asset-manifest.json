@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.719d9eec.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.7e5efba7.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.7e5efba7.chunk.js.map",
-    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.0243996a.js",
-    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.0243996a.js.map",
-    "static/js/2.ea303012.chunk.js": "/decent_humanoids/static/js/2.ea303012.chunk.js",
-    "static/js/2.ea303012.chunk.js.map": "/decent_humanoids/static/js/2.ea303012.chunk.js.map",
-    "static/js/3.7407b067.chunk.js": "/decent_humanoids/static/js/3.7407b067.chunk.js",
-    "static/js/3.7407b067.chunk.js.map": "/decent_humanoids/static/js/3.7407b067.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.bd89e8ae.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.c04fcecc.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.c04fcecc.chunk.js.map",
+    "runtime-main.js": "/decent_humanoids/static/js/runtime-main.ca7d6680.js",
+    "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.ca7d6680.js.map",
+    "static/js/2.6273386e.chunk.js": "/decent_humanoids/static/js/2.6273386e.chunk.js",
+    "static/js/2.6273386e.chunk.js.map": "/decent_humanoids/static/js/2.6273386e.chunk.js.map",
+    "static/js/3.341f84ae.chunk.js": "/decent_humanoids/static/js/3.341f84ae.chunk.js",
+    "static/js/3.341f84ae.chunk.js.map": "/decent_humanoids/static/js/3.341f84ae.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.719d9eec.chunk.css.map": "/decent_humanoids/static/css/main.719d9eec.chunk.css.map",
-    "static/js/2.ea303012.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.ea303012.chunk.js.LICENSE.txt",
+    "static/css/main.bd89e8ae.chunk.css.map": "/decent_humanoids/static/css/main.bd89e8ae.chunk.css.map",
+    "static/js/2.6273386e.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.6273386e.chunk.js.LICENSE.txt",
     "static/media/DH_History_Normalized_Size.340cdf5d.png": "/decent_humanoids/static/media/DH_History_Normalized_Size.340cdf5d.png",
     "static/media/Daggerofmanydaggers.e7f84d99.jpg": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
     "static/media/IphiriaClose.ac895cc6.png": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
@@ -24,9 +24,9 @@
     "static/media/logo.103b5fa1.svg": "/decent_humanoids/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0243996a.js",
-    "static/js/2.ea303012.chunk.js",
-    "static/css/main.719d9eec.chunk.css",
-    "static/js/main.7e5efba7.chunk.js"
+    "static/js/runtime-main.ca7d6680.js",
+    "static/js/2.6273386e.chunk.js",
+    "static/css/main.bd89e8ae.chunk.css",
+    "static/js/main.c04fcecc.chunk.js"
   ]
 }
