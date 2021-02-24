@@ -22,7 +22,7 @@
          {
             "info1": "Inkle gives you a top priority Righteous Fist contract for the City of Caer.",
             "info2": "The group befriends a direwolf pup named Shar. Shar helps them track down the rabid beasts",
-            "info3": "he group fights monster frogs and find black crystals inside of them. Shar leads you to the source of the black crystals.",
+            "info3": "The group fights monster frogs and find black crystals inside of them. Shar leads you to the source of the black crystals.",
             "info4": "null",
             "info5": "null",
             "info6": "null"
@@ -30,5 +30,53 @@
       ],
       "sessionNumber": "Session 2",
       "days": "Days 2 - 3"
+   },
+   {
+      "topBlurb": "null",
+      "title": "Ginturo's Hut",
+      "mainInfo": [
+         {
+            "info1": "Discover Ginturo's lab in his underground cavern. The group find an Orb of Chaos being used to create black crystals.",
+            "info2": "Ginturo is working with someone with the initials \"A\" \"S\"",
+            "info3": "Ginturo hints at Anak's abyssal nature.",
+            "info4": "The group fight and defeat Ginturo.",
+            "info5": "null",
+            "info6": "null"
+         }
+      ],
+      "sessionNumber": "Session 3",
+      "days": "Days 3 - 4"
+   },
+   {
+      "topBlurb": "Sara almost cried in real life when Rai said that she loved Maeve's dad. The rp was that good",
+      "title": "Chancellors and Chumps",
+      "mainInfo": [
+         {
+            "info1": "Inkle pays group, and they attend a rally in their honor, meeting Chancellor Gneaus.",
+            "info2": "At Gneaus Manor, he offers another contract to root out the Thieves Guild.",
+            "info3": "The group is trailed by a young thief named Sparrow. Rai visits them in the night to explain the Thieves Guild perspective",
+            "info4": "Rai, with Maeve's help, convince the group to break Rhys out of jail.",
+            "info5": "null",
+            "info6": "null"
+         }
+      ],
+      "sessionNumber": "Session 4",
+      "days": "Days 4 - 5"
+   },
+   {
+      "topBlurb": "Seemed pretty clear to me that the goal was to incapacitate, but this was the first sign of Anak's itchy trigger finger.",
+      "title": "Distraction at the Docks",
+      "mainInfo": [
+         {
+            "info1": "A + B + V blow up the warehouse to create a distraction.",
+            "info2": "Anak kills a guy. Baelok finds clues about Baefalls. Viz wild shapes and steals emeralds from Chancellor Gneaus.",
+            "info3": "Xalys, Maeve, Rai and the Changeling break out Maeve's dad and escape through the sewers.",
+            "info4": "Pursued by guards, and attacked by a Gibbering Mouther, the group find themselves stuck between an iron grate and the law.",
+            "info5": "null",
+            "info6": "null"
+         }
+      ],
+      "sessionNumber": "Session 5",
+      "days": "Days 5 - 6"
    }
 ]
