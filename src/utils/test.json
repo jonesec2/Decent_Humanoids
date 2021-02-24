@@ -38,8 +38,34 @@
             "pageNumber": 5
          }
       ],
-      "subtitle2": "null",
-      "subtitle3": "null",
+      "subtitle2":[
+         {
+            "page": "Xarius Xadysa",
+            "pageNumber": 5
+         },
+         {
+            "page": "Atrix",
+            "pageNumber": 5
+         },
+         {
+            "page": "Phazra Harquinn",
+            "pageNumber": 5
+         }
+      ],
+      "subtitle3": [
+         {
+            "page": "Dagger of Many Daggers",
+            "pageNumber": 4
+         },
+         {
+            "page": "Orranorra's Breeze",
+            "pageNumber": 5
+         },
+         {
+            "page": "Aegis Hammer",
+            "pageNumber": 5
+         }
+      ],
       "SectionOneP1": "Why not start by looking up one of our main cast members?",
       "SectionOneP2": "null",
       "SectionOneP3": "null",

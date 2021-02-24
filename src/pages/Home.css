@@ -159,6 +159,10 @@
 
 .timeline {
    overflow: auto;
+   align-content: center !important;
+   min-height: 600px;
+   display: block !important;
+   margin: 0;
 }
 
 .timelineImage {
@@ -171,14 +175,47 @@
    max-height: 200px;
 }
 
+.horizontal {
+   position:absolute;
+   display:block;
+   /* top:0; */
+   /* left:0; */
+   /* width:80px; */
+   /* max-height:500px; */
+   margin:0;
+   /* background:#abc; */
+   /* overflow-y:auto; */
+   /* overflow-x:hidden; */
+   /* transform:rotate(-90deg) translateY(-80px); */
+   /* transform-origin:right top; */
+}
+
+.horizontal > div{
+   display:block;
+   /* padding:5px; */
+   /* background:#cab; */
+   /* transform:rotate(90deg); */
+   transform-origin: right top;
+ }
+
 .topBlurb {
-   overflow: hidden;
+   min-width: 200px;
+   max-width: 400px;
+   max-height: 100%;
+   min-height: 50px;
+   background: white;
+   text-align: center;
+   border-radius: 10%;
+   border: black;
+   border: solid;
+   border-width: 0.05rem;
+   padding: 0.5rem;
+   font-style: italic;
 }
 
 .mainInfo {
    margin-bottom: 1.5rem;
    max-width: 600px;
-   max-height: 100%;
    min-height: 300px;
    background: rgb(230,230,230);
    text-align: center;

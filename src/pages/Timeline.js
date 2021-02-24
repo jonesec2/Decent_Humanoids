@@ -21,9 +21,9 @@ export default function Timeline() {
                <div className="minHome">
                   <h1 className="text-left">The Decent Humanoids Campaign Timeline</h1>
                   <hr />
-                  <div className="timeline">
+                  {/* <div className="timeline">
                      <img className="timelineImage" src={normalizedHistory} />
-                  </div>
+                  </div> */}
 
                   <MainTime/>
                   {/* <h2>Restart the adventure</h2>
