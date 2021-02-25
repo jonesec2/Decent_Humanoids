@@ -87,30 +87,6 @@ export default function MainText(object) {
             <hr></hr>
             <h3 ref={object.secondRef}>{info.title1}</h3>
 
-            {/* Section one Links */}
-            {info.subtitle1 === "null" ?
-               (<div></div>)
-               :
-               (
-                  <div className="row mx-auto subtitle align-middle">Related Entries:
-                     {info.subtitle1.map((search, i) => (
-                        <p key={i}>
-                           <Link className="col-2 border-right  align-middle"
-                              to={{
-                                 pathname: "/wiki",
-                                 state: search.pageNumber,
-                              }} onClick={() => window.location.reload()}
-
-                           > {search.page} </Link>
-                        </p>
-
-                     ))}
-                     <Route exact path={"/wiki"} />
-                  </div>
-               )
-            }
-            {/*  */}
-
             {/* Section 1 paragraphs */}
             {info.SectionOneP1 === "null" ?
                (<div></div>)
@@ -142,18 +118,13 @@ export default function MainText(object) {
                (<p>{info.SectionOneP5}</p>)
             }
 
-
-
-            <hr></hr>
-            <h3 ref={object.otherRef}>{info.title2}</h3>
-
             {/* Section one Links */}
-            {info.subtitle2 === "null" ?
+            {info.subtitle1 === "null" ?
                (<div></div>)
                :
                (
                   <div className="row mx-auto subtitle align-middle">Related Entries:
-                     {info.subtitle2.map((search, i) => (
+                     {info.subtitle1.map((search, i) => (
                         <p key={i}>
                            <Link className="col-2 border-right  align-middle"
                               to={{
@@ -170,6 +141,10 @@ export default function MainText(object) {
                )
             }
             {/*  */}
+
+
+            <hr></hr>
+            <h3 ref={object.otherRef}>{info.title2}</h3>
 
             {info.SectionTwoP1 === "null" ?
                (<div></div>)
@@ -200,19 +175,13 @@ export default function MainText(object) {
                (<p>{info.SectionTwoP5}</p>)
             }
 
-
-
-            <hr></hr>
-
-            <h3 ref={object.lastRef}>{info.title3}</h3>
-
             {/* Section one Links */}
-            {info.subtitle3 === "null" ?
+            {info.subtitle2 === "null" ?
                (<div></div>)
                :
                (
                   <div className="row mx-auto subtitle align-middle">Related Entries:
-                     {info.subtitle3.map((search, i) => (
+                     {info.subtitle2.map((search, i) => (
                         <p key={i}>
                            <Link className="col-2 border-right  align-middle"
                               to={{
@@ -229,6 +198,12 @@ export default function MainText(object) {
                )
             }
             {/*  */}
+
+
+            <hr></hr>
+
+            <h3 ref={object.lastRef}>{info.title3}</h3>
+
 
             {info.SectionThreeP1 === "null" ?
                (<div></div>)
@@ -258,6 +233,30 @@ export default function MainText(object) {
                :
                (<p>{info.SectionThreeP5}</p>)
             }
+
+            {/* Section one Links */}
+            {info.subtitle3 === "null" ?
+               (<div></div>)
+               :
+               (
+                  <div className="row mx-auto subtitle align-middle">Related Entries:
+                     {info.subtitle3.map((search, i) => (
+                        <p key={i}>
+                           <Link className="col-2 border-right  align-middle"
+                              to={{
+                                 pathname: "/wiki",
+                                 state: search.pageNumber,
+                              }} onClick={() => window.location.reload()}
+
+                           > {search.page} </Link>
+                        </p>
+
+                     ))}
+                     <Route exact path={"/wiki"} />
+                  </div>
+               )
+            }
+            {/*  */}
 
          </div>
       </div>
