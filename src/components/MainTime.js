@@ -13,15 +13,16 @@ export default function MainTime() {
          <div className=" timelineText ">
             {info.map((search, i) => (
                <div className="timelineContainer mx-3" key={i}>
+                  
                   {search.topBlurb === "null" ?
-                     (<div></div>)
+                     (<div className="noBlurb"></div>)
                      :
-                     (<div className="topBlurb">{search.topBlurb}</div>)
+                     (<div className="topBlurb mx-auto">{search.topBlurb}</div>)
                   }
 
                   <div className="mainInfo">
-                     <h3>{search.title}</h3>
-                     <p>
+                     <h3 className="mainChild">{search.title}</h3>
+                     <p className="mainChild">
                         {search.mainInfo[0].info1}
                         <br />
                         <br />{search.mainInfo[0].info2}

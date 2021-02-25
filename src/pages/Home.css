@@ -173,22 +173,28 @@
    max-width: 6000%;
    min-width: 5000px;
    max-height: 200px;
-   /* position:fixed; */
-   display:flex;
+   position:relative;
+   display: flex;
 }
 
 .timelineContainer {
    position: relative;
-   
+   /* bottom: -600px; */
+   bottom: 0;
+   margin: 0 auto;
+}
+
+.noBlurb {
+   height: 66px;
 }
 
 
 .topBlurb {
    min-width: 200px;
-   max-width: 400px;
+   max-width: 480px;
    max-height: 100%;
    min-height: 50px;
-   margin-left: 100px;
+   margin: auto;
    background: white;
    text-align: center;
    border-radius: 10%;
@@ -197,12 +203,14 @@
    border-width: 0.05rem;
    padding: 0.5rem;
    font-style: italic;
+   align-items: center;
 }
 
 .mainInfo {
    margin-bottom: 1.5rem;
    max-width: 600px;
    min-height: 300px;
+   max-height: 350px;
    background: rgb(230,230,230);
    text-align: center;
    border-radius: 10%;
@@ -210,7 +218,23 @@
    padding-bottom: 1rem;
    padding-right: 0.5rem;
    padding-left: 0.5rem;
-   /* overflow: hidden; */
+   position: relative;
+   bottom: 0;
+}
+
+.mainChild {
+   position: relative;
+}
+
+.line {
+   width: 120%;
+   height: 4px;
+   background: rgb(29,97,164);
+   z-index: 2;
+   position: absolute;
+   margin: auto;
+   bottom: 0;
+   margin-bottom: -15.8rem;
 }
 
 .dot {
@@ -218,31 +242,26 @@
    height: 25px;
    background: rgb(97,186,255);
    border-radius: 50%;
-   margin-left: 287.5px;
-   z-index: 1;
-   /* margin-top: -10px; */
+   z-index: 4;
+   align-items: center;
+   margin-left: 47.9%;
+   position: absolute;
+   bottom: 0;
+   margin-bottom: -16.5rem;
 }
 
-.line {
-   width: 120%;
-   height: 4px;
-   background: rgb(29,97,164);
-   /* margin-left: 83px; */
-   /* position: fixed; */
-   z-index: 2;
-   margin-bottom: -14.5px;
-}
 
 .sessionNumber {
    background: rgb(0,117,232);
-   display: inline-block;
    height: 25px;
-   margin-left: 225px;
-   margin-top: 40px;
-   position: relative;
+   margin-left: 37.5%;
+   position: absolute;
    width: 150px;
    color: white;
    text-align: center;
+   align-items: center;
+   bottom: 0;
+   margin-bottom: -21rem;
 }
 
 .sessionNumber:before {
@@ -252,6 +271,7 @@
    content: "";
    height: 0;
    left: 0;
+   margin: auto;
    position: absolute;
    top: -30px;
    width: 0;
@@ -261,12 +281,129 @@
    width: 150px;
    height: 30px;
    background: white;
-   margin-left: 225px;
+   margin-left: 37.5%;
    color: black;
    text-align: center;
    border: black;
    border: solid;
    border-width: 0.05rem;
+   position: absolute;
+   bottom: -22.8rem;
+}
+
+@media (max-width: 767px) {
+
+   .timelineContainer {
+      position: relative;
+      /* bottom: -600px; */
+      width: 440px;
+      bottom: 0;
+      margin: 0 auto;
+      font-size: 0.95rem;
+   }
+
+   h3 {
+      font-size: 1.6rem;
+   }
+
+   .noBlurb {
+      height: 48px;
+   }
+   
+   .topBlurb {
+      min-width: 200px;
+      max-width: 400px;
+      max-height: 48px;
+      min-height: 48px;
+      padding: 0.4rem;
+      font-size: 0.85rem;
+   
+   }
+   
+   .mainInfo {
+      min-height: 280px;
+      max-height: 400px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+   }
+
+   .dot {
+      margin-left: 47.5%;
+      margin-bottom: -17.5rem;
+   }
+
+   .line {
+      margin-bottom: -16.8rem;
+   }
+
+   .sessionNumber {
+      margin-left: 33%;
+      margin-bottom: -22rem;
+   }
+
+   .days {
+      margin-left: 33%;
+      bottom: -23.8rem;
+   }
+   
+}
+
+@media (max-width: 543px) {
+
+   .timelineContainer {
+      position: relative;
+      /* bottom: -600px; */
+      width: 340px;
+      bottom: 0;
+      margin-left: 8px!important;
+      margin-right: 8px!important;
+      font-size: 0.9rem;
+   }
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   .noBlurb {
+      height: 44px;
+   }
+   
+   .topBlurb {
+      min-width: 200px;
+      max-width: 340px;
+      max-height: 44px;
+      min-height: 44px;
+      padding: 0.4rem;
+      font-size: 0.7rem;
+   
+   }
+   
+   .mainInfo {
+      min-height: 280px;
+      max-height: 400px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+   }
+
+   .dot {
+      margin-left: 46.3%;
+      margin-bottom: -17.5rem;
+   }
+
+   .line {
+      margin-bottom: -16.8rem;
+   }
+
+   .sessionNumber {
+      margin-left: 27.9%;
+      margin-bottom: -22rem;
+   }
+
+   .days {
+      margin-left: 27.9%;
+      bottom: -23.8rem;
+   }
+   
 }
 
 #base {
@@ -481,6 +618,12 @@ a.lightbox-close:after {
 
 .minHome {
    min-height: 400px;
+}
+
+@media (max-width: 420px) {
+   .mobileHeading {
+      font-size: 2rem;
+   }
 }
 
 .noMatch {
