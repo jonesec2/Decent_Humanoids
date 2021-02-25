@@ -30,7 +30,7 @@ export default function Timeline() {
                   <p>I'll try my best to get you what you're looking for. If I can't I'll try to get you as close as possible.</p>
                   <hr></hr>
                   <Results search={search} /> */}
-                  <hr></hr>
+                  <hr className="hrTime"></hr>
                   <div className="row">
                      <p className="col-2">Controls</p>
                      <button className="col-2">Test</button>
