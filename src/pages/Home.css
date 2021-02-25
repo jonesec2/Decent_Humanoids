@@ -428,11 +428,11 @@
       bottom: 0;
       margin-left: 6px!important;
       margin-right: 6px!important;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
    }
 
    h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
    }
 
    .noBlurb {
@@ -445,7 +445,7 @@
       max-height: 44px;
       min-height: 44px;
       padding: 0.4rem;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
    
    }
    
