@@ -165,9 +165,6 @@
    margin: 0;
 }
 
-.timelineImage {
-   max-width: 6000%;
-}
 
 .timelineText {
    max-width: 6000%;
@@ -179,7 +176,6 @@
 
 .timelineContainer {
    position: relative;
-   /* bottom: -600px; */
    bottom: 0;
    margin: 0 auto;
 }

@@ -3,16 +3,20 @@ import React, { useState, useEffect, useRef } from "react";
 import timeline from "../utils/timeline.json"
 
 
-export default function MainTime() {
+export default function MainTime(object) {
 
    const info = timeline
-   console.log(info);
+   // console.log(info);
+   // console.log(object);
 
    return (
       <div className="timeline">
          <div className=" timelineText ">
             {info.map((search, i) => (
-               <div className="timelineContainer mx-3" key={i}>
+               <div className="timelineContainer mx-3" ref={object.myRef.current[i]} id={i}npm key={i} 
+               // {...console.log(i)} 
+               // {...console.log(object.myRef)}
+               >
                   
                   {search.topBlurb === "null" ?
                      (<div className="noBlurb"></div>)

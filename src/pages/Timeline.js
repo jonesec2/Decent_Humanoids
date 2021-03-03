@@ -1,43 +1,86 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Wrapper from "../components/Wrapper";
 import Navbar from "../components/Nav";
 import Footer from "../components/Footer";
-import Results from "../components/Results";
+// import Results from "../components/Results";
 // import iphiriaPic from "../images/IphireaLanding.png";
-import HistoryTest from "../images/dh_history_test.png";
-import HistoryTest2 from "../images/dh_history_test2.png";
-import normalizedHistory from "../images/DH_History_Normalized_Size.png"
+// import HistoryTest from "../images/dh_history_test.png";
+// import HistoryTest2 from "../images/dh_history_test2.png";
+// import normalizedHistory from "../images/DH_History_Normalized_Size.png"
 import MainTime from "../components/MainTime";
 
 export default function Timeline() {
 
-   console.log(HistoryTest);
-   // const search = "test"
+   const [i, setI] = useState(0)
+   let myRef = useRef(Array.from({length: 7}, () => React.createRef()));
+
+   useEffect(() => {
+      myRef.current[0].current.focus()
+      goToRef()
+   }, [myRef.current[i]]);
+   // console.log(i);
+
+   function gotToStart() {
+      myRef.current[0].current.scrollIntoView();
+      setI(0)
+   }
+
+   function goToEnd() {
+      myRef.current[6].current.scrollIntoView();
+      setI(6)
+   }
+
+   function nextButton() {
+      console.log(i)
+      if (i >= 6) {
+         return;
+      }
+      else { setI(i+1)}
+      console.log(myRef.current[i].current)
+   }
+
+   function goToRef() {
+      myRef.current[i].current.scrollIntoView();
+   }
+
+   function goToPrevious() {
+      console.log(i)
+      if (i <= 0) {
+         return;
+      }
+      else { setI(i-1)}
+      console.log(myRef.current[i].current)
+   }
+
+   console.log(i);
+   // console.log(myRef);
+   // console.log(myRef.current[0].current)
+
+   // console.log(HistoryTest);
+
    return (
       <div>
          <Navbar />
          <div className="noMatch">
             <Wrapper>
                <div className="minHome">
-                  <h1 className="text-left mobileHeading">Campaign Timeline</h1>
+                  <h1 className="text-left mobileHeading">Campaign Timeline </h1>
                   <hr />
-                  {/* <div className="timeline">
-                     <img className="timelineImage" src={normalizedHistory} />
-                  </div> */}
+                  <MainTime
+                     myRef={myRef}
+                     gotToStart={gotToStart}
+                     goToEnd={goToEnd}
+                     nextButton={nextButton}
+                     goToPrevious={goToPrevious}
 
-                  <MainTime/>
-                  {/* <h2>Restart the adventure</h2>
-                  <p>I'll try my best to get you what you're looking for. If I can't I'll try to get you as close as possible.</p>
-                  <hr></hr>
-                  <Results search={search} /> */}
+                  />
                   <hr className="hrTime"></hr>
                   <div className="row">
                      <p className="col-2">Controls</p>
-                     <button className="col-2">Test</button>
-                     <button className="col-2">Test</button>
-                     <button className="col-2">Test</button>
-                     <button className="col-2">Test</button>
-                     <button className="col-2">Test</button>
+                     <button onClick={gotToStart} className="col-2">Start test</button>
+                     <button onClick={nextButton} className="col-2">Next Test</button>
+                     <button onClick={goToPrevious} className="col-2">Previous Test</button>
+                     <button onClick={goToEnd} className="col-2">End Test</button>
                   </div>
                </div>
             </Wrapper>
