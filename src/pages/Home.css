@@ -507,6 +507,9 @@
    overflow: hidden;
 }
 
+.navButton {
+   padding: 0;
+}
 
 .noMatchImage {
    max-width: 100%;

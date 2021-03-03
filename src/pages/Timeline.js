@@ -15,8 +15,9 @@ export default function Timeline() {
    let myRef = useRef(Array.from({length: 7}, () => React.createRef()));
 
    useEffect(() => {
-      myRef.current[0].current.focus()
-      goToRef()
+      // myRef.current[0].current.focus()
+      goToRef();
+      window.scrollTop(0,0);
    }, [myRef.current[i]]);
    // console.log(i);
 
@@ -77,10 +78,10 @@ export default function Timeline() {
                   <hr className="hrTime"></hr>
                   <div className="row">
                      <p className="col-2">Controls</p>
-                     <button onClick={gotToStart} className="col-2">Start test</button>
-                     <button onClick={nextButton} className="col-2">Next Test</button>
-                     <button onClick={goToPrevious} className="col-2">Previous Test</button>
-                     <button onClick={goToEnd} className="col-2">End Test</button>
+                     <button onClick={gotToStart} className="col-2 navButton">Start</button>
+                     <button onClick={nextButton} className="col-2 navButton">Next</button>
+                     <button onClick={goToPrevious} className="col-2 navButton">Previous</button>
+                     <button onClick={goToEnd} className="col-2 navButton">End</button>
                   </div>
                </div>
             </Wrapper>
