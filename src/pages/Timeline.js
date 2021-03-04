@@ -14,12 +14,15 @@ export default function Timeline() {
    const [i, setI] = useState(0)
    let myRef = useRef(Array.from({length: 7}, () => React.createRef()));
 
+
    useEffect(() => {
       // myRef.current[0].current.focus()
       goToRef();
-      // window.scrollTo(0,0);
    }, [myRef.current[i]]);
    // console.log(i);
+   useEffect(() => {
+      window.scrollTo(0,0);
+   },[]);
 
    function gotToStart() {
       myRef.current[0].current.scrollIntoView();
@@ -78,11 +81,18 @@ export default function Timeline() {
 
                   />
                   <hr className="hrTime"></hr>
-                  <div className="row">
-                     <p className="col-2">Controls</p>
+                  <div className="row desktopControls">
+                     <p className="col-2" >Controls</p>
                      <button onClick={gotToStart} className="col-2 navButton">Start</button>
-                     <button onClick={nextButton} className="col-2 navButton">Next</button>
                      <button onClick={goToPrevious} className="col-2 navButton">Previous</button>
+                     <button onClick={nextButton} className="col-2 navButton">Next</button>
+                     <button onClick={goToEnd} className="col-2 navButton">End</button>
+                  </div>
+                  <div className="row mobileControls">
+                     <p className="col-2 maxNone" >Controls</p>
+                     <button onClick={gotToStart} className="col-2 navButton">Start</button>
+                     <button onClick={goToPrevious} className="col-2 navButton">{"<<<"}</button>
+                     <button onClick={nextButton} className="col-2 navButton">{">>>"}</button>
                      <button onClick={goToEnd} className="col-2 navButton">End</button>
                   </div>
                </div>

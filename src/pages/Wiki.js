@@ -102,13 +102,13 @@ export default function Wiki(props) {
       <div ref={myRef} onScroll={testScroll} >
          <Navbar />
          <div  className="noMatch">
-            <div className="example mobile">
+            <div className="example desktop">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>Top</p>
                <img id="firstSection" onClick={e => sideBarScroll(e.target.id)} className="d6" width="36px" height="36px" src={d61} />
                <p><img id="secondSection" onClick={e => sideBarScroll(e.target.id)} className="d6" width="36px" height="36px" src={d62}/></p>
                <p id="thirdSection" onClick={e => sideBarScroll(e.target.id)}>Bot</p>
             </div>
-            <div className="example2 desktop">
+            <div className="example2 mobile">
                <p id="topSection" onClick={e => sideBarScroll(e.target.id)}>^</p>
                <p id="firstSection" onClick={e => sideBarScroll(e.target.id)}>°</p>
                <p id="secondSection" onClick={e => sideBarScroll(e.target.id)}>°°</p>
