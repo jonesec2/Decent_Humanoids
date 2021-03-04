@@ -17,18 +17,20 @@ export default function Timeline() {
    useEffect(() => {
       // myRef.current[0].current.focus()
       goToRef();
-      window.scrollTop(0,0);
+      // window.scrollTo(0,0);
    }, [myRef.current[i]]);
    // console.log(i);
 
    function gotToStart() {
       myRef.current[0].current.scrollIntoView();
-      setI(0)
+      setI(0);
+      // window.scrollTo(0,0);
    }
 
    function goToEnd() {
       myRef.current[6].current.scrollIntoView();
       setI(6)
+      // window.scrollTo(0,0);
    }
 
    function nextButton() {
