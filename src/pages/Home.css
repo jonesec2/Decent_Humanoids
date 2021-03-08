@@ -501,7 +501,7 @@
    }
 
    h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
    }
 
    .noBlurb {
@@ -523,6 +523,81 @@
       max-height: 320px;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
+   }
+
+   .dot {
+      margin-left: 45%;
+      margin-bottom: -12.5rem;
+   }
+
+   .line {
+      margin-bottom: -11.8rem;
+   }
+
+   .sessionNumber {
+      margin-left: 20%;
+      margin-bottom: -17rem;
+   }
+
+   .days {
+      margin-left: 20%;
+      bottom: -18.8rem;
+      line-height: 2;
+   }
+
+   .timeline {
+      min-height: 502px;
+      max-height: 502px;
+   }
+
+   .hrTime {
+      margin-top: 5px;
+   }
+   
+}
+
+@media (max-width: 320px) {
+/* 
+   .minHome {
+      max-height: 620px !important;
+   } */
+
+   .mobileSM {
+      line-height: 1.2;
+   }
+
+   .timelineContainer {
+      width: 250px;
+      margin-left: 2px!important;
+      margin-right: 2px!important;
+      font-size: 0.78rem;
+      line-height: 1.2;
+   }
+
+   h3 {
+      font-size: 1.2rem;
+   }
+
+   .noBlurb {
+      height: 42px;
+   }
+   
+   .topBlurb {
+      min-width: 200px;
+      max-width: 280px;
+      max-height: 42px;
+      min-height: 42px;
+      padding: 0.2rem;
+      font-size: 0.65rem;
+   
+   }
+   
+   .mainInfo {
+      min-height: 240px;
+      max-height: 320px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      overflow-x: scroll;
    }
 
    .dot {
