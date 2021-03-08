@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/decent_humanoids/static/css/main.739ff82a.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.4633eac9.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.4633eac9.chunk.js.map",
+    "main.css": "/decent_humanoids/static/css/main.5f0d4ac7.chunk.css",
+    "main.js": "/decent_humanoids/static/js/main.24dd66ce.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.24dd66ce.chunk.js.map",
     "runtime-main.js": "/decent_humanoids/static/js/runtime-main.ca7d6680.js",
     "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.ca7d6680.js.map",
     "static/js/2.2feb207b.chunk.js": "/decent_humanoids/static/js/2.2feb207b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.341f84ae.chunk.js": "/decent_humanoids/static/js/3.341f84ae.chunk.js",
     "static/js/3.341f84ae.chunk.js.map": "/decent_humanoids/static/js/3.341f84ae.chunk.js.map",
     "index.html": "/decent_humanoids/index.html",
-    "static/css/main.739ff82a.chunk.css.map": "/decent_humanoids/static/css/main.739ff82a.chunk.css.map",
+    "static/css/main.5f0d4ac7.chunk.css.map": "/decent_humanoids/static/css/main.5f0d4ac7.chunk.css.map",
     "static/js/2.2feb207b.chunk.js.LICENSE.txt": "/decent_humanoids/static/js/2.2feb207b.chunk.js.LICENSE.txt",
     "static/media/DH_History_Normalized_Size.340cdf5d.png": "/decent_humanoids/static/media/DH_History_Normalized_Size.340cdf5d.png",
     "static/media/Daggerofmanydaggers.e7f84d99.jpg": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ca7d6680.js",
     "static/js/2.2feb207b.chunk.js",
-    "static/css/main.739ff82a.chunk.css",
-    "static/js/main.4633eac9.chunk.js"
+    "static/css/main.5f0d4ac7.chunk.css",
+    "static/js/main.24dd66ce.chunk.js"
   ]
 }
