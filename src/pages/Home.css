@@ -579,16 +579,16 @@
    }
 
    .noBlurb {
-      height: 42px;
+      height: 44px;
    }
    
    .topBlurb {
       min-width: 200px;
       max-width: 280px;
-      max-height: 42px;
-      min-height: 42px;
+      max-height: 44px;
+      min-height: 44px;
       padding: 0.2rem;
-      font-size: 0.65rem;
+      font-size: 0.63rem;
    
    }
    
