@@ -488,6 +488,10 @@
       max-height: 620px !important;
    } */
 
+   .mobileSM {
+      line-height: 1.2;
+   }
+
    .timelineContainer {
       width: 250px;
       margin-left: 2px!important;

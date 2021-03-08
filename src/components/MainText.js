@@ -34,7 +34,7 @@ export default function MainText(object) {
    let history = useHistory();
 
    return (
-      <div className="container text-center mx-auto my-3">
+      <div className="container mobileSM text-center mx-auto my-3">
          <div className="container mx-auto mb-3 pb-2 ml-5 border textR">
             <img onClick={e => showModal()} className="image" src={info.mainImage} alt={info.imageDescription} />
             {show === 'true' ?
