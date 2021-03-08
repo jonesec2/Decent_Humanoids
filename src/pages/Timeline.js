@@ -82,18 +82,16 @@ export default function Timeline() {
                   />
                   <hr className="hrTime"></hr>
                   <div className="row desktopControls">
-                     <p className="col-2" >Controls</p>
-                     <button onClick={gotToStart} className="col-2 navButton">Start</button>
+                     <button onClick={gotToStart} className="col-2 ml-auto navButton">Start</button>
                      <button onClick={goToPrevious} className="col-2 navButton">Previous</button>
                      <button onClick={nextButton} className="col-2 navButton">Next</button>
-                     <button onClick={goToEnd} className="col-2 navButton">End</button>
+                     <button onClick={goToEnd} className="col-2 mr-auto navButton">End</button>
                   </div>
-                  <div className="row mobileControls">
-                     <p className="col-2 maxNone" >Controls</p>
-                     <button onClick={gotToStart} className="col-2 navButton">Start</button>
-                     <button onClick={goToPrevious} className="col-2 navButton">{"<<<"}</button>
-                     <button onClick={nextButton} className="col-2 navButton">{">>>"}</button>
-                     <button onClick={goToEnd} className="col-2 navButton">End</button>
+                  <div className="row mobileControls mx-auto">
+                     <button onClick={gotToStart} className="col-2 px-auto ml-auto navButton">Start</button>
+                     <button onClick={goToPrevious} className="col-2  navButton">{"<<<"}</button>
+                     <button onClick={nextButton} className="col-2  navButton">{">>>"}</button>
+                     <button onClick={goToEnd} className="col-2 mr-auto  navButton">End</button>
                   </div>
                </div>
             </Wrapper>

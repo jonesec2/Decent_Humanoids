@@ -632,6 +632,87 @@
 }
 
 
+@media (max-height: 568px) {
+   /* 
+      .minHome {
+         max-height: 620px !important;
+      } */
+   
+      .mobileSM {
+         line-height: 1.2;
+      }
+   
+      .timelineContainer {
+         width: 250px;
+         margin-left: 2px!important;
+         margin-right: 2px!important;
+         font-size: 0.78rem;
+         line-height: 1.2;
+      }
+   
+      h3 {
+         font-size: 1.2rem;
+      }
+   
+      .noBlurb {
+         height: 50px;
+      }
+      
+      .topBlurb {
+         min-width: 240px;
+         max-width: 280px;
+         max-height: 50px;
+         min-height: 50px;
+         padding: 0.3rem;
+         font-size: 0.65rem;
+      }
+      
+      .mainInfo {
+         min-height: 240px;
+         max-height: 280px;
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+         overflow: auto;
+      }
+   
+      .dot {
+         margin-left: 45%;
+         margin-bottom: -10.5rem;
+      }
+   
+      .line {
+         margin-bottom: -9.8rem;
+      }
+   
+      .sessionNumber {
+         margin-left: 20%;
+         margin-bottom: -15rem;
+      }
+   
+      .days {
+         margin-left: 20%;
+         bottom: -16.8rem;
+         line-height: 2;
+      }
+   
+      .timeline {
+         min-height: 480px;
+         max-height: 480px;
+      }
+   
+      .hrTime {
+         margin-top: 5px;
+         margin-bottom: 5px;
+      }
+      .navButton {
+         padding: 0.4rem !important;
+         width: fit-content;
+         min-width: 50px;
+      }
+      
+   }
+
+
 #base {
    background: rgb(0,117,232);
    display: inline-block;
@@ -658,7 +739,7 @@
 }
 
 .navButton {
-   padding: 0;
+   padding: 0.5rem;
 }
 
 .noMatchImage {
