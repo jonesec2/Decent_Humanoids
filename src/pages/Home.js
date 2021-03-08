@@ -74,7 +74,7 @@ function Home() {
          <Navbar />
          <div className="noMatch">
             <Wrapper>
-               <div className="minHome">
+               <div className="minHome mobileSM">
                   <h1 className="text-left">Welcome</h1>
                   <hr />
                   <p>This is the Decent Humanoids wikipedia page. These chronicle the adventures of 6 friends through their D&D campaign. </p>

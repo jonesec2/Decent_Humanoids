@@ -1118,9 +1118,16 @@ a.lightbox-close:after {
    overflow-wrap: break-word !important;
    word-wrap: break-word !important;
    text-align: left;
-   padding: 0.3rem !important;
+   padding-right: 0.3rem !important;
+   padding-bottom: 0.3rem !important;
+   padding-top: 0.3rem !important;
+   
    z-index: 1;
    /* line-height: -5rem !important; */
+}
+
+.topInfo {
+   padding-top: 0 !important;
 }
 
 body, html {
