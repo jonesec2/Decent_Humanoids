@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Dhante - my Fiery French Half-Orc Firecracker
 
 ---------------------------------------------------------------------------------------------------------------------------
-React Info
+# React Info
 ---------------------------------------------------------------------------------------------------------------------------
 ## Available Scripts
 
