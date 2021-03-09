@@ -1,7 +1,25 @@
-# Getting Started with Create React App
+# Decent Humanoids Wiki
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## About
+
+
+## Aproach
+
+
+## Special Thanks
+
+My wife
+My friends
+D&D
+Justin for inspiring me to start my own game
+Dhante - my Fiery French Half-Orc Firecracker
+
+---------------------------------------------------------------------------------------------------------------------------
+React Info
+---------------------------------------------------------------------------------------------------------------------------
 ## Available Scripts
 
 In the project directory, you can run:
