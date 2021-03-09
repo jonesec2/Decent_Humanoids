@@ -11,11 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Special Thanks
 
-My wife
-My friends
-D&D
-Justin for inspiring me to start my own game
-Dhante - my Fiery French Half-Orc Firecracker
+* My wife
+* My friends
+* D&D
+* Justin for inspiring me to start my own game
+* Dhante - my Fiery French Half-Orc Firecracker
 
 ---------------------------------------------------------------------------------------------------------------------------
 React Info
