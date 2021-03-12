@@ -70,7 +70,7 @@ export default function Timeline() {
          <div className="noMatch">
             <Wrapper>
                <div className="minHome">
-                  <h1 className="text-left mobileHeading">Campaign Timeline </h1>
+                  <h1 className="text-left mobileHeading">Campaign Timeline</h1>
                   <hr />
                   <MainTime
                      myRef={myRef}
