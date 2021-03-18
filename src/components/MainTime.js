@@ -8,14 +8,18 @@ export default function MainTime(object) {
    const info = timeline
    // console.log(info);
    // console.log(object);
+   // var width = window.element.offsetWidth
 
    return (
-      <div className="timeline">
+      <div onScroll={object.onScroll} className="timeline"
+      // {...console.log(window.scrollLeft)}
+      >
          <div className=" timelineText ">
             {info.map((search, i) => (
                <div className="timelineContainer mx-3" ref={object.myRef.current[i]} id={i}npm key={i} 
                // {...console.log(i)} 
                // {...console.log(object.myRef)}
+               // {...console.log(window.scrollLeft)}
                >
                   
                   {search.topBlurb === "null" ?

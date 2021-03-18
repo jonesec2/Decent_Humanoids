@@ -30,6 +30,7 @@ export default function MainText(object) {
 
    console.log(object.object)
    console.log(info.subtitle1)
+   console.log(info.mainImage)
 
    let history = useHistory();
 
