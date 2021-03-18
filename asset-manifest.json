@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/decent_humanoids/static/css/main.68d9f193.chunk.css",
-    "main.js": "/decent_humanoids/static/js/main.b1f4fb0e.chunk.js",
-    "main.js.map": "/decent_humanoids/static/js/main.b1f4fb0e.chunk.js.map",
+    "main.js": "/decent_humanoids/static/js/main.f41c404a.chunk.js",
+    "main.js.map": "/decent_humanoids/static/js/main.f41c404a.chunk.js.map",
     "runtime-main.js": "/decent_humanoids/static/js/runtime-main.ca7d6680.js",
     "runtime-main.js.map": "/decent_humanoids/static/js/runtime-main.ca7d6680.js.map",
     "static/js/2.2feb207b.chunk.js": "/decent_humanoids/static/js/2.2feb207b.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.ca7d6680.js",
     "static/js/2.2feb207b.chunk.js",
     "static/css/main.68d9f193.chunk.css",
-    "static/js/main.b1f4fb0e.chunk.js"
+    "static/js/main.f41c404a.chunk.js"
   ]
 }
