@@ -6,6 +6,7 @@ import icon from "../images/favicon.ico";
 export default function Results(props) {
 
    console.log(props)
+   const image = "img/favicon.ico"
 
    const [word, setWord] = useState("");
    const [searchWord, setSearchWord] = useState("")
@@ -59,7 +60,7 @@ export default function Results(props) {
       <div>
          <div className="row">
             <div className="float-right col-sm-1 col-2  px-0 imgWrap">
-               <img className="d20" width="47px" height="47px" src={icon} />
+               <img className="d20" width="47px" height="47px" src={image} />
             </div>
             <div className="col-sm-11 col-10 search pl-0">
                <input onChange={e => handleChange(e.target.value)}
