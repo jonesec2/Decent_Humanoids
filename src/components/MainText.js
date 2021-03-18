@@ -3,6 +3,7 @@ import { Link, useHistory, Route } from "react-router-dom";
 // import test from "../utils/test.json";
 // import picture from "../images/eb_dh1.jpg"
 // import testPic from "./images/eb_dh1.jpg"
+import group from "./images/dh_groupA.jpg"
 import Modal from "../components/Modal";
 
 
@@ -13,7 +14,7 @@ export default function MainText(object) {
 
    const [show, setShow] = useState('false')
 
-
+   console.log(group);
    const showModal = e => {
       if (show === 'false') {
          setShow('true')
