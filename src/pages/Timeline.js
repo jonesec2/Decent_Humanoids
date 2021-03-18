@@ -26,11 +26,6 @@ export default function Timeline() {
       window.scrollTo(0, 0);
    }, []);
 
-
-   // /decent_humanoids/static/media/eb_dh1.b235a8ce.jpg
-   // /decent_humanoids/static/media/iphiria_map.915f8f12.jpg
-
-
    useEffect(() => {
       // goToRef(approximateRef);
       setTimeWidth(myRef.current[i].current.offsetWidth)
@@ -41,7 +36,7 @@ export default function Timeline() {
    function onScroll(e) {
       const scrollX = e.target.scrollLeft
       // console.log(scrollX)
-      setApproximateRef(Math.trunc(scrollX / timeWidth))
+      // setApproximateRef(Math.trunc(scrollX / timeWidth))
       console.log("scrolled!")
       // setI(Math.trunc(scrollX / timeWidth))
       // if (approximateRef > 6) {
@@ -69,7 +64,6 @@ export default function Timeline() {
    }
 
    function nextButton() {
-      // console.log(i)
       if (i >= 6) {
          return;
       }
@@ -80,7 +74,6 @@ export default function Timeline() {
 
 
    function goToPrevious() {
-      // console.log(i)
       if (i <= 0) {
          return;
       }
