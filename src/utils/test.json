@@ -85,7 +85,7 @@
    {
       "title": "Decent Humanoids",
       "overview": "This is the overview for the Decent Humanoids. Normally there would be a lot more things but this just for the test. The Decent Humanoids are just as their name implies.",
-      "mainImage": "/decent_humanoids/static/media/eb_dh1.b235a8ce.jpg",
+      "mainImage": "img/eb_dh1.jpg",
       "imageDescription": "The Decent Humanoids",
       "rightInfo1": "As drawn by our wonderful Emily Burlingame.",
       "rightInfo2": "null",
@@ -117,7 +117,7 @@
    {
       "title": "Iphiria",
       "overview": "The country of Iphiria is blah blah blah",
-      "mainImage": "/decent_humanoids/static/media/IphiriaClose.ac895cc6.png",
+      "mainImage": "img/IphiriaClose.png",
       "imageDescription": "Iphiria",
       "rightInfo1": "Country of Iphiria and its surrounding countries.",
       "rightInfo2": "null",
@@ -149,7 +149,7 @@
    {
       "title": "Maeve Leaflock",
       "overview": "The stealthy by choice, firecracker by nature, Rogue of the Decent Humanoids",
-      "mainImage": "/decent_humanoids/static/media/dh_Maeve_1.664b3f4a.jpg",
+      "mainImage": "img/dh_Maeve_1.jpg",
       "imageDescription": "Maeve Leaflock",
       "rightInfo1": "Maeve checking if the coast is clear before continuing her stealth mission",
       "rightInfo2": "Character: Level 13 Thief Rogue",
@@ -181,7 +181,7 @@
    {
       "title": "Dagger of Many Daggers",
       "overview": "This thing is one dagger, but then sometimes many daggers. I was sure this item was going to be a big hit. I try to make cool loot that can work for anyone, but sometimes I find something or think of something that would be very cool for a specific character. This dagger was to be Maeve's. I remember finding the description of this thing on some homebrew website and knew immediately I needed to get this thing into the game.",
-      "mainImage": "/decent_humanoids/static/media/Daggerofmanydaggers.e7f84d99.jpg",
+      "mainImage": "img/Daggerofmanydaggers.jpg",
       "imageDescription": "Dagger of Many Daggers",
       "rightInfo1": "The first time this dagger is used is always an interesting experience for the user. They swear they only threw one dagger, but those five flying through the air were not imaginary. When confronted on how they managed to throw five daggers at the same time, they'll scratch their head and say \"I only threw one...\".",
       "rightInfo2": "When it's pointed out that there are five puncture marks, but only one dagger in the dummy, it left everyone scratching their heads.",
