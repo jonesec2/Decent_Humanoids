@@ -71,7 +71,7 @@ export default function Timeline() {
    }
 
    function nextButton() {
-      if (i >= 6) {
+      if (i >= timelineLength -1) {
          return;
       }
       else { setI(i + 1) }
