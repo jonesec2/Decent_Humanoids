@@ -9,13 +9,20 @@ import Footer from "../components/Footer";
 // import HistoryTest2 from "../images/dh_history_test2.png";
 // import normalizedHistory from "../images/DH_History_Normalized_Size.png"
 import MainTime from "../components/MainTime";
+import timeline from "../utils/timeline.json"
 
 export default function Timeline() {
 
+   console.log(timeline)
+   // console.log(timeline.length)
+   const timelineLength = timeline.length
+   // console.log(timelineLength)
    const [i, setI] = useState(0);
-   let myRef = useRef(Array.from({ length: 7 }, () => React.createRef()));
+   let myRef = useRef(Array.from({ length: timelineLength }, () => React.createRef()));
    const [timeWidth, setTimeWidth] = useState();
    const [approximateRef, setApproximateRef] = useState(0);
+
+   console.log(myRef.current)
 
 
    useEffect(() => {
@@ -59,8 +66,8 @@ export default function Timeline() {
    }
 
    function goToEnd() {
-      myRef.current[6].current.scrollIntoView({behavior: 'smooth'});
-      setI(6)
+      myRef.current[timelineLength-1].current.scrollIntoView({behavior: 'smooth'});
+      setI(timelineLength-1)
    }
 
    function nextButton() {
@@ -106,6 +113,7 @@ export default function Timeline() {
                      nextButton={nextButton}
                      goToPrevious={goToPrevious}
                      onScroll={onScroll}
+                     timeline
                      // gotToRef={goToRef}
 
                   />

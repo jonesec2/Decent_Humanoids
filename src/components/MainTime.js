@@ -6,6 +6,7 @@ import timeline from "../utils/timeline.json"
 export default function MainTime(object) {
 
    const info = timeline
+   // console.log(timeline)
    // console.log(info);
    // console.log(object);
    // var width = window.element.offsetWidth
