@@ -121,7 +121,7 @@ export default function Timeline() {
                   <div className="row desktopControls">
                      <button onClick={gotToStart} className="col-2 ml-auto navButton">Start</button>
                      <button onClick={goToPrevious} className="col-2 navButton">Previous</button>
-                     <div className="col-1 timelineButton"><p className="timelineP text-center">Page Number</p> <input value={i +1} className="timelineInput text-center"></input></div>
+                     <div className="col-1 timelineButton"><p className="timelineP text-center">Page #</p> <input value={i +1} className="timelineInput text-center"></input></div>
                      <button onClick={nextButton} className="col-2 navButton">Next</button>
                      <button onClick={goToEnd} className="col-2 mr-auto navButton">End</button>
                   </div>
