@@ -667,6 +667,7 @@
    }
    .timelineInput {
       height: 100%;
+      /* width:4rem; */
    }
 }
 
