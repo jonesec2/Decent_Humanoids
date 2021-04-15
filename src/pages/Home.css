@@ -662,6 +662,12 @@
       width: fit-content;
       min-width: 50px;
    }
+   .timelineButton {
+      padding: 0;
+   }
+   .timelineInput {
+      height: 100%;
+   }
 }
 
 #base {
