@@ -32,6 +32,7 @@ export default function MainText(object) {
    console.log(object.object)
    console.log(info.subtitle1)
    console.log(info.mainImage)
+   console.log(info.Gallery.length)
 
    let history = useHistory();
 
@@ -211,6 +212,7 @@ export default function MainText(object) {
                (<div></div>)
                :
                (<p>{info.SectionThreeP1}</p>)
+               // <img className="image gallery" src={info.SectionThreeP1} alt={info.imageDescription} />)
             }
             {info.SectionThreeP2 === "null" ?
                (<div></div>)
@@ -259,6 +261,28 @@ export default function MainText(object) {
                )
             }
             {/*  */}
+            {info.Gallery.length === 0 ?
+               (<div></div>)
+               :
+               (
+                  <div>
+                     <h3>{info.title4}</h3>
+                     <div className="container mx-auto mb-3 pb-2 ml-5 border">
+                        <div className="gallery">
+                           <div className="gallery_column">
+                           {info.Gallery.map((search, i) => (
+                              <figure className="gallery_thumb">
+                                 <img key={i} className="gallery_image" src={search.image} alt={search.imageDescription} />
+                              </figure>
+
+                           ))}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               )
+
+            }
 
          </div>
       </div>

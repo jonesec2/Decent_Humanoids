@@ -158,7 +158,9 @@ export default function Wiki(props) {
                         SectionThreeP2: object.SectionThreeP2,
                         SectionThreeP3: object.SectionThreeP3,
                         SectionThreeP4: object.SectionThreeP4,
-                        SectionThreeP5: object.SectionThreeP5
+                        SectionThreeP5: object.SectionThreeP5,
+                        title4: object.title4,
+                        Gallery: object.Gallery
                      }}>
                   </MainText>
                </Wrapper>

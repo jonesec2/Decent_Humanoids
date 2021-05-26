@@ -374,7 +374,7 @@
       margin-left: 33%;
       bottom: -23.8rem;
    }
-   .timelineInput{
+   .timelineInput {
       margin-top: auto;
       margin-bottom: auto;
    }
@@ -726,6 +726,30 @@
 
 .image:hover {
    opacity: 0.9;
+}
+
+.gallery {
+   display: flex;
+   padding: 2px;
+   margin: auto;
+   cursor: zoom-in;
+   transition: 0.17s;
+}
+
+.gallery_column {
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+}
+
+.gallery__thumb {
+   position: relative;
+}
+
+.gallery_image {
+   display: block;
+   width: 100%;
+   transition: .3s;
 }
 
 .imageTarget {

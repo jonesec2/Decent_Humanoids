@@ -38,7 +38,7 @@
             "pageNumber": 5
          }
       ],
-      "subtitle2":[
+      "subtitle2": [
          {
             "page": "Xarius Xadysa",
             "pageNumber": 5
@@ -80,7 +80,12 @@
       "SectionThreeP2": "null",
       "SectionThreeP3": "null",
       "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": ""
+         }
+      ]
    },
    {
       "title": "Decent Humanoids",
@@ -92,9 +97,10 @@
       "rightInfo3": "null",
       "rightInfo4": "null",
       "rightInfo5": "null",
-      "title1": "History",
-      "title2": "Future",
-      "title3": "Gallery",
+      "title1": "Members",
+      "title2": "Background",
+      "title3": "Epilogue",
+      "title4": "Gallery",
       "subtitle1": "null",
       "subtitle2": "null",
       "subtitle3": "null",
@@ -112,7 +118,12 @@
       "SectionThreeP2": "null",
       "SectionThreeP3": "null",
       "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": ""
+         }
+      ]
    },
    {
       "title": "Iphiria",
@@ -125,8 +136,8 @@
       "rightInfo4": "null",
       "rightInfo5": "null",
       "title1": "History",
-      "title2": "Future",
-      "title3": "Gallery",
+      "title2": "Explored Locations",
+      "title4": "Gallery",
       "subtitle1": "null",
       "subtitle2": "null",
       "subtitle3": "null",
@@ -144,7 +155,12 @@
       "SectionThreeP2": "null",
       "SectionThreeP3": "null",
       "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": ""
+         }
+      ]
    },
    {
       "title": "Maeve Leaflock",
@@ -152,17 +168,18 @@
       "mainImage": "img/dh_Maeve_1.jpg",
       "imageDescription": "Maeve Leaflock",
       "rightInfo1": "Maeve checking if the coast is clear before continuing her stealth mission",
-      "rightInfo2": "Character: Level 13 Thief Rogue",
+      "rightInfo2": "Character: Level 14 Thief Rogue",
       "rightInfo3": "Alignment: Chaotic Good",
       "rightInfo4": "null",
       "rightInfo5": "null",
-      "title1": "History",
-      "title2": "Future",
-      "title3": "Gallery",
+      "title1": "Background",
+      "title2": "Decent Humanoids",
+      "title3": "Epilogue",
+      "title4": "Gallery",
       "subtitle1": "null",
       "subtitle2": "null",
       "subtitle3": "null",
-      "SectionOneP1": "Maeve wasn't always level 13, but she was always a badd ass bitcchh.",
+      "SectionOneP1": "Maeve wasn't always level 14, but she was always a badd ass bitcchh.",
       "SectionOneP2": "null",
       "SectionOneP3": "null",
       "SectionOneP4": "null",
@@ -176,7 +193,12 @@
       "SectionThreeP2": "null",
       "SectionThreeP3": "null",
       "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": ""
+         }
+      ]
    },
    {
       "title": "Dagger of Many Daggers",
@@ -189,8 +211,8 @@
       "rightInfo4": "null",
       "rightInfo5": "null",
       "title1": "Why carry many blade when one do trick?",
-      "title2": "History",
-      "title3": "Gallery",
+      "title2": "Background",
+      "title4": "Gallery",
       "subtitle1": "null",
       "subtitle2": "null",
       "subtitle3": "null",
@@ -204,11 +226,8 @@
       "SectionTwoP3": "After the fight, the Dagger of Many Daggers is discovered and Maeve claims it for her own. The dagger itself lacking morality, it comes to the decisions of it's wielder to decide whether it is used for good or evil. In Maeve's hands it was put to good use. Being a skilled rogue, this item helped The Decent Humanoids in many situations. And Maeve being Chaotic Good, only used it to serve the purpose of good.",
       "SectionTwoP4": "Now it resides with Maeve in Dunshire. For the most part her adventuring days behind her, she still wields it just in case.",
       "SectionTwoP5": "null",
-      "SectionThreeP1": "img/DMD img/DMD img/DMD img/DMD, img/DMD img/DMD img/DMD img/DMD ,img/DMD img/DMD img/DMD img/DMD img/DMD img/DMD img/DMD img/DMD",
-      "SectionThreeP2": "img/DMD img/DMD img/DMD img/DMD, img/DMD img/DMD img/DMD img/DMD ,img/DMD img/DMD img/DMD img/DMD ,img/DMD img/DMD img/DMD img/DMD",
-      "SectionThreeP3": "img/DMD img/DMD img/DMD img/DMD, img/DMD img/DMD img/DMD img/DMD, img/DMD img/DMD img/DMD img/DMD, img/DMD img/DMD img/DMD img/DMD",
-      "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "Gallery": [
+      ]
    },
    {
       "title": "Work in Progress",
@@ -240,6 +259,71 @@
       "SectionThreeP2": "null",
       "SectionThreeP3": "null",
       "SectionThreeP4": "null",
-      "SectionThreeP5": "null"
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": ""
+         }
+      ]
+   },
+   {
+      "title": "Baelok Ariandel",
+      "overview": "The proverbial onion who prefers to talk with his fists, and Monk of The Decent Humanoids",
+      "mainImage": "img/dh_Baelok_2.jpg",
+      "imageDescription": "Baelok Ariandel",
+      "rightInfo1": "Baelok bringing down his staff",
+      "rightInfo2": "Character: Level 14 Way of the Open Hand Monk",
+      "rightInfo3": "Alignment at start: Lawful Neutral",
+      "rightInfo4": "Alignment at end: Lawful Good",
+      "rightInfo5": "null",
+      "title1": "Background",
+      "title2": "Decent Humanoids",
+      "title3": "Epilogue",
+      "title4": "Gallery",
+      "subtitle1": [
+         {
+            "page": "Moyrn",
+            "pageNumber": 5
+         },
+         {
+            "page": "Baefalls",
+            "pageNumber": 5
+         }
+      ],
+      "subtitle2": "null",
+      "subtitle3": "null",
+      "SectionOneP1": "Born of the Princess of Ariandel and a Half-Orc commoner, .... ",
+      "SectionOneP2": "null",
+      "SectionOneP3": "null",
+      "SectionOneP4": "null",
+      "SectionOneP5": "null",
+      "SectionTwoP1": "Baelok needed clues to find the humans with guns, and he needed gold to get it. He met the rest of the Decent Humanoids working on a Righteous Fist contract.",
+      "SectionTwoP2": "null",
+      "SectionTwoP3": "null",
+      "SectionTwoP4": "null",
+      "SectionTwoP5": "null",
+      "SectionThreeP1": "Having rescued his mother, laid his past to rest, and marrying Xalys, he begins to settle his life down.",
+      "SectionThreeP2": "null",
+      "SectionThreeP3": "null",
+      "SectionThreeP4": "null",
+      "SectionThreeP5": "null",
+      "Gallery": [
+         {
+            "image": "img/dh_Baelok_1.jpg",
+            "imageDescription": "Bae 2"
+         },
+         {
+            "image": "img/eb_dh1.jpg",
+            "imageDescription": "Bae 2"
+         },
+         {
+            "image": "img/dh_groupA_poster.jpg",
+            "imageDescription": "Bae 2"
+         },
+         {
+            "image": "img/dh_groupA.jpg",
+            "imageDescription": "Bae 2"
+         }
+      ]
    }
 ]
